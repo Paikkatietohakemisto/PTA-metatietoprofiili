@@ -1,0 +1,2 @@
+# PTA-metatietoprofiili
+Paikkatietoalustan metatietoprofiili
