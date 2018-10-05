@@ -1,0 +1,47 @@
+== PTA-aineistojen metatiedot
+
+Paikkatietoalusta-tietoaineistojen metatietojen tulee olla kuvattu seuraavien dokumenttien tai niiden osien
+sisältämien vaatimusten mukaisesti:
+
+* 'Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007', +
+vaatimustenmukaisuusluokka 'Conformance Class 2: metadata/2.0/isdss'
+* 'JHS 158 Paikkatietoaineistojen ja -palveluiden metatiedot', JHS-metatietoprofiili.
+
+Lisäksi PTA-aineineistojen metatietojen kuvaamisessa tulee noudattaa tässä luvussa kuvattuja PTA-kohtaisia lisävaatimuksia.
+
+=== Vaatimusluokka PTA-aineisto
+Paragraph – intro text for the requirement class.
+
+Use the following table for Requirements Classes.
+
+include::requirements/luokka_pta-aineisto.adoc[]
+
+==== Metatiedon tunnistamistiedot
+
+===== Vaatimus 1
+Paragraph - intro text for the requirement.
+
+Use the following table for Requirements, number sequentially.
+
+include::requirements/vaatimus1.adoc[]
+
+==== Sijaintitiedon esitystapa (spatialRepresentationInfo)
+==== Vertausjärjestelmä (referenceSystemInfo)
+==== Resurssin tunnistamistiedot (indentificationInfo)
+==== Tietosisältö (contentInfo)
+==== Jakelutiedot (distributionInfo)
+==== Laatutiedot (dataQualityInfo)
+==== Ylläpitotiedot (metadataMaintenance)
+
+
+////
+Dictionary tables for requirements can be added as necessary. Modify the following example as needed.
+
+[width="90%",options="header"]
+|===
+|Names |Definition |Data types and values |Multiplicity and use
+|name 1 |definition of name 1 |float |One or more (mandatory)
+|name 2 |definition of name 2 |character string type, not empty |Zero or one (optional)
+|name 3 |definition of name 3 |GML:: Point PropertyType |One (mandatory)
+|===
+////

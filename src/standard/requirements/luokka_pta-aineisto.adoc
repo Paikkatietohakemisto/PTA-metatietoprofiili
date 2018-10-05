@@ -1,0 +1,16 @@
+[cols="1,4",width="90%"]
+|===
+2+|*Vaatimusluokka* {set:cellbgcolor:#CACCCE}
+2+|/vaatimus/luokka-pta-aineisto {set:cellbgcolor:#FFFFFF}
+|Kohde |Metatietokuvaus
+|Riippuvuus |http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/isdss
+|Riippuvuus |http://www.jhs-suositukset.fi/suomi/jhs158/jhs-metatietoprofiili
+|*Vaatimus 1* {set:cellbgcolor:#CACCCE} |/vaatimus/luokka-pta-aineisto/vaatimus-1 +
+requirement description {set:cellbgcolor:#FFFFFF}
+|*Vaatimus 2* {set:cellbgcolor:#CACCCE} |/vaatimus/luokka-pta-aineisto/vaatimus-2 +
+requirement description {set:cellbgcolor:#FFFFFF}
+
+|*Vaatimus 3* {set:cellbgcolor:#CACCCE} |/vaatimus/luokka-pta-aineisto/vaatimus-3 +
+requirement description
+{set:cellbgcolor:#FFFFFF}
+|===

@@ -1,0 +1,115 @@
+:Title: Paikkatietoalusta - metatietoprofiili
+:titletext: Paikkatietoalusta - metatietoprofiili
+:doctype: book
+:encoding: utf-8
+:lang: en
+:toc:
+:toc-placement!:
+:toclevels: 3
+:numbered:
+:sectanchors:
+:source-highlighter: pygments
+:imagesdir: images
+
+:appendix-caption: Liitteet
+:appendix-refsig: {appendix-caption}
+:caution-caption: Huom
+:chapter-label: Luku
+//:chapter-refsig: {chapter-label}
+:example-caption: Esimerkki
+:figure-caption: Kuvio
+:important-caption: Tärkeää
+:last-update-label: Viimeksi päivitetty
+ifdef::listing-caption[:listing-caption: Listaus]
+//:manname-title: NIMI
+:note-caption: Huomio
+//:part-refsig: ???
+ifdef::preface-title[:preface-title: Esipuhe]
+//:section-refsig: ???
+:table-caption: Taulukko
+:tip-caption: Vinkki
+:toc-title: Sisällysluettelo
+:untitled-label: Nimetön
+:version-label: Versio
+:warning-caption: Varoitus
+
+
+= {title}
+
+<<<
+[cols = "<",frame = "none",grid = "none"]
+|===
+|{set:cellbgcolor:#FFFFFF}
+|[big]*Maanmittauslaitos*
+|Hyväksytty:   <yyyy-mm-dd>
+|Julkaistu:   <yyyy-mm-dd>
+|Dokumentin tunniste: http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.1
+|Versio: 0.1
+|Kieli: suomi
+|Toimittaja(t):   Ilkka Rinne / Spatineo Oy
+|===
+
+<<<
+[cols = "^", frame = "none"]
+|===
+|[big]*{titletext}*
+|===
+
+[cols = "^", frame = "none", grid = "none"]
+|===
+|Tekijänoikeus (C) 2018 Maanmittauslaitos
+
+|===
+
+
+
+<<<
+toc::[]
+
+<<<
+
+////
+Make sure to complete each included document
+////
+include::clause_0_front_material.adoc[]
+
+include::clause_1_scope.adoc[]
+
+include::clause_2_conformance.adoc[]
+
+include::clause_3_references.adoc[]
+
+include::clause_4_terms_and_definitions.adoc[]
+
+include::clause_5_conventions.adoc[]
+
+include::yleista.adoc[]
+
+include::luku_6_pta_aineistot.adoc[]
+
+////
+include::clause_6_informative_text.adoc[]
+
+include::clause_7_normative_text.adoc[]
+
+include::clause_8_media_types.adoc[]
+////
+
+<<<
+////
+add or remove annexes after "A" as necessary
+////
+//include::annex-a.adoc[]
+
+<<<
+//include::annex-n.adoc[]
+
+<<<
+////
+Revision History should be the last annex before the Bibliography
+Bibliography should be the last annex
+////
+//include::annex-history.adoc[]
+
+<<<
+include::annex-bibliography.adoc[]
