@@ -1,5 +1,4 @@
-== PTA-aineistojen metatiedot
-
+== Vaatimusluokka PTA-aineisto
 Paikkatietoalusta-tietoaineistojen metatietojen tulee olla kuvattu seuraavien dokumenttien tai niiden osien
 sisältämien vaatimusten mukaisesti:
 
@@ -7,31 +6,27 @@ sisältämien vaatimusten mukaisesti:
 vaatimustenmukaisuusluokka 'Conformance Class 2: metadata/2.0/isdss'
 * 'JHS 158 Paikkatietoaineistojen ja -palveluiden metatiedot', JHS-metatietoprofiili.
 
-Lisäksi PTA-aineineistojen metatietojen kuvaamisessa tulee noudattaa tässä luvussa kuvattuja PTA-kohtaisia lisävaatimuksia.
-
-=== Vaatimusluokka PTA-aineisto
-Paragraph – intro text for the requirement class.
-
-Use the following table for Requirements Classes.
+Lisäksi PTA-aineineistojen metatietojen kuvaamisessa tulee noudattaa tässä luvussa kuvattuja PTA-kohtaisia
+lisävaatimuksia:
 
 include::requirements/luokka_pta-aineisto.adoc[]
 
-==== Metatiedon tunnistamistiedot
+=== Metatiedon tunnistamistiedot
 
-===== Vaatimus 1
+==== Vaatimus 1
 Paragraph - intro text for the requirement.
 
 Use the following table for Requirements, number sequentially.
 
 include::requirements/vaatimus1.adoc[]
 
-==== Sijaintitiedon esitystapa (spatialRepresentationInfo)
-==== Vertausjärjestelmä (referenceSystemInfo)
-==== Resurssin tunnistamistiedot (indentificationInfo)
-==== Tietosisältö (contentInfo)
-==== Jakelutiedot (distributionInfo)
-==== Laatutiedot (dataQualityInfo)
-==== Ylläpitotiedot (metadataMaintenance)
+=== Sijaintitiedon esitystapa (spatialRepresentationInfo)
+=== Vertausjärjestelmä (referenceSystemInfo)
+=== Resurssin tunnistamistiedot (indentificationInfo)
+=== Tietosisältö (contentInfo)
+=== Jakelutiedot (distributionInfo)
+=== Laatutiedot (dataQualityInfo)
+=== Ylläpitotiedot (metadataMaintenance)
 
 
 ////

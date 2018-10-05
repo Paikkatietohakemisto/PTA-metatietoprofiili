@@ -2,7 +2,7 @@
 :titletext: Paikkatietoalusta - metatietoprofiili
 :doctype: book
 :encoding: utf-8
-:lang: en
+:lang: fi
 :toc:
 :toc-placement!:
 :toclevels: 3
@@ -32,7 +32,6 @@ ifdef::preface-title[:preface-title: Esipuhe]
 :untitled-label: Nimetön
 :version-label: Versio
 :warning-caption: Varoitus
-
 
 = {title}
 
@@ -99,17 +98,17 @@ include::clause_8_media_types.adoc[]
 ////
 add or remove annexes after "A" as necessary
 ////
-//include::annex-a.adoc[]
+include::annex-a.adoc[]
 
 <<<
-//include::annex-n.adoc[]
+include::annex-n.adoc[]
 
 <<<
 ////
 Revision History should be the last annex before the Bibliography
 Bibliography should be the last annex
 ////
-//include::annex-history.adoc[]
+include::annex-history.adoc[]
 
 <<<
 include::annex-bibliography.adoc[]

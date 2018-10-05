@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
 <meta charset="utf-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
@@ -578,23 +578,35 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_tunnisteet">5.1. Tunnisteet</a></li>
 </ul>
 </li>
-<li><a href="#_pta_aineistojen_metatiedot">6. PTA-aineistojen metatiedot</a>
+<li><a href="#_vaatimusluokka_pta_aineisto">6. Vaatimusluokka PTA-aineisto</a>
 <ul class="sectlevel2">
-<li><a href="#_vaatimusluokka_pta_aineisto">6.1. Vaatimusluokka PTA-aineisto</a>
+<li><a href="#_metatiedon_tunnistamistiedot">6.1. Metatiedon tunnistamistiedot</a>
 <ul class="sectlevel3">
-<li><a href="#_metatiedon_tunnistamistiedot">6.1.1. Metatiedon tunnistamistiedot</a></li>
-<li><a href="#_sijaintitiedon_esitystapa_spatialrepresentationinfo">6.1.2. Sijaintitiedon esitystapa (spatialRepresentationInfo)</a></li>
-<li><a href="#_vertausjärjestelmä_referencesysteminfo">6.1.3. Vertausjärjestelmä (referenceSystemInfo)</a></li>
-<li><a href="#_resurssin_tunnistamistiedot_indentificationinfo">6.1.4. Resurssin tunnistamistiedot (indentificationInfo)</a></li>
-<li><a href="#_tietosisältö_contentinfo">6.1.5. Tietosisältö (contentInfo)</a></li>
-<li><a href="#_jakelutiedot_distributioninfo">6.1.6. Jakelutiedot (distributionInfo)</a></li>
-<li><a href="#_laatutiedot_dataqualityinfo">6.1.7. Laatutiedot (dataQualityInfo)</a></li>
-<li><a href="#_ylläpitotiedot_metadatamaintenance">6.1.8. Ylläpitotiedot (metadataMaintenance)</a></li>
+<li><a href="#_vaatimus_1">6.1.1. Vaatimus 1</a></li>
+</ul>
+</li>
+<li><a href="#_sijaintitiedon_esitystapa_spatialrepresentationinfo">6.2. Sijaintitiedon esitystapa (spatialRepresentationInfo)</a></li>
+<li><a href="#_vertausjärjestelmä_referencesysteminfo">6.3. Vertausjärjestelmä (referenceSystemInfo)</a></li>
+<li><a href="#_resurssin_tunnistamistiedot_indentificationinfo">6.4. Resurssin tunnistamistiedot (indentificationInfo)</a></li>
+<li><a href="#_tietosisältö_contentinfo">6.5. Tietosisältö (contentInfo)</a></li>
+<li><a href="#_jakelutiedot_distributioninfo">6.6. Jakelutiedot (distributionInfo)</a></li>
+<li><a href="#_laatutiedot_dataqualityinfo">6.7. Laatutiedot (dataQualityInfo)</a></li>
+<li><a href="#_ylläpitotiedot_metadatamaintenance">6.8. Ylläpitotiedot (metadataMaintenance)</a></li>
+</ul>
+</li>
+<li><a href="#_conformance_class_abstract_test_suite_normative">Liite A: Conformance Class Abstract Test Suite (Normative)</a>
+<ul class="sectlevel2">
+<li><a href="#_conformance_class_a">A.1. Conformance Class A</a>
+<ul class="sectlevel3">
+<li><a href="#_requirement_1">A.1.1. Requirement 1</a></li>
+<li><a href="#_requirement_2">A.1.2. Requirement 2</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#Viitteet">Liite A: Viitteet</a></li>
+<li><a href="#_title_normativeinformative">Liite B: Title ( {Normative/Informative} )</a></li>
+<li><a href="#_revision_history">Liite C: Revision History</a></li>
+<li><a href="#Viitteet">Liite D: Viitteet</a></li>
 </ul>
 </div>
 <div style="page-break-after: always;"></div>
@@ -808,7 +820,7 @@ Global Grid Forum (2002)</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_pta_aineistojen_metatiedot"><a class="anchor" href="#_pta_aineistojen_metatiedot"></a>6. PTA-aineistojen metatiedot</h2>
+<h2 id="_vaatimusluokka_pta_aineisto"><a class="anchor" href="#_vaatimusluokka_pta_aineisto"></a>6. Vaatimusluokka PTA-aineisto</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Paikkatietoalusta-tietoaineistojen metatietojen tulee olla kuvattu seuraavien dokumenttien tai niiden osien
@@ -826,15 +838,7 @@ vaatimustenmukaisuusluokka 'Conformance Class 2: metadata/2.0/isdss'</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Lisäksi PTA-aineineistojen metatietojen kuvaamisessa tulee noudattaa tässä luvussa kuvattuja PTA-kohtaisia lisävaatimuksia.</p>
-</div>
-<div class="sect2">
-<h3 id="_vaatimusluokka_pta_aineisto"><a class="anchor" href="#_vaatimusluokka_pta_aineisto"></a>6.1. Vaatimusluokka PTA-aineisto</h3>
-<div class="paragraph">
-<p>Paragraph – intro text for the requirement class.</p>
-</div>
-<div class="paragraph">
-<p>Use the following table for Requirements Classes.</p>
+<p>Lisäksi PTA-aineineistojen metatietojen kuvaamisessa tulee noudattaa alla kuvattuja PTA-kohtaisia lisävaatimuksia:</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
 <colgroup>
@@ -877,10 +881,10 @@ requirement description</p></td>
 </tr>
 </tbody>
 </table>
+<div class="sect2">
+<h3 id="_metatiedon_tunnistamistiedot"><a class="anchor" href="#_metatiedon_tunnistamistiedot"></a>6.1. Metatiedon tunnistamistiedot</h3>
 <div class="sect3">
-<h4 id="_metatiedon_tunnistamistiedot"><a class="anchor" href="#_metatiedon_tunnistamistiedot"></a>6.1.1. Metatiedon tunnistamistiedot</h4>
-<div class="sect4">
-<h5 id="_vaatimus_1"><a class="anchor" href="#_vaatimus_1"></a>Vaatimus 1</h5>
+<h4 id="_vaatimus_1"><a class="anchor" href="#_vaatimus_1"></a>6.1.1. Vaatimus 1</h4>
 <div class="paragraph">
 <p>Paragraph - intro text for the requirement.</p>
 </div>
@@ -903,42 +907,140 @@ requirement description</p></td>
 </table>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_sijaintitiedon_esitystapa_spatialrepresentationinfo"><a class="anchor" href="#_sijaintitiedon_esitystapa_spatialrepresentationinfo"></a>6.1.2. Sijaintitiedon esitystapa (spatialRepresentationInfo)</h4>
+<div class="sect2">
+<h3 id="_sijaintitiedon_esitystapa_spatialrepresentationinfo"><a class="anchor" href="#_sijaintitiedon_esitystapa_spatialrepresentationinfo"></a>6.2. Sijaintitiedon esitystapa (spatialRepresentationInfo)</h3>
 
 </div>
-<div class="sect3">
-<h4 id="_vertausjärjestelmä_referencesysteminfo"><a class="anchor" href="#_vertausjärjestelmä_referencesysteminfo"></a>6.1.3. Vertausjärjestelmä (referenceSystemInfo)</h4>
+<div class="sect2">
+<h3 id="_vertausjärjestelmä_referencesysteminfo"><a class="anchor" href="#_vertausjärjestelmä_referencesysteminfo"></a>6.3. Vertausjärjestelmä (referenceSystemInfo)</h3>
 
 </div>
-<div class="sect3">
-<h4 id="_resurssin_tunnistamistiedot_indentificationinfo"><a class="anchor" href="#_resurssin_tunnistamistiedot_indentificationinfo"></a>6.1.4. Resurssin tunnistamistiedot (indentificationInfo)</h4>
+<div class="sect2">
+<h3 id="_resurssin_tunnistamistiedot_indentificationinfo"><a class="anchor" href="#_resurssin_tunnistamistiedot_indentificationinfo"></a>6.4. Resurssin tunnistamistiedot (indentificationInfo)</h3>
 
 </div>
-<div class="sect3">
-<h4 id="_tietosisältö_contentinfo"><a class="anchor" href="#_tietosisältö_contentinfo"></a>6.1.5. Tietosisältö (contentInfo)</h4>
+<div class="sect2">
+<h3 id="_tietosisältö_contentinfo"><a class="anchor" href="#_tietosisältö_contentinfo"></a>6.5. Tietosisältö (contentInfo)</h3>
 
 </div>
-<div class="sect3">
-<h4 id="_jakelutiedot_distributioninfo"><a class="anchor" href="#_jakelutiedot_distributioninfo"></a>6.1.6. Jakelutiedot (distributionInfo)</h4>
+<div class="sect2">
+<h3 id="_jakelutiedot_distributioninfo"><a class="anchor" href="#_jakelutiedot_distributioninfo"></a>6.6. Jakelutiedot (distributionInfo)</h3>
 
 </div>
-<div class="sect3">
-<h4 id="_laatutiedot_dataqualityinfo"><a class="anchor" href="#_laatutiedot_dataqualityinfo"></a>6.1.7. Laatutiedot (dataQualityInfo)</h4>
+<div class="sect2">
+<h3 id="_laatutiedot_dataqualityinfo"><a class="anchor" href="#_laatutiedot_dataqualityinfo"></a>6.7. Laatutiedot (dataQualityInfo)</h3>
 
 </div>
-<div class="sect3">
-<h4 id="_ylläpitotiedot_metadatamaintenance"><a class="anchor" href="#_ylläpitotiedot_metadatamaintenance"></a>6.1.8. Ylläpitotiedot (metadataMaintenance)</h4>
+<div class="sect2">
+<h3 id="_ylläpitotiedot_metadatamaintenance"><a class="anchor" href="#_ylläpitotiedot_metadatamaintenance"></a>6.8. Ylläpitotiedot (metadataMaintenance)</h3>
 <div style="page-break-after: always;"></div>
-<div style="page-break-after: always;"></div>
-<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conformance_class_abstract_test_suite_normative"><a class="anchor" href="#_conformance_class_abstract_test_suite_normative"></a>Liite A: Conformance Class Abstract Test Suite (Normative)</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Huomio</div>
+</td>
+<td class="content">
+Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_conformance_class_a"><a class="anchor" href="#_conformance_class_a"></a>A.1. Conformance Class A</h3>
+<div class="sect3">
+<h4 id="_requirement_1"><a class="anchor" href="#_requirement_1"></a>A.1.1. Requirement 1</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test id:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/conf/conf-class-a/req-name-1</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/req-class-a/req-name-1</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test purpose:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Verify that&#8230;&#8203;</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test method:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Inspect&#8230;&#8203;</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_requirement_2"><a class="anchor" href="#_requirement_2"></a>A.1.2. Requirement 2</h4>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="Viitteet"><a class="anchor" href="#Viitteet"></a>Liite A: Viitteet</h2>
+<h2 id="_title_normativeinformative"><a class="anchor" href="#_title_normativeinformative"></a>Liite B: Title ( {Normative/Informative} )</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Huomio</div>
+</td>
+<td class="content">
+Place other Annex material in sequential annexes beginning with "B" and leave final two annexes for the Revision History and Bibliography
+</td>
+</tr>
+</table>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_revision_history"><a class="anchor" href="#_revision_history"></a>Liite C: Revision History</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Date</th>
+<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Release</th>
+<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Editor</th>
+<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Primary clauses modified</th>
+<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">2016-04-28</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">0.1</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">G. Editor</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">all</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">initial version</p></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Viitteet"><a class="anchor" href="#Viitteet"></a>Liite D: Viitteet</h2>
 <div class="sectionbody">
 <div id="TG_MD_20" class="paragraph">
 <p>[1] Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0, <a href="https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139" class="bare">https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139</a></p>
@@ -951,7 +1053,7 @@ requirement description</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Viimeksi päivitetty 2018-10-05 12:57:05 UTC
+Viimeksi päivitetty 2018-10-05 13:17:28 UTC
 </div>
 </div>
 </body>
