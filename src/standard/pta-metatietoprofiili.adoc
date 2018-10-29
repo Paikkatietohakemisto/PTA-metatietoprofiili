@@ -9,8 +9,8 @@
 :numbered:
 :sectanchors:
 :source-highlighter: pygments
+:pygments-style: borland
 :imagesdir: images
-
 :appendix-caption: Liitteet
 :appendix-refsig: {appendix-caption}
 :caution-caption: Huom

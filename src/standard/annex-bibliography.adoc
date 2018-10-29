@@ -3,8 +3,14 @@
 [[Viitteet]]
 = Viitteet
 
+[[ISO_19115]]
+[1] ISO 19115:2003 Geographic information -- Metadata
+
 [[TG_MD_20]]
-[1] Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0, https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139
+[2] Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0, https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139
 
 [[JHS158]]
-[2] JHS 158 Paikkatietoaineistojen ja -palveluiden metatiedot, vuoden 2018 versio, http://www.jhs-suositukset.fi/suomi/jhs158
+[3] JHS 158 Paikkatietoaineistojen ja -palveluiden metatiedot, vuoden 2018 versio, http://www.jhs-suositukset.fi/suomi/jhs158
+
+[[CityGML]]
+[4] OGC City Geography Markup Language (CityGML) Encoding Standard, version 2.0, OGC 12-019, https://portal.opengeospatial.org/files/?artifact_id=47842

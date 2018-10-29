@@ -1,7 +1,0 @@
-[width="90%",cols="2,6"]
-|===
-|*Vaatimus 1* {set:cellbgcolor:#CACCCE}| /vaatimus/luokka-pta-aineisto/vaatimus-1 +
- +
-
-Requirement 'shall' statement {set:cellbgcolor:#FFFFFF}
-|===
