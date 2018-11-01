@@ -566,7 +566,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_yleiset_metatiedon_xml_koodaukseen_kohdistuvat_vaatimukset">6.1. Yleiset metatiedon XML-koodaukseen kohdistuvat vaatimukset</a></li>
 <li><a href="#_metatiedon_tunnistamistiedot">6.2. Metatiedon tunnistamistiedot</a>
 <ul class="sectlevel3">
-<li><a href="#_metatietokuvauksen_yksilöivä_tunnus">6.2.1. Metatietokuvauksen yksilöivä tunnus</a></li>
+<li><a href="#_metatiedon_kieli_ja_monikielisyys">6.2.1. Metatiedon kieli ja monikielisyys</a></li>
+<li><a href="#_metatietokuvauksen_yksilöivä_tunnus">6.2.2. Metatietokuvauksen yksilöivä tunnus</a></li>
 </ul>
 </li>
 <li><a href="#_vertausjärjestelmä_referencesysteminfo">6.3. Vertausjärjestelmä (referenceSystemInfo)</a></li>
@@ -579,7 +580,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_aineiston_saatavuuden_ja_käytön_rajoitteet">6.4.5. Aineiston saatavuuden ja käytön rajoitteet</a></li>
 </ul>
 </li>
-<li><a href="#_jakelutiedot_distributioninfo">6.5. Jakelutiedot (distributionInfo)</a></li>
+<li><a href="#_jakelutiedot_distributioninfo">6.5. Jakelutiedot (distributionInfo)</a>
+<ul class="sectlevel3">
+<li><a href="#_aineiston_latausosoitteet">6.5.1. Aineiston latausosoitteet</a></li>
+<li><a href="#_aineiston_siirto_tai_tallennusmuoto">6.5.2. Aineiston siirto- tai tallennusmuoto</a></li>
+</ul>
+</li>
 <li><a href="#_laatutiedot_dataqualityinfo">6.6. Laatutiedot (dataQualityInfo)</a></li>
 </ul>
 </li>
@@ -965,7 +971,41 @@ TBA: JHS 158 -profiilin vaatimukset?
 </ul>
 </div>
 <div class="sect3">
-<h4 id="_metatietokuvauksen_yksilöivä_tunnus"><a class="anchor" href="#_metatietokuvauksen_yksilöivä_tunnus"></a>6.2.1. Metatietokuvauksen yksilöivä tunnus</h4>
+<h4 id="_metatiedon_kieli_ja_monikielisyys"><a class="anchor" href="#_metatiedon_kieli_ja_monikielisyys"></a>6.2.1. Metatiedon kieli ja monikielisyys</h4>
+<div class="paragraph">
+<p>INSPIRE-vaatimus TG Requirement C.5 vaatii ilmaisemaan luonnollisen kielen, jolla metatiedon vapaatekstisisältö on
+kuvattu. Lisäksi vaatimus TG Requirement C.4 esittää kolme sallittua vaihtoehtoa vapaateksti-arvoisten metatietoelementtien
+ilmaisemiseen.</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;1</strong> </p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>vaatimus/luokka-pta-aineisto/vaatimus-metatiedon-kieli</code><br>
+Mikäli PTA-aineiston metatietokuvaus on saatavilla useammalla kuin yhdellä kielellä, tulee niistä yksi valita
+metatiedon kieleksi INSPIRE-vaatimuksen TG Requirement C.5 mukaisesti.</p>
+<p class="tableblock">XPath-kyselyn
+<code>/*/gmd:locale/gmd:PT_Locale[@id]</code>
+tulee palauttaa yllä määritellyn metatiedon kielen lisäksi metatietokuvauksessa
+käytettyjen kieli- ja merkistöyhdistelmien tiedot.<br></p>
+<p class="tableblock">Kunkin monikielisen vapaatekstielementin
+tyyppi on määriteltävä uudelleen dynaamisella tyypityksellä (attribuutti <code>xsi:type="gmd:PT_FreeText_PropertyType"</code>) INSPIRE-vaatimuksen
+TG Requirement C.4 vaihtoehdon 3 mukaisesti.<br></p>
+<p class="tableblock">XPath-kyselyn
+<code>//gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#&lt;locale_id&gt;']</code>
+tulee palauttaa arvot niille vapaatekstikentille, jotka on annettu eri kielellä kuin
+yllä määritelty metatiedon kieli. Merkkijonon <code>&lt;locale_id&gt;</code> arvo on oltava kyseisen kieli- ja merkistöyhdistelmän
+kuvaavan elementin <code>/*/gmd:locale/gmd:PT_Locale</code> attribuutin <code>id</code> arvo.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_metatietokuvauksen_yksilöivä_tunnus"><a class="anchor" href="#_metatietokuvauksen_yksilöivä_tunnus"></a>6.2.2. Metatietokuvauksen yksilöivä tunnus</h4>
 <div class="paragraph">
 <p><a href="#TG_MD_20">[TG_MD_20]</a> suosittelee pysyvien ja globaalisti yksilöivien tunnusten antamista INSPIRE-aineistojen metatietokuvauksille käyttäen elementtiä
 <code>gmd:fileIdentifier</code>.</p>
@@ -977,10 +1017,11 @@ TBA: JHS 158 -profiilin vaatimukset?
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;1</strong> </p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;2</strong> </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>vaatimus/luokka-pta-aineisto/vaatimus-metatiedon-tunnus</code><br>
 PTA-aineistojen <a href="#ISO_19139">ISO 19139</a> -muotoisissa metatietokuvauksille on annettava globaalisti
-yksilöivä merkkijonomuotoinen UUID-tunnus. XPath-kyselyn <code>/*/gmd:fileIdentifier</code>
+yksilöivä merkkijonomuotoinen UUID-tunnus. XPath-kyselyn
+<code>/*/gmd:fileIdentifier</code>
 tulee palauttaa näin määritelty metatiedon yksilöivä tunnus.</p></td>
 </tr>
 </tbody>
@@ -1132,7 +1173,7 @@ ilmaista käyttäen <code>gmd:MD_Identifier</code>-elementtiä (TG Recommendatio
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;2</strong> </p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;3</strong> </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>vaatimus/luokka-pta-aineisto/vaatimus-aineiston-tunnus</code><br>
 PTA-aineistolle tulee antaa pysyvä URL-muotoinen tunnus. URL-osoitteen protokollan tulee olla joko <code>HTTP</code> tai <code>HTTPS</code>,
 ja sen tulee osoittaa ko. protokollan mukaisesti joko suoraan tai uudelleenohjauksen avulla julkisessa Internetissä sijaitsevaan dokumentiin, joka antaa
@@ -1176,14 +1217,14 @@ ko. aineisto ei ole enää saatavilla Paikkatietoikkunan kautta.</p></td>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;3</strong> </p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;4</strong> </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>vaatimus/luokka-pta-aineisto/vaatimus-paivitys-tiheys</code><br>
 Mikäli aineistolle on määritelty säännöllinen päivitystiheys, ja se voidaan ilmaista
 ISO 19139 -standardin koodilistan <code>MD_MaintenanceFrequencyCode</code> arvojen avulla, on
 se annettava metatiedossa. Seuraavan XPath-kyselyn tulee tällöin
 palauttaa aineiston päivitystiheystieto:
 <code>/*/gmd:identificationInfo[1]/*/gmd:resourceMaintenance/*/gmd:maintenanceAndUpdateFrequency/gmd:MD_MaintenanceFrequencyCode</code></p>
-<p class="tableblock">Koodin on oltava yksi ISO 19139 -standardin koodilistan <code><code>MD_MaintenanceFrequencyCode</code></code> sallituista arvoista.</p></td>
+<p class="tableblock">Koodin on oltava yksi ISO 19139 -standardin koodilistan <code>MD_MaintenanceFrequencyCode</code> sallituista arvoista.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1243,7 +1284,7 @@ suositeltavaa antaa joko aineiston ajallinen kattavuus tai sen luontiajankohta.<
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;4</strong> </p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;5</strong> </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>vaatimus/luokka-pta-aineisto/vaatimus-viimeinen-paivitys</code><br>
 Mikäli aineistolle ei ole metatiedossa kuvattu säännöllistä päivitystiheyttä (ks. <a href="#maintenance-and-update-frequency">Vaatimus 1</a>), on
 aineiston viimeisin päivitysajankohta on annettava. Seuraavan XPath-kyselyn tulee tällöin palauttaa aineiston
@@ -1282,7 +1323,7 @@ on pakollinen, mikäli yleisesti tunnettu URI-tunnus käytettyihin sanastoihin j
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;5</strong> </p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;6</strong> </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>vaatimus/luokka-pta-aineisto/vaatimus-asiasana-ankkuri</code><br>
 Metatietokuvauksessa aineistoa kuvaavat avainsanat on ilmaistava sekä
 itse avainsanan sisältävänä tekstinä että ko. avainsanaan URI-tunnuksena,
@@ -1304,7 +1345,7 @@ arvona.</p></td>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;6</strong> </p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;7</strong> </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>vaatimus/luokka-pta-aineisto/vaatimus-asiasanasto-ankkuri</code><br>
 Metatietokuvauksessa avainsanojen sanastot on ilmaistava sekä
 sanaston otsikon sisältävänä tekstinä että tai sanaston URI-tunnuksena,
@@ -1328,7 +1369,7 @@ arvona.</p></td>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;7</strong> </p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;8</strong> </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>vaatimus/luokka-pta-aineisto/vaatimus-pta-asiasanat</code><br>
 Kaikki Paikkatietohakemiston hakusanastoon sisältyvät avainsanat on määriteltävä
 elementeissä, jotka löytyvät XPath-kyselyn
@@ -1345,7 +1386,10 @@ tuloksena, vaatimuksen 3 mukaisesti.</p></td>
 <div class="paragraph">
 <p>INSPIRE-metatietovaatimusten mukaan aineistojen julkinen saatavuus ja käytön rajoitteet ilmaistaan erillisinä
 metatietoelementteinä (<a href="#TG_MD_20">[TG_MD_20]</a>, luku 2.3.6 "Limitations on public access" ja
-luku 2.3.7 "Conditions applying to access and use"). Näissä luvuissa kuvattu TG Requirement C.17 vaatii, että
+luku 2.3.7 "Conditions applying to access and use").</p>
+</div>
+<div class="paragraph">
+<p>TG Requirement C.17 vaatii, että
 rajoitukset aineistojen julkiselle saatavuudelle tulee esittää XPath-kyselyn
 <code>/*/gmd:identificationInfo[1]/*/gmd:resourceConstraints/*[./gmd:accessConstraints/*/@codeListValue='otherRestrictions']/gmd:otherConstraints</code>
 palauttamissa elementeissä. Mikäli rajoituksia ei ole tai ne eivät ole tiedossa, tulee tämä ilmaista erityisen
@@ -1354,11 +1398,21 @@ PTA-aineistojen julkiseen saatavuuteen liittyen ei vaadita INSPIRE-vaatimukset y
 </div>
 <div class="paragraph">
 <p>TG Requirement C.18 puolestaan vaatii, että rajoitukset aineistojen käytölle tulee joko esittää
-XPath-kyselyn
-<code>/*/gmd:identificationInfo[1]/*/gmd:resourceConstraints/*[./gmd:accessConstraints/*/@codeListValue='otherRestrictions']/gmd:otherConstraints</code>
-tai
-<code>/*/gmd:identificationInfo[1]/*/gmd:resourceConstraints/*[./gmd:useConstraints/*/@codeListValue='otherRestrictions']/gmd:otherConstraints</code>
-palauttamissa elementeissä. Mikäli rajoituksia ei ole tai ne eivät ole tiedossa, tulee tämä ilmaista erityisen
+jomman kumman seuraavista XPath-kyselyistä palauttamissa elementeissä:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>/*/gmd:identificationInfo[1]/*/gmd:resourceConstraints/*[./gmd:accessConstraints/*/@codeListValue='otherRestrictions']/gmd:otherConstraints</code>
+tai</p>
+</li>
+<li>
+<p><code>/*/gmd:identificationInfo[1]/*/gmd:resourceConstraints/*[./gmd:useConstraints/*/@codeListValue='otherRestrictions']/gmd:otherConstraints</code></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Mikäli rajoituksia ei ole tai ne eivät ole tiedossa, tulee tämä ilmaista erityisen
 tähän tarkoitukseen määritellyn INSPIRE-koodilistan avulla.</p>
 </div>
 <div class="paragraph">
@@ -1368,7 +1422,7 @@ ilmaista saman <code>gmd:resourceConstraints</code>-elemementin avulla.</p>
 <div class="paragraph">
 <p>PTA-aineistojen suhteen INSPIRE-vaatimusta C.18
 tiukennetaan siten, että <code>gmd:useConstraints</code>-elementtiä tulee aina käyttää aineiston käyttöön liittyvien
-lisenssiehtojen tai muiden sopimusteknisten rajoittavien vaatimusten ilmaisemiseen.</p>
+lisenssiehtojen tai muiden sopimusteknisten rajoittavien vaatimusten ilmaisemiseen (vaihtoehto 2 yllä).</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
 <colgroup>
@@ -1377,7 +1431,7 @@ lisenssiehtojen tai muiden sopimusteknisten rajoittavien vaatimusten ilmaisemise
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;8</strong> </p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;9</strong> </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>vaatimus/luokka-pta-aineisto/vaatimus-kayton-rajoitukset</code><br>
 Rajoitukset aineistojen käytölle, kuten vaadittavat lisenssiehdot tai muut sopimustekniset vaatimukset,
 tulee esittää XPath-kyselyn
@@ -1419,6 +1473,83 @@ dokumentista <a href="#TG_MD_20">[TG_MD_20]</a>.</p>
 </tr>
 </tbody>
 </table>
+<div class="sect3">
+<h4 id="_aineiston_latausosoitteet"><a class="anchor" href="#_aineiston_latausosoitteet"></a>6.5.1. Aineiston latausosoitteet</h4>
+<div class="paragraph">
+<p>INSPIRE-vaatimus TG Requirement 1.8 vaatii antamaan URL-osoitteen josta aineiston saa ladattua, tai mikäli aineiston
+lataus ei ole suoraan mahdollista, URL-osoitteen, jossa on aineistoa kuvaavaa lisätietoa, mikäli tällainen osoite on
+olemassa. PTA-aineistot ovat aina saatavilla vähintään Paikkatietoalustan latauspalvelun kautta INSPIRE-yhteensopivan
+rajapintapalvelun kautta, joten tätä vaatimusta voidaan tiukentaa siten, että aineiston metatieto sisältää
+aina vähintään ko. aineiston PTA-latauspalveluun viittaavan suoran osoitteen.</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #CACCCE;"><p class="tableblock"><strong>Vaatimus&#160;10</strong> </p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>vaatimus/luokka-pta-aineisto/vaatimus-latauspalvelu-linkki</code><br></p>
+<p class="tableblock">Linkit rajapintapalveluihin, joista aineisto on ladattavissa, tulee antaa aineiston metatiedoissa.
+XPath-kyselyn
+<code>/*/gmd:distrubutionInfo[1]/*/gmd:transferOptions/*/gmd:online/*/[./gmd:protocol/gmx:Anchor/@xlink:href='&lt;protokollatunnus&gt;']</code>
+tulee palauttaa ko. aineiston lataamiseen tarvittavat tiedot. Merkkijonon <code>&lt;protokollatunnus&gt;</code> arvo määräytyy
+latauspalvelun tyypin perusteella taulukon 1 mukaisesti.</p>
+<p class="tableblock">Vähintään yksi tämän vaatimuksen mukainen metatietoelementti on annettava kullekin aineistolle.</p></td>
+</tr>
+</tbody>
+</table>
+<table id="taulukko-download-protocol" class="tableblock frame-all grid-all stretch">
+<caption class="title">Taulukko 1. Latauspalvelukohtaiset protokollatunnukset</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Latauspalvelun tyyppi</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Protokollatunnus</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">INSPIRE Pre-defined Dataset WFS 2.0</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://inspire.ec.europa.eu/id/ats/download-service/3.1/predefined-wfs" class="bare">http://inspire.ec.europa.eu/id/ats/download-service/3.1/predefined-wfs</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">INSPIRE Direct Access WFS 2.0</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://inspire.ec.europa.eu/id/ats/download-service/3.1/direct-wfs" class="bare">http://inspire.ec.europa.eu/id/ats/download-service/3.1/direct-wfs</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">INSPIRE Pre-defined Dataset Atom</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://inspire.ec.europa.eu/id/ats/download-service/3.1/predefined-atom" class="bare">http://inspire.ec.europa.eu/id/ats/download-service/3.1/predefined-atom</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">INSPIRE WCS 2.0 Mandatory Download Operations</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://inspire.ec.europa.eu/id/ats/download-service-wcs/1.0/wcs-man" class="bare">http://inspire.ec.europa.eu/id/ats/download-service-wcs/1.0/wcs-man</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">INSPIRE WCS 2.0 Direct Access Download Operations</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://inspire.ec.europa.eu/id/ats/download-service-wcs/1.0/wcs-con" class="bare">http://inspire.ec.europa.eu/id/ats/download-service-wcs/1.0/wcs-con</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">INSPIRE Pre-defined Dataset SOS 2.0</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://inspire.ec.europa.eu/id/ats/download-service-sos/1.0/predefined-sos" class="bare">http://inspire.ec.europa.eu/id/ats/download-service-sos/1.0/predefined-sos</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">INSPIRE Direct Access SOS 2.0</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="http://inspire.ec.europa.eu/id/ats/download-service-sos/1.0/direct-sos" class="bare">http://inspire.ec.europa.eu/id/ats/download-service-sos/1.0/direct-sos</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_aineiston_siirto_tai_tallennusmuoto"><a class="anchor" href="#_aineiston_siirto_tai_tallennusmuoto"></a>6.5.2. Aineiston siirto- tai tallennusmuoto</h4>
+<div class="paragraph">
+<p>INSPIRE-vaatimus TG Requirement 2.6 vaatii kuvaamaan metatiedossa ne siirto- tai tallennusmuodot (formaatit),
+joiden mukaisesti koodattuna aineisto on ladattavissa. PTA-aineistoille ei aseteta erityisiä vaatimuksia
+tämän INSPIRE-vaatimuksen lisäksi.</p>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_laatutiedot_dataqualityinfo"><a class="anchor" href="#_laatutiedot_dataqualityinfo"></a>6.6. Laatutiedot (dataQualityInfo)</h3>
@@ -1613,7 +1744,7 @@ Place other Annex material in sequential annexes beginning with "B" and leave fi
 </div>
 <div id="footer">
 <div id="footer-text">
-Viimeksi päivitetty 2018-10-22 09:22:07 UTC
+Viimeksi päivitetty 2018-11-01 14:50:50 UTC
 </div>
 </div>
 </body>

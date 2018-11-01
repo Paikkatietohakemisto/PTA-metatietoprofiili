@@ -57,6 +57,35 @@ WARNING: TBA: JHS 158 -profiilin vaatimukset?
 
 * JHS 158: md-date aina metatiedon luontipvm, INSPIREssä viimeisin muokkaus, tai luonti, jos ei muokattu
 
+==== Metatiedon kieli ja monikielisyys
+INSPIRE-vaatimus TG Requirement C.5 vaatii ilmaisemaan luonnollisen kielen, jolla metatiedon vapaatekstisisältö on
+kuvattu. Lisäksi vaatimus TG Requirement C.4 esittää kolme sallittua vaihtoehtoa vapaateksti-arvoisten metatietoelementtien
+ilmaisemiseen.
+
+[width="90%",cols="2,6"]
+|===
+|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#CACCCE}| `vaatimus/luokka-pta-aineisto/vaatimus-metatiedon-kieli` +
+{set:cellbgcolor:#FFFFFF}
+Mikäli PTA-aineiston metatietokuvaus on saatavilla useammalla kuin yhdellä kielellä, tulee niistä yksi valita
+metatiedon kieleksi INSPIRE-vaatimuksen TG Requirement C.5 mukaisesti.
+
+XPath-kyselyn
+`/pass:[*]/gmd:locale/gmd:PT_Locale[@id]`
+tulee palauttaa yllä määritellyn metatiedon kielen lisäksi metatietokuvauksessa
+käytettyjen kieli- ja merkistöyhdistelmien tiedot. +
+
+Kunkin monikielisen vapaatekstielementin
+tyyppi on määriteltävä uudelleen dynaamisella tyypityksellä (attribuutti `xsi:type="gmd:PT_FreeText_PropertyType"`) INSPIRE-vaatimuksen
+TG Requirement C.4 vaihtoehdon 3 mukaisesti. +
+
+XPath-kyselyn
+`//gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#<locale_id>']`
+tulee palauttaa arvot niille vapaatekstikentille, jotka on annettu eri kielellä kuin
+yllä määritelty metatiedon kieli. Merkkijonon `<locale_id>` arvo on oltava kyseisen kieli- ja merkistöyhdistelmän
+kuvaavan elementin `/pass:[*]/gmd:locale/gmd:PT_Locale` attribuutin `id` arvo.
+
+|===
+
 ==== Metatietokuvauksen yksilöivä tunnus
 
 <<TG_MD_20>> suosittelee pysyvien ja globaalisti yksilöivien tunnusten antamista INSPIRE-aineistojen metatietokuvauksille käyttäen elementtiä
@@ -67,7 +96,8 @@ WARNING: TBA: JHS 158 -profiilin vaatimukset?
 |*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#CACCCE}| `vaatimus/luokka-pta-aineisto/vaatimus-metatiedon-tunnus` +
 {set:cellbgcolor:#FFFFFF}
 PTA-aineistojen <<ISO_19139, ISO 19139>> -muotoisissa metatietokuvauksille on annettava globaalisti
-yksilöivä merkkijonomuotoinen UUID-tunnus. XPath-kyselyn `/pass:[*]/gmd:fileIdentifier`
+yksilöivä merkkijonomuotoinen UUID-tunnus. XPath-kyselyn
+`/pass:[*]/gmd:fileIdentifier`
 tulee palauttaa näin määritelty metatiedon yksilöivä tunnus.
 |===
 
@@ -168,7 +198,7 @@ se annettava metatiedossa. Seuraavan XPath-kyselyn tulee tällöin
 palauttaa aineiston päivitystiheystieto:
 `/pass:[*]/gmd:identificationInfo[1]/pass:[*]/gmd:resourceMaintenance/pass:[*]/gmd:maintenanceAndUpdateFrequency/gmd:MD_MaintenanceFrequencyCode`
 
-Koodin on oltava yksi ISO 19139 -standardin koodilistan ```MD_MaintenanceFrequencyCode``` sallituista arvoista.
+Koodin on oltava yksi ISO 19139 -standardin koodilistan `MD_MaintenanceFrequencyCode` sallituista arvoista.
 |===
 
 [NOTE]
@@ -275,7 +305,9 @@ tuloksena, vaatimuksen 3 mukaisesti.
 
 INSPIRE-metatietovaatimusten mukaan aineistojen julkinen saatavuus ja käytön rajoitteet ilmaistaan erillisinä
 metatietoelementteinä (<<TG_MD_20>>, luku 2.3.6 "Limitations on public access" ja
-luku 2.3.7 "Conditions applying to access and use"). Näissä luvuissa kuvattu TG Requirement C.17 vaatii, että
+luku 2.3.7 "Conditions applying to access and use").
+
+TG Requirement C.17 vaatii, että
 rajoitukset aineistojen julkiselle saatavuudelle tulee esittää XPath-kyselyn
 `/pass:[*]/gmd:identificationInfo[1]/pass:[*]/gmd:resourceConstraints/pass:[*][./gmd:accessConstraints/pass:[*]/@codeListValue='otherRestrictions']/gmd:otherConstraints`
 palauttamissa elementeissä. Mikäli rajoituksia ei ole tai ne eivät ole tiedossa, tulee tämä ilmaista erityisen
@@ -283,11 +315,13 @@ tähän tarkoitukseen määritellyn INSPIRE-koodilistan avulla.
 PTA-aineistojen julkiseen saatavuuteen liittyen ei vaadita INSPIRE-vaatimukset ylittäviä metatietoja.
 
 TG Requirement C.18 puolestaan vaatii, että rajoitukset aineistojen käytölle tulee joko esittää
-XPath-kyselyn
-`/pass:[*]/gmd:identificationInfo[1]/pass:[*]/gmd:resourceConstraints/pass:[*][./gmd:accessConstraints/pass:[*]/@codeListValue='otherRestrictions']/gmd:otherConstraints`
+jomman kumman seuraavista XPath-kyselyistä palauttamissa elementeissä:
+
+1. `/pass:[*]/gmd:identificationInfo[1]/pass:[*]/gmd:resourceConstraints/pass:[*][./gmd:accessConstraints/pass:[*]/@codeListValue='otherRestrictions']/gmd:otherConstraints`
 tai
-`/pass:[*]/gmd:identificationInfo[1]/pass:[*]/gmd:resourceConstraints/pass:[*][./gmd:useConstraints/pass:[*]/@codeListValue='otherRestrictions']/gmd:otherConstraints`
-palauttamissa elementeissä. Mikäli rajoituksia ei ole tai ne eivät ole tiedossa, tulee tämä ilmaista erityisen
+2. `/pass:[*]/gmd:identificationInfo[1]/pass:[*]/gmd:resourceConstraints/pass:[*][./gmd:useConstraints/pass:[*]/@codeListValue='otherRestrictions']/gmd:otherConstraints`
+
+Mikäli rajoituksia ei ole tai ne eivät ole tiedossa, tulee tämä ilmaista erityisen
 tähän tarkoitukseen määritellyn INSPIRE-koodilistan avulla.
 
 Lisäksi <<TG_MD_20>>:ssa vaaditaan, että vaatimusten C.17 ja C.18 kuvaamia rajoitustietoja ei saa
@@ -295,7 +329,7 @@ ilmaista saman `gmd:resourceConstraints`-elemementin avulla.
 
 PTA-aineistojen suhteen INSPIRE-vaatimusta C.18
 tiukennetaan siten, että `gmd:useConstraints`-elementtiä tulee aina käyttää aineiston käyttöön liittyvien
-lisenssiehtojen tai muiden sopimusteknisten rajoittavien vaatimusten ilmaisemiseen.
+lisenssiehtojen tai muiden sopimusteknisten rajoittavien vaatimusten ilmaisemiseen (vaihtoehto 2 yllä).
 
 [width="90%",cols="2,6"]
 |===
@@ -324,6 +358,45 @@ dokumentista <<TG_MD_20>>.
 |TG{nbsp}Requirement{nbsp}1.8 {set:cellbgcolor:#FFFFFF}| http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/req/datasets-and-series/resource-locator
 |TG{nbsp}Requirement{nbsp}2.6 | http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/req/isdss/data-encoding
 |===
+
+==== Aineiston latausosoitteet
+INSPIRE-vaatimus TG Requirement 1.8 vaatii antamaan URL-osoitteen josta aineiston saa ladattua, tai mikäli aineiston
+lataus ei ole suoraan mahdollista, URL-osoitteen, jossa on aineistoa kuvaavaa lisätietoa, mikäli tällainen osoite on
+olemassa. PTA-aineistot ovat aina saatavilla vähintään Paikkatietoalustan latauspalvelun kautta INSPIRE-yhteensopivan
+rajapintapalvelun kautta, joten tätä vaatimusta voidaan tiukentaa siten, että aineiston metatieto sisältää
+aina vähintään ko. aineiston PTA-latauspalveluun viittaavan suoran osoitteen.
+
+[width="90%",cols="2,6"]
+|===
+|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#CACCCE}| `vaatimus/luokka-pta-aineisto/vaatimus-latauspalvelu-linkki` +
+{set:cellbgcolor:#FFFFFF}
+
+Linkit rajapintapalveluihin, joista aineisto on ladattavissa, tulee antaa aineiston metatiedoissa.
+XPath-kyselyn
+`/pass:[*]/gmd:distrubutionInfo[1]/pass:[*]/gmd:transferOptions/pass:[*]/gmd:online/pass:[*]/[./gmd:protocol/gmx:Anchor/@xlink:href='<protokollatunnus>']`
+tulee palauttaa ko. aineiston lataamiseen tarvittavat tiedot. Merkkijonon `<protokollatunnus>` arvo määräytyy
+latauspalvelun tyypin perusteella taulukon 1 mukaisesti.
+
+Vähintään yksi tämän vaatimuksen mukainen metatietoelementti on annettava kullekin aineistolle.
+|===
+
+[#taulukko-download-protocol]
+.Latauspalvelukohtaiset protokollatunnukset
+|===
+|*Latauspalvelun tyyppi* | *Protokollatunnus*
+|INSPIRE Pre-defined Dataset WFS 2.0 | http://inspire.ec.europa.eu/id/ats/download-service/3.1/predefined-wfs
+|INSPIRE Direct Access WFS 2.0 | http://inspire.ec.europa.eu/id/ats/download-service/3.1/direct-wfs
+|INSPIRE Pre-defined Dataset Atom | http://inspire.ec.europa.eu/id/ats/download-service/3.1/predefined-atom
+|INSPIRE WCS 2.0 Mandatory Download Operations | http://inspire.ec.europa.eu/id/ats/download-service-wcs/1.0/wcs-man
+|INSPIRE WCS 2.0 Direct Access Download Operations | http://inspire.ec.europa.eu/id/ats/download-service-wcs/1.0/wcs-con
+|INSPIRE Pre-defined Dataset SOS 2.0 | http://inspire.ec.europa.eu/id/ats/download-service-sos/1.0/predefined-sos
+|INSPIRE Direct Access SOS 2.0 | http://inspire.ec.europa.eu/id/ats/download-service-sos/1.0/direct-sos
+|===
+
+==== Aineiston siirto- tai tallennusmuoto
+INSPIRE-vaatimus TG Requirement 2.6 vaatii kuvaamaan metatiedossa ne siirto- tai tallennusmuodot (formaatit),
+joiden mukaisesti koodattuna aineisto on ladattavissa. PTA-aineistoille ei aseteta erityisiä vaatimuksia
+tämän INSPIRE-vaatimuksen lisäksi.
 
 === Laatutiedot (dataQualityInfo)
 Alla on listattu täydellisyyden vuoksi laatutietoihin

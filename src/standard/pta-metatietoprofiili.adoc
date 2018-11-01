@@ -7,6 +7,7 @@
 :toc-placement!:
 :toclevels: 3
 :numbered:
+
 :sectanchors:
 :source-highlighter: pygments
 :pygments-style: borland
@@ -26,13 +27,13 @@ ifdef::listing-caption[:listing-caption: Listaus]
 //:part-refsig: ???
 ifdef::preface-title[:preface-title: Esipuhe]
 //:section-refsig: ???
-:table-caption: Taulukko
+
 :tip-caption: Vinkki
 :toc-title: Sisällysluettelo
 :untitled-label: Nimetön
 :version-label: Versio
 :warning-caption: Varoitus
-
+:table-caption: Taulukko
 = {title}
 
 <<<
