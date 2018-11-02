@@ -7,7 +7,6 @@
 :toc-placement!:
 :toclevels: 3
 :numbered:
-
 :sectanchors:
 :source-highlighter: pygments
 :pygments-style: borland
@@ -36,6 +35,7 @@ ifdef::preface-title[:preface-title: Esipuhe]
 :table-caption: Taulukko
 = {title}
 
+
 <<<
 [cols = "<",frame = "none",grid = "none"]
 |===
@@ -57,7 +57,7 @@ ifdef::preface-title[:preface-title: Esipuhe]
 
 [cols = "^", frame = "none", grid = "none"]
 |===
-|Tekijänoikeus (C) 2018 Maanmittauslaitos
+|(C) 2018 Maanmittauslaitos
 
 |===
 
@@ -87,24 +87,6 @@ include::yleista.adoc[]
 
 include::luku_6_pta_aineistot.adoc[]
 
-////
-include::clause_6_informative_text.adoc[]
-
-include::clause_7_normative_text.adoc[]
-
-include::clause_8_media_types.adoc[]
-////
-
-<<<
-////
-add or remove annexes after "A" as necessary
-////
-include::annex-a.adoc[]
-
-<<<
-include::annex-n.adoc[]
-
-<<<
 ////
 Revision History should be the last annex before the Bibliography
 Bibliography should be the last annex
