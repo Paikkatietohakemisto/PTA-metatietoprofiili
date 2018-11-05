@@ -8,7 +8,7 @@ viittausten osalta tarkoitetaan kyseisen asiankirjan viimeisintä julkaistua ver
 
 <<ISO_19139>> ISO/TS 19139: 2007, Geographic information - Metadata - XML schema implementation
 
-<<ISO_19105>> EN ISO 19105:2005, Geographic Information – Conformance and testing (ISO 19105:2000)
+<<ISO_19105>> EN ISO 19105:2005, Geographic Information – Conformance and testing
 
 <<ISO_639-2>> ISO 639-2:1998, Codes for the representation of names of languages – Part 2: Alpha-3 code
 

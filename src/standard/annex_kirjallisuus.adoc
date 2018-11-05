@@ -3,8 +3,15 @@
 [[Viitteet]]
 = Viitteet
 
+
+[[ISO_19115]]
+<<ISO_19115>> EN ISO 19115:2003, Geographic information - Metadata, https://www.iso.org/standard/26020.html
+
 [[ISO_19139]]
-<<ISO_19139>> ISO 19139:2007 Geographic information -- Metadata -- XML schema implementation
+<<ISO_19139>> ISO 19139:2007 Geographic information -- Metadata -- XML schema implementation, https://www.iso.org/standard/32557.html
+
+[[ISO_639-2]]
+<<ISO_639-2>> ISO 639-2:1998 Codes for the representation of names of languages -- Part 2: Alpha-3 code, https://www.iso.org/standard/4767.html
 
 [[TG_MD_20]]
 <<TG_MD_20>> Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0, https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139
@@ -15,5 +22,14 @@
 [[JHS_158]]
 <<JHS_158>> JHS 158 Paikkatietoaineistojen ja -palveluiden metatiedot, vuoden 2018 versio, http://www.jhs-suositukset.fi/suomi/jhs158
 
+[[JHS_197]]
+<<JHS_197>> JHS 197  EUREF-FIN -koordinaattijärjestelmät, niihin liittyvät muunnokset ja karttalehtijako, vuoden 2016 versio, http://www.jhs-suositukset.fi/suomi/jhs197
+
 [[CityGML]]
 <<CityGML>> OGC City Geography Markup Language (CityGML) Encoding Standard, version 2.0, OGC 12-019, https://portal.opengeospatial.org/files/?artifact_id=47842
+
+[[WCS_20]]
+<<WCS_20>> OGC Web Coverage Service (WCS) Interface Standard - Core, version 2.1, OGC 17-089r1, http://docs.opengeospatial.org/is/17-089r1/17-089r1.html
+
+[[SOS_20]]
+<<SOS_20>> OGC Sensor Observation Service Interface Standard, OGC 17-089r1, https://portal.opengeospatial.org/files/?artifact_id=47599

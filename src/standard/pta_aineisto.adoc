@@ -8,6 +8,9 @@ sisältämien vaatimusten mukaisesti:
 Lisäksi PTA-aineistojen metatietojen kuvaamisessa tulee noudattaa tässä luvussa kuvattuja PTA-kohtaisia
 lisävaatimuksia.
 
+Tämä vaatimuksenmukaisuusluokka koskee Paikkatietoalusta-palvelun keskeisiä tietoainestoja, eli
+niin sanottuja PTA-aineistoja. Palvelujen metatiedot on rajattu tämän vaatimuksenmukaisuusluokan ulkopuolelle.
+
 [#luokka-pta-aineisto]
 .Yhteenveto PTA-metatietoprofiilin sisältämistä vaatimuksista
 [cols="1,4",width="90%"]
@@ -416,7 +419,7 @@ elementeissä, jotka löytyvät XPath-kyselyn
 tuloksena, vaatimuksen 3 mukaisesti.
 |===
 
-WARNING: Mistä Paikkatietohakemiston hakusanaston sanat ja niiden URL-osoitteet voi löytää? Fintossa ei voi tehdä hakua,
+IMPORTANT: Mistä Paikkatietohakemiston hakusanaston sanat ja niiden URL-osoitteet voi löytää? Fintossa ei voi tehdä hakua,
 joka palauttaisi kaikki ko. sanaston sanat, vaikka vapaasanahakua voikin rajata koskemaan vain Paikkatietohakemiston hakusanastoa.
 
 ==== Aineiston saatavuuden ja käytön rajoitteet
@@ -738,6 +741,13 @@ totuusarvot (true/false).
 Aineiston läpäisemien PTA-vaatimuksenmukaisuustestien tuloksia voidaan yhdessä käyttää aineistojen yhteismitallisen
 laatuluokituksen laskemiseen.
 
+[NOTE]
+====
+PTA-vaatimuksenmukaisuusluokkien ja niihin kuuluvien PTA-laatuvahti -palvelun testien määrittely ei kuulu tämän
+dokumentin piiriin.
+
+====
+
 .Esimerkki{nbsp}{counter:example}: PTA-laatuvahdin testituloksen perusteella tuotettu tulos: aineisto on kuviteellisen vaatimuksenmukaisuusluokan Topologia mukainen. Huomaa, että päivämäärä on kyseisen vaatimuksenmukaisuusluokan julkaisupäivä, ei testin ajopäivä.
 [source,xml]
 ----
@@ -775,7 +785,7 @@ laatuluokituksen laskemiseen.
 </gmd:report>
 ----
 
-[#rec-lod]
+[#suositus-yksityiskohtaisuus-luokittelu]
 [width="90%",cols="2,6"]
 |===
 |*Suositus{nbsp}{counter:rec}* | `vaatimukset/suositus-yksityiskohtaisuus-luokittelu` +

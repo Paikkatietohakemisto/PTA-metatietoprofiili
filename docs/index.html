@@ -587,7 +587,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_muutoshistoria">Liite A: Muutoshistoria</a></li>
 <li><a href="#Viitteet">Liite B: Viitteet</a></li>
-<li><a href="#_vaatimuksenmukaisuuden_abstakti_testisarja_normatiivinen">Liite C: Vaatimuksenmukaisuuden abstakti testisarja (normatiivinen)</a>
+<li><a href="#_vaatimuksenmukaisuuden_abstaktit_testisarjat_normatiivinen">Liite C: Vaatimuksenmukaisuuden abstaktit testisarjat (normatiivinen)</a>
 <ul class="sectlevel2">
 <li><a href="#_vaatimuksenmukaisuusluokka_pta_aineisto_2">C.1. Vaatimuksenmukaisuusluokka PTA-aineisto</a>
 <ul class="sectlevel3">
@@ -653,7 +653,7 @@ viittausten osalta tarkoitetaan kyseisen asiankirjan viimeisintä julkaistua ver
 <p><a href="#ISO_19139">[ISO_19139]</a> ISO/TS 19139: 2007, Geographic information - Metadata - XML schema implementation</p>
 </div>
 <div class="paragraph">
-<p><a href="#ISO_19105">[ISO_19105]</a> EN ISO 19105:2005, Geographic Information – Conformance and testing (ISO 19105:2000)</p>
+<p><a href="#ISO_19105">[ISO_19105]</a> EN ISO 19105:2005, Geographic Information – Conformance and testing</p>
 </div>
 <div class="paragraph">
 <p><a href="#ISO_639-2">[ISO_639-2]</a> ISO 639-2:1998, Codes for the representation of names of languages – Part 2: Alpha-3 code</p>
@@ -703,14 +703,55 @@ Council as regards interoperability of spatial data services.</p>
 <h2 id="_termit_ja_määritelmät"><a class="anchor" href="#_termit_ja_määritelmät"></a>4. Termit ja määritelmät</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This document uses the terms defined in Sub-clause 5.3 of [OGC 06-121r8], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this standard.</p>
+<p>Tämän asiakirjan puitteissä seuraavat termit ja määritelmät ovat voimassa:</p>
 </div>
 <div class="paragraph">
-<p>For the purposes of this document, the following additional terms and definitions apply.</p>
+<p><strong>PTA-aineisto</strong></p>
 </div>
 <div class="paragraph">
-<p><strong>term name</strong>
-text of the definition</p>
+<p><strong>rajapintapalvelu</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>vaatimus</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>vaatimuksenmukaisuusluokka</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>abstrakti testisarja</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>metatietoelementti</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>INSPIRE-tunnus</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>jatkumo</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>jatkumotunnus</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>havaintotarjooma</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>havaintotarjoomatunnus</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>XPath-kysely</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>URI-tunnus</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>URL-osoite</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Paikkatietoalusta (PTA)</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>PTA-laatuvahti</strong></p>
 </div>
 </div>
 </div>
@@ -748,6 +789,10 @@ sisältämien vaatimusten mukaisesti:</p>
 <div class="paragraph">
 <p>Lisäksi PTA-aineistojen metatietojen kuvaamisessa tulee noudattaa tässä luvussa kuvattuja PTA-kohtaisia
 lisävaatimuksia.</p>
+</div>
+<div class="paragraph">
+<p>Tämä vaatimuksenmukaisuusluokka koskee Paikkatietoalusta-palvelun keskeisiä tietoainestoja, eli
+niin sanottuja PTA-aineistoja. Palvelujen metatiedot on rajattu tämän vaatimuksenmukaisuusluokan ulkopuolelle.</p>
 </div>
 <table id="luokka-pta-aineisto" class="tableblock frame-all grid-all" style="width: 90%;">
 <caption class="title">Taulukko 1. Yhteenveto PTA-metatietoprofiilin sisältämistä vaatimuksista</caption>
@@ -1466,11 +1511,11 @@ tuloksena, vaatimuksen 3 mukaisesti.</p></td>
 </tr>
 </tbody>
 </table>
-<div class="admonitionblock warning">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">Varoitus</div>
+<div class="title">Tärkeää</div>
 </td>
 <td class="content">
 Mistä Paikkatietohakemiston hakusanaston sanat ja niiden URL-osoitteet voi löytää? Fintossa ei voi tehdä hakua,
@@ -1926,6 +1971,21 @@ totuusarvot (true/false).</p></td>
 <p>Aineiston läpäisemien PTA-vaatimuksenmukaisuustestien tuloksia voidaan yhdessä käyttää aineistojen yhteismitallisen
 laatuluokituksen laskemiseen.</p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Huomio</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>PTA-vaatimuksenmukaisuusluokkien ja niihin kuuluvien PTA-laatuvahti -palvelun testien määrittely ei kuulu tämän
+dokumentin piiriin.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="listingblock">
 <div class="title">Esimerkki&#160;7: PTA-laatuvahdin testituloksen perusteella tuotettu tulos: aineisto on kuviteellisen vaatimuksenmukaisuusluokan Topologia mukainen. Huomaa, että päivämäärä on kyseisen vaatimuksenmukaisuusluokan julkaisupäivä, ei testin ajopäivä.</div>
 <div class="content">
@@ -1963,7 +2023,7 @@ laatuluokituksen laskemiseen.</p>
 <span class="tok-nt">&lt;/gmd:report&gt;</span></code></pre>
 </div>
 </div>
-<table id="rec-lod" class="tableblock frame-all grid-all" style="width: 90%;">
+<table id="suositus-yksityiskohtaisuus-luokittelu" class="tableblock frame-all grid-all" style="width: 90%;">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -2017,8 +2077,14 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 <div class="sect1">
 <h2 id="Viitteet"><a class="anchor" href="#Viitteet"></a>Liite B: Viitteet</h2>
 <div class="sectionbody">
+<div id="ISO_19115" class="paragraph">
+<p><a href="#ISO_19115">[ISO_19115]</a> EN ISO 19115:2003, Geographic information - Metadata, <a href="https://www.iso.org/standard/26020.html" class="bare">https://www.iso.org/standard/26020.html</a></p>
+</div>
 <div id="ISO_19139" class="paragraph">
-<p><a href="#ISO_19139">[ISO_19139]</a> ISO 19139:2007 Geographic information&#8201;&#8212;&#8201;Metadata&#8201;&#8212;&#8201;XML schema implementation</p>
+<p><a href="#ISO_19139">[ISO_19139]</a> ISO 19139:2007 Geographic information&#8201;&#8212;&#8201;Metadata&#8201;&#8212;&#8201;XML schema implementation, <a href="https://www.iso.org/standard/32557.html" class="bare">https://www.iso.org/standard/32557.html</a></p>
+</div>
+<div id="ISO_639-2" class="paragraph">
+<p><a href="#ISO_639-2">[ISO_639-2]</a> ISO 639-2:1998 Codes for the representation of names of languages&#8201;&#8212;&#8201;Part 2: Alpha-3 code, <a href="https://www.iso.org/standard/4767.html" class="bare">https://www.iso.org/standard/4767.html</a></p>
 </div>
 <div id="TG_MD_20" class="paragraph">
 <p><a href="#TG_MD_20">[TG_MD_20]</a> Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0, <a href="https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139" class="bare">https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139</a></p>
@@ -2029,14 +2095,23 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 <div id="JHS_158" class="paragraph">
 <p><a href="#JHS_158">[JHS_158]</a> JHS 158 Paikkatietoaineistojen ja -palveluiden metatiedot, vuoden 2018 versio, <a href="http://www.jhs-suositukset.fi/suomi/jhs158" class="bare">http://www.jhs-suositukset.fi/suomi/jhs158</a></p>
 </div>
+<div id="JHS_197" class="paragraph">
+<p><a href="#JHS_197">[JHS_197]</a> JHS 197  EUREF-FIN -koordinaattijärjestelmät, niihin liittyvät muunnokset ja karttalehtijako, vuoden 2016 versio, <a href="http://www.jhs-suositukset.fi/suomi/jhs197" class="bare">http://www.jhs-suositukset.fi/suomi/jhs197</a></p>
+</div>
 <div id="CityGML" class="paragraph">
 <p><a href="#CityGML">[CityGML]</a> OGC City Geography Markup Language (CityGML) Encoding Standard, version 2.0, OGC 12-019, <a href="https://portal.opengeospatial.org/files/?artifact_id=47842" class="bare">https://portal.opengeospatial.org/files/?artifact_id=47842</a></p>
+</div>
+<div id="WCS_20" class="paragraph">
+<p><a href="#WCS_20">[WCS_20]</a> OGC Web Coverage Service (WCS) Interface Standard - Core, version 2.1, OGC 17-089r1, <a href="http://docs.opengeospatial.org/is/17-089r1/17-089r1.html" class="bare">http://docs.opengeospatial.org/is/17-089r1/17-089r1.html</a></p>
+</div>
+<div id="SOS_20" class="paragraph">
+<p><a href="#SOS_20">[SOS_20]</a> OGC Sensor Observation Service Interface Standard, OGC 17-089r1, <a href="https://portal.opengeospatial.org/files/?artifact_id=47599" class="bare">https://portal.opengeospatial.org/files/?artifact_id=47599</a></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_vaatimuksenmukaisuuden_abstakti_testisarja_normatiivinen"><a class="anchor" href="#_vaatimuksenmukaisuuden_abstakti_testisarja_normatiivinen"></a>Liite C: Vaatimuksenmukaisuuden abstakti testisarja (normatiivinen)</h2>
+<h2 id="_vaatimuksenmukaisuuden_abstaktit_testisarjat_normatiivinen"><a class="anchor" href="#_vaatimuksenmukaisuuden_abstaktit_testisarjat_normatiivinen"></a>Liite C: Vaatimuksenmukaisuuden abstaktit testisarjat (normatiivinen)</h2>
 <div class="sectionbody">
 <div class="admonitionblock note">
 <table>
