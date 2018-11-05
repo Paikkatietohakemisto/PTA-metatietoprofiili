@@ -1,0 +1,19 @@
+[appendix]
+:appendix-caption: Liite
+== Vaatimuksenmukaisuuden abstakti testisarja (normatiivinen)
+
+[NOTE]
+Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)
+
+=== Vaatimuksenmukaisuusluokka PTA-aineisto
+
+==== Vaatimus 1
+[cols=">20h,<80d",width="100%"]
+|===
+|Testin tunnus: |/conf/conf-class-a/req-name-1
+|Vaatimus: |/req/req-class-a/req-name-1
+|Testin tarkoitus: | Verify that...
+|Testimenetelmä: | Inspect...
+|===
+
+==== Vaatimus 2

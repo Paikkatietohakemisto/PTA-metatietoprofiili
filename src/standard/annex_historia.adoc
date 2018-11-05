@@ -1,0 +1,9 @@
+[appendix]
+:appendix-caption: Liite
+== Muutoshistoria
+
+[width="90%",options="header"]
+|===
+|Päiväys |Versio |Editori | Muutoksen kohde |Kuvaus
+|2018-11-06 |0.1 |Ilkka Rinne |kaikki |Ensimmäinen versio (luonnos)
+|===

@@ -1,0 +1,5 @@
+== Vaatimuksenmukaisuus
+Tämä asiakirja määrittelee yhden vaatimuksenmukaisuusluokan '<<#luokka-pta-aineisto,PTA-aineisto>>',
+jonka kohteena on <<ISO_19139>>-standardin mukainen metatietodokumentti.
+Kaikkien PTA-aineistoja kuvaavien metatietodokumenttien tulee täyttää tämän
+vaatimuksenmukaisuusluokan kaikki vaatimukset.

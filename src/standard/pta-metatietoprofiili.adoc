@@ -26,7 +26,6 @@ ifdef::listing-caption[:listing-caption: Listaus]
 //:part-refsig: ???
 ifdef::preface-title[:preface-title: Esipuhe]
 //:section-refsig: ???
-
 :tip-caption: Vinkki
 :toc-title: Sisällysluettelo
 :untitled-label: Nimetön
@@ -46,7 +45,7 @@ ifdef::preface-title[:preface-title: Esipuhe]
 |Dokumentin tunniste: http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.1
 |Versio: 0.1
 |Kieli: suomi
-|Toimittaja(t):   Ilkka Rinne / Spatineo Oy
+|Editori:   Ilkka Rinne / Spatineo Oy
 |===
 
 <<<
@@ -71,27 +70,28 @@ toc::[]
 ////
 Make sure to complete each included document
 ////
-include::clause_0_front_material.adoc[]
+include::front_material.adoc[]
 
-include::clause_1_scope.adoc[]
+include::taustaa.adoc[]
 
-include::clause_2_conformance.adoc[]
+include::vaatimuksenmukaisuus.adoc[]
 
-include::clause_3_references.adoc[]
+include::viitteet.adoc[]
 
-include::clause_4_terms_and_definitions.adoc[]
+include::termit_ja_maaritelmat.adoc[]
 
-include::clause_5_conventions.adoc[]
+include::konventiot.adoc[]
 
-include::yleista.adoc[]
-
-include::luku_6_pta_aineistot.adoc[]
+include::pta_aineisto.adoc[]
 
 ////
 Revision History should be the last annex before the Bibliography
 Bibliography should be the last annex
 ////
-include::annex-history.adoc[]
+include::annex_historia.adoc[]
 
 <<<
-include::annex-bibliography.adoc[]
+include::annex_kirjallisuus.adoc[]
+
+<<<
+include::annex_a_ATS.adoc[]

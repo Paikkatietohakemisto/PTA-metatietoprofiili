@@ -3,9 +3,6 @@
 [[Viitteet]]
 = Viitteet
 
-[[ISO_19115]]
-<<ISO_19115>> ISO 19115:2003 Geographic information -- Metadata
-
 [[ISO_19139]]
 <<ISO_19139>> ISO 19139:2007 Geographic information -- Metadata -- XML schema implementation
 
