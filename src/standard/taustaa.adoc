@@ -1,1 +1,78 @@
 == Taustaa
+Paikkatietoalusta-hankeen tavoitteena on yhtenäistää valtion, maakuntien ja kuntien paikkatiedot ja
+tuoda ne myös yritysten ja yhteisöjen saataville. Vuonna 2017 alkanut hanke on osa hallituksen Digitalisoidaan julkiset
+palvelut -kärkihankekokonaisuutta. Tavoitteena on yhtenäistää ja parantaa julkisen hallinnon sähköisiä
+palveluita, parantaa ja tehdä läpinäkyvämmäksi tietopohjaista päätöksentekoa sekä säästää kustannuksia
+julkisessa hallinnossa.
+
+Ajantasaisten ja riittävän tarkkojen metatietojen rooli paikkatietoaineistojen löytämisessä sekä
+niiden soveltuvuuden ja laadun arvioinnissa on tärkeä. Vain laadukkaan ja hyvin ylläpidetyn metatiedon
+avulla voidaan toteuttaa hyvin toimivia ja täsmällisiä tuloksia antavia aineiston hakupalveluita,
+kuten Paikkatietoalustan ontologioiden hyödyntämiseen ja koneoppimiseen perustuva älykäs hakukone (<<Älykäs_haku>>).
+
+Paikkatietoalustan oman metatietoprofiilin, niin sanotun PTA-metatietoprofiilin, tarkoituksena on
+ohjata Paikkatietoalustalla julkaistavien aineistojen tuottajia kuvaamaan aineistojen metatiedot tavalla,
+joka helpottaa Paikkatietoalustan käyttäjäryhmien aineistojen löytämistä ja arviointia heidän keskeisissä
+käyttötapauksissaan.
+
+Käyttäjien metatiedon käyttöön ja paikkatietoaineistojen löytämiseen liittyvien
+tarpeiden selvittämiseksi tehtiin käyttötarveselvitys elo-lokakussa 2018. Selvityksen aikana yksilö- ja
+ryhmähaastatteluihin osallistui yhteensä 22 henkilöä seitsemästä eri julkishallinnon ja yksityisen sektorin
+organisaatiosta (<<Käyttötarveselvitys>>). Käyttötarveselvityksen tuloksena syntyi raportti, joka kuvaa paikkatietoaineistojen hankintaa,
+arviointia ja käyttöä haastatelluissa organisaatioissa, sekä Paikkatietoalustaan ja julkishallinnon
+ylläpitämiin ja julkaisemiin paikkatietoaineistoihin liittyviä onnistumisia ja parannuskohteita.
+
+=== PTA-kohtaisten metatietovaatimusten perustelut
+
+Käyttötarveselvityksen tuloksia on hyödynnetty määriteltäessä PTA-metatietoprofiilin vaatimuksia.
+Metatietovaatimusten määrittely on tasapainottelua juuri sopivan kuvaustason saavuttamiseksi:
+Uusien pakollisten metatietoelementtien vaatiminen tai niiden kuvaustekniikan tarkentaminen aiheuttaa
+lisävaatimuksia myös metatietoa käsitteleville tietojärjestelmille, ja siten usein lisäkustannuksia.
+Toisaalta puutteellinen tai epätarkka ohjeistus johtaa metatietokuvauksiin, joiden tiedot ovat
+puutteellisia tai joiden tietojen automaattinen hyödyntäminen on vaikeaa, ja joiden laatimisen
+kustannus-hyötysuhde jää matalaksi.
+
+Erityisesti PTA-metatietoprofiilin laadinnassa on pyritty ratkaisemaan seuraavia haastatteluissa
+ilmenneitä metatietojen käytön ongelmia ja puutteita:
+
+* Käyttäjien on vaikeaa hahmottaa mitä aineistoja Paikkatietoalustan kautta on saatavilla, millaisin
+käyttöehdoin ne saa käyttöön ja millaia mahdollisia rajoitteita ne sisältävät. Tähän vastaa
+<<#vaatimus-kayton-rajoitukset,Vaatimus 10>>.
+
+* Paikkatietoalustan ja Paikkatietohakemiston kautta aineistoa etsittäessä on usein vaikeaa
+selvittää miten tiettyyn aineistoon pääsee käsiksi. Hakupalvelusta pitäisi suoraan päästä
+lataamaan vähintään näyte aineistosta ja lisäksi tulisi selkeästi tarjota tarvittava tieto aineistojen
+lataamiseksi erilaisia rajapintapalveluja käyttäen. Tähän vastaavat Vaatimukset
+<<#vaatimus-latauspalvelu-linkki,11>>, <<#vaatimus-latauspalvelu-linkki-predefined-wfs,12>>,
+<<#vaatimus-latauspalvelu-linkki-predefined-atom,13>>, <<#vaatimus-latauspalvelu-linkki-wcs,14>> ja
+<<#vaatimus-latauspalvelu-linkki-sos,15>>.
+
+* Hakupalvelut eivät ymmärrä hakusanojen taivutusmuotoja ja niihin liittyviä käsitteitä riittävän hyvin, mikä
+johtaa puutteelisten tai virheellisten halutulosten esittämiseen. Myös aineistojen tuottajien on
+hankalaa tietää mitä sanastoja ja avainsanoja aineistojen metatiedoissa tulisi käyttää. Tarvitaan
+nykyistä parempaa ohjeistusta avainsanojen ja -sanastojen käytöstä osana paikkatietoaineitojen
+metatietoja. Tähän vastaavat Vaatimukset <<#vaatimus-asiasana-ankkkuri, 7>>,
+<<#vaatimus-asiasanasato-ankkkuri, 8>> ja <<#vaatimus-pta.-asiasanat, 9>>.
+
+* Metatietojen perusteella on toisinaan vaikea tietää milloin aineisto on kerätty ja minkä hetken tilannetta
+se kuvaa. Tähän vastaavat Vaatimukset <<#vaatimus-paivitystiheys,5>> ja
+<<#vaatimus-viimeinen-paivitys,6>> sekä <<#suositus-aikaviite,Suositus 2>>.
+
+* Metatietojen perusteella on usein vaikeaa tietää minkälainen aineiston yksityiskohtaisuuden tai
+spatiaalisen tarkkuuden taso on. Vektoripohjaisten aineistojen yksityiskohtaisuuden
+arviointi nykyisten metatietokuvausten perusteella on vaikeaa, ja erityisen vaikeaa tämä tieto
+on päätelllä automaattisesti, sillä mahdollinen yksityiskohtaisuudesta kertova tieto on
+usein annettu vapaatekstinä. Tähän vastaa <<#suositus-yksityiskohtaisuus-luokittelu, Suositus 3>>.
+
+* Paikkatietoaineistojen sisällön laatua on vaikeaa arvioida metatietojen perusteella. Käytännössä
+arvioinnissa luotetaan usein siihen, että kun aineiston on tuottanut ja/tai julkaissut laadukkaista
+aineistoista tunnettu taho, niin oletetaan sen täyttävän järkevät laatuvaatimukset. Laatutestien
+tulosten ilmaisemiseen osana metatietoja liittyy <<#vaatimus-pta-vaatimuksenmukaisuus, Vaatimus 16>>.
+
+PTA-metatietoprofiili perustuu kansainvälisiin <<ISO_19115>> - ja <<ISO_19139>> -standardeihin
+ja niitä tarkentavien INSPIRE-direktiivin metatieto-ohjeistus - (<<TG_MD_20>>) ja
+Julkishallinnon suositus <<JHS_158>> -dokumenttien vaatimuksin ja suosituksiin. Vaatimukset
+<<#vaatimus-metatiedon-kieli,1>>, <<#vaatimus-metatiedon-tunnus,2>>, <<#vaatimus-tm35-tunnus,3>> ja
+<<#vaatimus-aineiston-tunnus,4>> sekä <<#suositus-aineiston-pta-tunnus, Suositus 1>> tarkentavat
+mainittujen ohjeistusten teknisiä vaatimuksia hakutoimintojen ja aineistojen ylläpidon
+helpottamiseksi ja käyttövarmuuden parantamiseksi.

@@ -32,6 +32,7 @@ ifdef::preface-title[:preface-title: Esipuhe]
 :version-label: Versio
 :warning-caption: Varoitus
 :table-caption: Taulukko
+:versio: 0.5
 = {title}
 
 
@@ -42,8 +43,8 @@ ifdef::preface-title[:preface-title: Esipuhe]
 |[big]*Maanmittauslaitos*
 |Hyväksytty:   <yyyy-mm-dd>
 |Julkaistu:   <yyyy-mm-dd>
-|Dokumentin tunniste: http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.1
-|Versio: 0.1
+|Dokumentin tunniste: http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/{versio}
+|Versio: {versio}
 |Kieli: suomi
 |Editori:   Ilkka Rinne / Spatineo Oy
 |===
@@ -61,10 +62,8 @@ ifdef::preface-title[:preface-title: Esipuhe]
 |===
 
 
-
 <<<
 toc::[]
-
 <<<
 
 ////

@@ -1,11 +1,15 @@
 [big]*i.     Lyhennelmä*
-
-<Insert Abstract Text here>
+[abstract]
+--
+TBA
+--
 
 [big]*ii.    Avainsanat*
 
-The following are keywords to be used by search engines and document catalogues.
+TBA
 
-ogcdoc, OGC document,  <tags separated by commas>
+:keywords: sana1, sana2
 
 [big]*iii.   Johdanto*
+
+TBA

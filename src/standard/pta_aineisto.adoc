@@ -16,7 +16,7 @@ niin sanottuja PTA-aineistoja. Palvelujen metatiedot on rajattu tämän vaatimuk
 [cols="1,4",width="90%"]
 |===
 2+|*Vaatimuksenmukaisuusluokka PTA-aineisto* {set:cellbgcolor:#9fc4e5}
-2+| `http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.1/vaatimukset/luokka-pta-aineisto` {set:cellbgcolor:#FFFFFF}
+2+| `http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/{versio}/vaatimukset/luokka-pta-aineisto` {set:cellbgcolor:#FFFFFF}
 |*Kohde* |ISO 19139 -standardin mukainen metatietodokumentti
 |*Riippuvuus* |http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/isdss
 |*Riippuvuus* |http://www.jhs-suositukset.fi/suomi/jhs158/jhs-metatietoprofiili

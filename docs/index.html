@@ -510,10 +510,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Julkaistu:   &lt;yyyy-mm-dd&gt;</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dokumentin tunniste: <a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.1" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.1</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dokumentin tunniste: <a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Versio: 0.1</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Versio: 0.5</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Kieli: suomi</p></td>
@@ -548,7 +548,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc">
 <div id="toctitle" class="title">Sisällysluettelo</div>
 <ul class="sectlevel1">
-<li><a href="#_taustaa">1. Taustaa</a></li>
+<li><a href="#_taustaa">1. Taustaa</a>
+<ul class="sectlevel2">
+<li><a href="#_pta_kohtaisten_metatietovaatimusten_perustelut">1.1. PTA-kohtaisten metatietovaatimusten perustelut</a></li>
+</ul>
+</li>
 <li><a href="#_vaatimuksenmukaisuus">2. Vaatimuksenmukaisuus</a></li>
 <li><a href="#_velvoittavat_viittaukset">3. Velvoittavat viittaukset</a></li>
 <li><a href="#_termit_ja_määritelmät">4. Termit ja määritelmät</a></li>
@@ -603,27 +607,126 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p><strong class="big">i.     Lyhennelmä</strong></p>
 </div>
+<div class="quoteblock abstract">
+<blockquote>
 <div class="paragraph">
-<p>&lt;Insert Abstract Text here&gt;</p>
+<p>TBA</p>
+</div>
+</blockquote>
 </div>
 <div class="paragraph">
 <p><strong class="big">ii.    Avainsanat</strong></p>
 </div>
 <div class="paragraph">
-<p>The following are keywords to be used by search engines and document catalogues.</p>
-</div>
-<div class="paragraph">
-<p>ogcdoc, OGC document,  &lt;tags separated by commas&gt;</p>
+<p>TBA</p>
 </div>
 <div class="paragraph">
 <p><strong class="big">iii.   Johdanto</strong></p>
+</div>
+<div class="paragraph">
+<p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_taustaa"><a class="anchor" href="#_taustaa"></a>1. Taustaa</h2>
 <div class="sectionbody">
-
+<div class="paragraph">
+<p>Paikkatietoalusta-hankeen tavoitteena on yhtenäistää valtion, maakuntien ja kuntien paikkatiedot ja
+tuoda ne myös yritysten ja yhteisöjen saataville. Vuonna 2017 alkanut hanke on osa hallituksen Digitalisoidaan julkiset
+palvelut -kärkihankekokonaisuutta. Tavoitteena on yhtenäistää ja parantaa julkisen hallinnon sähköisiä
+palveluita, parantaa ja tehdä läpinäkyvämmäksi tietopohjaista päätöksentekoa sekä säästää kustannuksia
+julkisessa hallinnossa.</p>
+</div>
+<div class="paragraph">
+<p>Ajantasaisten ja riittävän tarkkojen metatietojen rooli paikkatietoaineistojen löytämisessä sekä
+niiden soveltuvuuden ja laadun arvioinnissa on tärkeä. Vain laadukkaan ja hyvin ylläpidetyn metatiedon
+avulla voidaan toteuttaa hyvin toimivia ja täsmällisiä tuloksia antavia aineiston hakupalveluita,
+kuten Paikkatietoalustan ontologioiden hyödyntämiseen ja koneoppimiseen perustuva älykäs hakukone (<a href="#Älykäs_haku">[Älykäs_haku]</a>).</p>
+</div>
+<div class="paragraph">
+<p>Paikkatietoalustan oman metatietoprofiilin, niin sanotun PTA-metatietoprofiilin, tarkoituksena on
+ohjata Paikkatietoalustalla julkaistavien aineistojen tuottajia kuvaamaan aineistojen metatiedot tavalla,
+joka helpottaa Paikkatietoalustan käyttäjäryhmien aineistojen löytämistä ja arviointia heidän keskeisissä
+käyttötapauksissaan.</p>
+</div>
+<div class="paragraph">
+<p>Käyttäjien metatiedon käyttöön ja paikkatietoaineistojen löytämiseen liittyvien
+tarpeiden selvittämiseksi tehtiin käyttötarveselvitys elo-lokakussa 2018. Selvityksen aikana yksilö- ja
+ryhmähaastatteluihin osallistui yhteensä 22 henkilöä seitsemästä eri julkishallinnon ja yksityisen sektorin
+organisaatiosta (<a href="#Käyttötarveselvitys">[Käyttötarveselvitys]</a>). Käyttötarveselvityksen tuloksena syntyi raportti, joka kuvaa paikkatietoaineistojen hankintaa,
+arviointia ja käyttöä haastatelluissa organisaatioissa, sekä Paikkatietoalustaan ja julkishallinnon
+ylläpitämiin ja julkaisemiin paikkatietoaineistoihin liittyviä onnistumisia ja parannuskohteita.</p>
+</div>
+<div class="sect2">
+<h3 id="_pta_kohtaisten_metatietovaatimusten_perustelut"><a class="anchor" href="#_pta_kohtaisten_metatietovaatimusten_perustelut"></a>1.1. PTA-kohtaisten metatietovaatimusten perustelut</h3>
+<div class="paragraph">
+<p>Käyttötarveselvityksen tuloksia on hyödynnetty määriteltäessä PTA-metatietoprofiilin vaatimuksia.
+Metatietovaatimusten määrittely on tasapainottelua juuri sopivan kuvaustason saavuttamiseksi:
+Uusien pakollisten metatietoelementtien vaatiminen tai niiden kuvaustekniikan tarkentaminen aiheuttaa
+lisävaatimuksia myös metatietoa käsitteleville tietojärjestelmille, ja siten usein lisäkustannuksia.
+Toisaalta puutteellinen tai epätarkka ohjeistus johtaa metatietokuvauksiin, joiden tiedot ovat
+puutteellisia tai joiden tietojen automaattinen hyödyntäminen on vaikeaa, ja joiden laatimisen
+kustannus-hyötysuhde jää matalaksi.</p>
+</div>
+<div class="paragraph">
+<p>Erityisesti PTA-metatietoprofiilin laadinnassa on pyritty ratkaisemaan seuraavia haastatteluissa
+ilmenneitä metatietojen käytön ongelmia ja puutteita:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Käyttäjien on vaikeaa hahmottaa mitä aineistoja Paikkatietoalustan kautta on saatavilla, millaisin
+käyttöehdoin ne saa käyttöön ja millaia mahdollisia rajoitteita ne sisältävät. Tähän vastaa
+<a href="#vaatimus-kayton-rajoitukset">Vaatimus 10</a>.</p>
+</li>
+<li>
+<p>Paikkatietoalustan ja Paikkatietohakemiston kautta aineistoa etsittäessä on usein vaikeaa
+selvittää miten tiettyyn aineistoon pääsee käsiksi. Hakupalvelusta pitäisi suoraan päästä
+lataamaan vähintään näyte aineistosta ja lisäksi tulisi selkeästi tarjota tarvittava tieto aineistojen
+lataamiseksi erilaisia rajapintapalveluja käyttäen. Tähän vastaavat Vaatimukset
+<a href="#vaatimus-latauspalvelu-linkki">11</a>, <a href="#vaatimus-latauspalvelu-linkki-predefined-wfs">12</a>,
+<a href="#vaatimus-latauspalvelu-linkki-predefined-atom">13</a>, <a href="#vaatimus-latauspalvelu-linkki-wcs">14</a> ja
+<a href="#vaatimus-latauspalvelu-linkki-sos">15</a>.</p>
+</li>
+<li>
+<p>Hakupalvelut eivät ymmärrä hakusanojen taivutusmuotoja ja niihin liittyviä käsitteitä riittävän hyvin, mikä
+johtaa puutteelisten tai virheellisten halutulosten esittämiseen. Myös aineistojen tuottajien on
+hankalaa tietää mitä sanastoja ja avainsanoja aineistojen metatiedoissa tulisi käyttää. Tarvitaan
+nykyistä parempaa ohjeistusta avainsanojen ja -sanastojen käytöstä osana paikkatietoaineitojen
+metatietoja. Tähän vastaavat Vaatimukset <a href="#vaatimus-asiasana-ankkkuri">7</a>,
+<a href="#vaatimus-asiasanasato-ankkkuri">8</a> ja <a href="#vaatimus-pta.-asiasanat">9</a>.</p>
+</li>
+<li>
+<p>Metatietojen perusteella on toisinaan vaikea tietää milloin aineisto on kerätty ja minkä hetken tilannetta
+se kuvaa. Tähän vastaavat Vaatimukset <a href="#vaatimus-paivitystiheys">5</a> ja
+<a href="#vaatimus-viimeinen-paivitys">6</a> sekä <a href="#suositus-aikaviite">Suositus 2</a>.</p>
+</li>
+<li>
+<p>Metatietojen perusteella on usein vaikeaa tietää minkälainen aineiston yksityiskohtaisuuden tai
+spatiaalisen tarkkuuden taso on. Vektoripohjaisten aineistojen yksityiskohtaisuuden
+arviointi nykyisten metatietokuvausten perusteella on vaikeaa, ja erityisen vaikeaa tämä tieto
+on päätelllä automaattisesti, sillä mahdollinen yksityiskohtaisuudesta kertova tieto on
+usein annettu vapaatekstinä. Tähän vastaa <a href="#suositus-yksityiskohtaisuus-luokittelu">Suositus 3</a>.</p>
+</li>
+<li>
+<p>Paikkatietoaineistojen sisällön laatua on vaikeaa arvioida metatietojen perusteella. Käytännössä
+arvioinnissa luotetaan usein siihen, että kun aineiston on tuottanut ja/tai julkaissut laadukkaista
+aineistoista tunnettu taho, niin oletetaan sen täyttävän järkevät laatuvaatimukset. Laatutestien
+tulosten ilmaisemiseen osana metatietoja liittyy <a href="#vaatimus-pta-vaatimuksenmukaisuus">Vaatimus 16</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>PTA-metatietoprofiili perustuu kansainvälisiin <a href="#ISO_19115">[ISO 19115]</a> - ja <a href="#ISO_19139">[ISO 19139]</a> -standardeihin
+ja niitä tarkentavien INSPIRE-direktiivin metatieto-ohjeistus - (<a href="#TG_MD_20">[TG Metadata 2.0]</a>) ja
+Julkishallinnon suositus <a href="#JHS_158">[JHS 158]</a> -dokumenttien vaatimuksin ja suosituksiin. Vaatimukset
+<a href="#vaatimus-metatiedon-kieli">1</a>, <a href="#vaatimus-metatiedon-tunnus">2</a>, <a href="#vaatimus-tm35-tunnus">3</a> ja
+<a href="#vaatimus-aineiston-tunnus">4</a> sekä <a href="#suositus-aineiston-pta-tunnus">Suositus 1</a> tarkentavat
+mainittujen ohjeistusten teknisiä vaatimuksia hakutoimintojen ja aineistojen ylläpidon
+helpottamiseksi ja käyttövarmuuden parantamiseksi.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -631,7 +734,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="paragraph">
 <p>Tämä asiakirja määrittelee yhden vaatimuksenmukaisuusluokan '<a href="#luokka-pta-aineisto">PTA-aineisto</a>',
-jonka kohteena on <a href="#ISO_19139">[ISO_19139]</a>-standardin mukainen metatietodokumentti.
+jonka kohteena on <a href="#ISO_19139">[ISO 19139]</a>-standardin mukainen metatietodokumentti.
 Kaikkien PTA-aineistoja kuvaavien metatietodokumenttien tulee täyttää tämän
 vaatimuksenmukaisuusluokan kaikki vaatimukset.</p>
 </div>
@@ -647,16 +750,16 @@ mahdollisia kyseisen päivän jälkeen julkaistuja lisäyksiä tai korjauksia ei
 viittausten osalta tarkoitetaan kyseisen asiankirjan viimeisintä julkaistua versiota.</p>
 </div>
 <div class="paragraph">
-<p><a href="#ISO_19115">[ISO_19115]</a> EN ISO 19115: 2005, Geographic information - Metadata</p>
+<p><a href="#ISO_19115">[ISO 19115]</a> EN ISO 19115: 2005, Geographic information - Metadata</p>
 </div>
 <div class="paragraph">
-<p><a href="#ISO_19139">[ISO_19139]</a> ISO/TS 19139: 2007, Geographic information - Metadata - XML schema implementation</p>
+<p><a href="#ISO_19139">[ISO 19139]</a> ISO/TS 19139: 2007, Geographic information - Metadata - XML schema implementation</p>
 </div>
 <div class="paragraph">
 <p><a href="#ISO_19105">[ISO_19105]</a> EN ISO 19105:2005, Geographic Information – Conformance and testing</p>
 </div>
 <div class="paragraph">
-<p><a href="#ISO_639-2">[ISO_639-2]</a> ISO 639-2:1998, Codes for the representation of names of languages – Part 2: Alpha-3 code</p>
+<p><a href="#ISO_639-2">[ISO 639-2]</a> ISO 639-2:1998, Codes for the representation of names of languages – Part 2: Alpha-3 code</p>
 </div>
 <div class="paragraph">
 <p><a href="#INSPIRE">[INSPIRE]</a> Directive 2007/2/EC of the European Parliament and of the Council of 14 March
@@ -692,10 +795,10 @@ Council as regards interoperability of spatial data services.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p><a href="#TG_MD_20">[TG_MD_20]</a> Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0, <a href="https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139" class="bare">https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139</a></p>
+<p><a href="#TG_MD_20">[TG Metadata 2.0]</a> Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0, <a href="https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139" class="bare">https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139</a></p>
 </div>
 <div class="paragraph">
-<p><a href="#JHS_158">[JHS_158]</a> JHS 158 Paikkatietoaineistojen ja -palveluiden metatiedot, vuoden 2018 versio, <a href="http://www.jhs-suositukset.fi/suomi/jhs158" class="bare">http://www.jhs-suositukset.fi/suomi/jhs158</a></p>
+<p><a href="#JHS_158">[JHS 158]</a> JHS 158 Paikkatietoaineistojen ja -palveluiden metatiedot, vuoden 2018 versio, <a href="http://www.jhs-suositukset.fi/suomi/jhs158" class="bare">http://www.jhs-suositukset.fi/suomi/jhs158</a></p>
 </div>
 </div>
 </div>
@@ -761,10 +864,11 @@ Council as regards interoperability of spatial data services.</p>
 <div class="sect2">
 <h3 id="_tunnisteet"><a class="anchor" href="#_tunnisteet"></a>5.1. Tunnisteet</h3>
 <div class="paragraph">
-<p>Tässä asiakirjassa kuvattujen vaatimusten kokonaisuuteen viitataan absoluuttiselle URI-tunnuksella <code><a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.1" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.1</a></code>.
+<p>Tässä asiakirjassa kuvattujen vaatimusten kokonaisuuteen viitataan absoluuttiselle URI-tunnuksella
+<code><a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5</a></code>.
 Kaikkiin tässä asiakirjassa kuvattuihin vaatimuksiin ja vaatimuksenmukaisuustesteihin viitataan osittaisilla URI-tunnuksilla,
 jotka on määritelty suhteellisina tähän koko asiakirjan URI-tunnukseen nähden, esimerkiksi Vaatimuksen 1 absoluuttinen
-URI-tunnus on <code><a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.1/vaatimukset/vaatimus-metatiedon-kieli" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.1/vaatimukset/vaatimus-metatiedon-kieli</a></code>.</p>
+URI-tunnus on <code><a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5/vaatimukset/vaatimus-metatiedon-kieli" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5/vaatimukset/vaatimus-metatiedon-kieli</a></code>.</p>
 </div>
 </div>
 </div>
@@ -779,10 +883,10 @@ sisältämien vaatimusten mukaisesti:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>'Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007', vaatimustenmukaisuusluokka 'Conformance Class 2: metadata/2.0/isdss' <a href="#TG_MD_20">[TG_MD_20]</a></p>
+<p>'Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007', vaatimustenmukaisuusluokka 'Conformance Class 2: metadata/2.0/isdss' <a href="#TG_MD_20">[TG Metadata 2.0]</a></p>
 </li>
 <li>
-<p>'JHS 158 Paikkatietoaineistojen ja -palveluiden metatiedot', JHS-metatietoprofiili <a href="#JHS_158">[JHS_158]</a></p>
+<p>'JHS 158 Paikkatietoaineistojen ja -palveluiden metatiedot', JHS-metatietoprofiili <a href="#JHS_158">[JHS 158]</a></p>
 </li>
 </ul>
 </div>
@@ -805,7 +909,7 @@ niin sanottuja PTA-aineistoja. Palvelujen metatiedot on rajattu tämän vaatimuk
 <td class="tableblock halign-left valign-top" colspan="2" style="background-color: #9fc4e5;"><p class="tableblock"><strong>Vaatimuksenmukaisuusluokka PTA-aineisto</strong> </p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.1/vaatimukset/luokka-pta-aineisto" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.1/vaatimukset/luokka-pta-aineisto</a></code> </p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5/vaatimukset/luokka-pta-aineisto" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5/vaatimukset/luokka-pta-aineisto</a></code> </p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Kohde</strong></p></td>
@@ -921,9 +1025,9 @@ on käytössä yleisesti tunnettu luokittelu.</p></td>
 <div class="sect2">
 <h3 id="_yleiset_metatiedon_xml_koodaukseen_kohdistuvat_vaatimukset"><a class="anchor" href="#_yleiset_metatiedon_xml_koodaukseen_kohdistuvat_vaatimukset"></a>6.1. Yleiset metatiedon XML-koodaukseen kohdistuvat vaatimukset</h3>
 <div class="paragraph">
-<p>Alla on listattu yleiset <a href="#ISO_19139">[ISO_19139]</a>-standardin mukaisen
+<p>Alla on listattu yleiset <a href="#ISO_19139">[ISO 19139]</a>-standardin mukaisen
 metatiedon koodaukseen liittyvät INSPIRE-vaatimukset. Näiden vaatimusten tarkemmat kuvaukset löytyvät
-dokumentista <a href="#TG_MD_20">[TG_MD_20]</a>.</p>
+dokumentista <a href="#TG_MD_20">[TG Metadata 2.0]</a>.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
 <caption class="title">Taulukko 2. Yleiset metatiedon XML-koodaukseen kohdistuvat INSPIRE-vaatimukset</caption>
@@ -963,7 +1067,7 @@ dokumentista <a href="#TG_MD_20">[TG_MD_20]</a>.</p>
 <div class="paragraph">
 <p>Alla on listattu metatiedon tunnistamistietoihin
 liittyvät INSPIRE-vaatimukset. Näiden vaatimusten tarkemmat kuvaukset löytyvät
-dokumentista <a href="#TG_MD_20">[TG_MD_20]</a>.</p>
+dokumentista <a href="#TG_MD_20">[TG Metadata 2.0]</a>.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
 <caption class="title">Taulukko 3. Metatiedon tunnistamistietoihin kohdistuvat INSPIRE-vaatimukset</caption>
@@ -1074,7 +1178,7 @@ kuvaavan elementin <code>/*/gmd:locale/gmd:PT_Locale</code> attribuutin <code>id
 <div class="sect3">
 <h4 id="_metatietokuvauksen_yksilöivä_tunnus"><a class="anchor" href="#_metatietokuvauksen_yksilöivä_tunnus"></a>6.2.2. Metatietokuvauksen yksilöivä tunnus</h4>
 <div class="paragraph">
-<p><a href="#TG_MD_20">[TG_MD_20]</a> suosittelee pysyvien ja globaalisti yksilöivien tunnusten antamista INSPIRE-aineistojen metatietokuvauksille käyttäen elementtiä
+<p><a href="#TG_MD_20">[TG Metadata 2.0]</a> suosittelee pysyvien ja globaalisti yksilöivien tunnusten antamista INSPIRE-aineistojen metatietokuvauksille käyttäen elementtiä
 <code>gmd:fileIdentifier</code>.</p>
 </div>
 <table id="vaatimus-metatiedon-tunnus" class="tableblock frame-all grid-all" style="width: 90%;">
@@ -1100,7 +1204,7 @@ tulee palauttaa näin määritelty metatiedon yksilöivä tunnus.</p></td>
 <div class="paragraph">
 <p>Alla on listattu vertausjärjestelmään
 liittyvät INSPIRE-vaatimukset. Näiden vaatimusten tarkemmat kuvaukset löytyvät
-dokumentista <a href="#TG_MD_20">[TG_MD_20]</a>.</p>
+dokumentista <a href="#TG_MD_20">[TG Metadata 2.0]</a>.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
 <caption class="title">Taulukko 4. Vertausjärjestelmien kuvaamiseen kohdistuvat INSPIRE-vaatimukset</caption>
@@ -1128,14 +1232,14 @@ dokumentista <a href="#TG_MD_20">[TG_MD_20]</a>.</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p><a href="#TG_MD_20">[TG_MD_20]</a>:n vaatimus TG Requirement 2.2 vaatii, että vertausjärjestelmätunnuksina käytetään
+<p><a href="#TG_MD_20">[TG Metadata 2.0]</a>:n vaatimus TG Requirement 2.2 vaatii, että vertausjärjestelmätunnuksina käytetään
 kyseisen asiakirjan Annex D.4:n sisältämän taulukon "Default Coordinate Reference Systems"
 URI-muotoisia tunnuksia, mikäli aineiston vertausjärjestelmä on lueteltu kyseisessä taulukossa.</p>
 </div>
 <div class="paragraph">
-<p>Suomessa on yleisesti käytössä spatiaalinen vertausjärjestelmä ETRS-TM35FIN, joka on <a href="#JHS_197">[JHS_197]</a>:n mukainen
+<p>Suomessa on yleisesti käytössä spatiaalinen vertausjärjestelmä ETRS-TM35FIN, joka on <a href="#JHS_197">[JHS 197]</a>:n mukainen
 suositeltu tasokoortinaattijärjestelmä koko Suomen alueen kattaville aineistoille. ETRS-TM35FIN-järjestelmän
-mukaiset koordinaatistot eivät sisälly <a href="#TG_MD_20">[TG_MD_20]</a>:n Annex D.4:n taulukkoon.</p>
+mukaiset koordinaatistot eivät sisälly <a href="#TG_MD_20">[TG Metadata 2.0]</a>:n Annex D.4:n taulukkoon.</p>
 </div>
 <table id="vaatimus-tm35fin-tunnus" class="tableblock frame-all grid-all" style="width: 90%;">
 <colgroup>
@@ -1183,7 +1287,7 @@ tulee palauttaa käytetyn ETRS-TM35FIN-koordinaatiston URI-tunnus.</p></td>
 <div class="paragraph">
 <p>Alla on listattu resurssin tunnistamistietoihin
 liittyvät INSPIRE-vaatimukset. Näiden vaatimusten tarkemmat kuvaukset löytyvät
-dokumentista <a href="#TG_MD_20">[TG_MD_20]</a>.</p>
+dokumentista <a href="#TG_MD_20">[TG Metadata 2.0]</a>.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
 <caption class="title">Taulukko 6. Resurssin tunnistamistietoihin kohdistuvat INSPIRE-vaatimukset</caption>
@@ -1280,7 +1384,7 @@ dokumentista <a href="#TG_MD_20">[TG_MD_20]</a>.</p>
 <div class="sect3">
 <h4 id="_aineiston_yksilöivä_tunnus"><a class="anchor" href="#_aineiston_yksilöivä_tunnus"></a>6.4.1. Aineiston yksilöivä tunnus</h4>
 <div class="paragraph">
-<p>INSPIRE-aineistoille on annettava yksilöivä URI-muotoinen tunnus (<a href="#TG_MD_20">[TG_MD_20]</a>, TG Requirement 1.3). Lisäksi
+<p>INSPIRE-aineistoille on annettava yksilöivä URI-muotoinen tunnus (<a href="#TG_MD_20">[TG Metadata 2.0]</a>, TG Requirement 1.3). Lisäksi
 suositellaan, että aineiston tunnus on pysyvä (TG Recommendation 1.3), että käytettävä URI-tunnus on
 HTTP- tai HTTPS-protokollan mukainen URL-osoite (TG Recommendation 1.2), ja että aineiston tunnus tulisi
 ilmaista käyttäen <code>gmd:MD_Identifier</code>-elementtiä (TG Recommendation 1.1).</p>
@@ -1353,7 +1457,7 @@ palauttaa aineiston päivitystiheystieto:<br>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>INSPIRE <a href="#TG_MD_20">[TG_MD_20]</a> TG Requirement C.11:ssa vaaditaan, että aineiston aikaviite annetaan vähintään yhdellä
+<p>INSPIRE <a href="#TG_MD_20">[TG Metadata 2.0]</a> TG Requirement C.11:ssa vaaditaan, että aineiston aikaviite annetaan vähintään yhdellä
 seuraavista tavoista:</p>
 </div>
 <div class="ulist">
@@ -1429,7 +1533,7 @@ saatavissa. Erotuskyky tulee tällöin antaa joko mittakaavana (equivalent scale
 <div class="paragraph">
 <p>Mittakaava tai näytetiheys ei ole kaikista tarkoituksenmukaisin tapa ilmaista kaikkien PTA-aineiston
 yksityiskohtaisuuden tasoa. Esimerkiksi rakennetun ympäristön CityGML-aineistoissa yksityiskohtaisuus
-ilmaistaan CityGML-standardissa määritellyillä level of detail -tasoilla (LOD0 - LOD4) <a href="#CityGML">[CityGML]</a>.
+ilmaistaan CityGML-standardissa määritellyillä level of detail -tasoilla (LOD0 - LOD4) <a href="#CityGML">[CityGML 2.0]</a>.
 PTA-metatietokuvauksessa suositellaan tällaisissa tapauksissa käytettäväksi
 vaatimuksenmukaisuus-viittausta osana laatutietoja (ks. <a href="#rec-lod">Suositus 3</a>)</p>
 </div>
@@ -1529,7 +1633,7 @@ joka palauttaisi kaikki ko. sanaston sanat, vaikka vapaasanahakua voikin rajata 
 <h4 id="_aineiston_saatavuuden_ja_käytön_rajoitteet"><a class="anchor" href="#_aineiston_saatavuuden_ja_käytön_rajoitteet"></a>6.4.5. Aineiston saatavuuden ja käytön rajoitteet</h4>
 <div class="paragraph">
 <p>INSPIRE-metatietovaatimusten mukaan aineistojen julkinen saatavuus ja käytön rajoitteet ilmaistaan erillisinä
-metatietoelementteinä (<a href="#TG_MD_20">[TG_MD_20]</a>, luku 2.3.6 "Limitations on public access" ja
+metatietoelementteinä (<a href="#TG_MD_20">[TG Metadata 2.0]</a>, luku 2.3.6 "Limitations on public access" ja
 luku 2.3.7 "Conditions applying to access and use").</p>
 </div>
 <div class="paragraph">
@@ -1541,7 +1645,7 @@ tähän tarkoitukseen määritellyn INSPIRE-koodilistan avulla.
 PTA-aineistojen julkiseen saatavuuteen liittyen ei vaadita INSPIRE-vaatimukset ylittäviä metatietoja.</p>
 </div>
 <div class="listingblock">
-<div class="title">Esimerkki&#160;2: Aineiston julkista saatavuutta rajoitettu INSPIRE-direktiin artiklan 13(1) perusteella, esimerkki suoraan <a href="#TG_MD_20">[TG_MD_20]</a>:sta. Esimerkissa metatiedon kieli on ranska.</div>
+<div class="title">Esimerkki&#160;2: Aineiston julkista saatavuutta rajoitettu INSPIRE-direktiin artiklan 13(1) perusteella, esimerkki suoraan <a href="#TG_MD_20">[TG Metadata 2.0]</a>:sta. Esimerkissa metatiedon kieli on ranska.</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="xml"><span></span>/*/gmd:identificationInfo/*/gmd:resourceConstraints:
 
@@ -1583,7 +1687,7 @@ tai</p>
 tähän tarkoitukseen määritellyn INSPIRE-koodilistan avulla.</p>
 </div>
 <div class="paragraph">
-<p>Lisäksi <a href="#TG_MD_20">[TG_MD_20]</a>:ssa vaaditaan, että vaatimusten C.17 ja C.18 kuvaamia rajoitustietoja ei saa
+<p>Lisäksi <a href="#TG_MD_20">[TG Metadata 2.0]</a>:ssa vaaditaan, että vaatimusten C.17 ja C.18 kuvaamia rajoitustietoja ei saa
 ilmaista saman <code>gmd:resourceConstraints</code>-elemementin avulla.</p>
 </div>
 <div class="paragraph">
@@ -1640,7 +1744,7 @@ sen hyödyntämiseen tietyissä käyttötapauksissa tai sovellusalueilla.</p></t
 <div class="paragraph">
 <p>Alla on listattu täydellisyyden vuoksi jakelutietoihin
 liittyvät INSPIRE-vaatimukset. Näiden vaatimusten tarkemmat kuvaukset löytyvät
-dokumentista <a href="#TG_MD_20">[TG_MD_20]</a>.</p>
+dokumentista <a href="#TG_MD_20">[TG Metadata 2.0]</a>.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
 <caption class="title">Taulukko 7. Jakelutietoihin kohdistuvat INSPIRE-vaatimukset</caption>
@@ -1748,7 +1852,7 @@ rajapintapalvelun tyypin perusteella taulukon 7 mukaisesti.</p>
 tulee XPath-kyselyn<br>
 <code>/*/gmd:distributionInfo[1]/*/gmd:transferOptions/*/gmd:onLine/*[./gmd:linkage/gmd:URL and ./gmd:function/gmd:CI_OnLineFunctionCode/@codeListValue='download' and ./gmd:protocol/gmx:Anchor/@xlink:href='http://inspire.ec.europa.eu/id/ats/download-service/3.1/predefined-wfs']/gmd:name/gco:CharacterString/text()</code>
 palauttaa aineiston INSPIRE-tunnus. Tämän tunnuksen avulla kyseisestä WFS-rajapalvelusta voidaan hakea metatiedon
-kuvaama aineisto tallennetun kyselyn avulla <a href="#TG_DS_31">[TG_DS_31]</a>:n vaatimusten TG Requirement 49, 50 ja 51 mukaisesti.</p></td>
+kuvaama aineisto tallennetun kyselyn avulla <a href="#TG_DS_31">[TG Download Services 3.1]</a>:n vaatimusten TG Requirement 49, 50 ja 51 mukaisesti.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1790,7 +1894,7 @@ kuvaama aineisto tallennetun kyselyn avulla <a href="#TG_DS_31">[TG_DS_31]</a>:n
 <p class="tableblock">Mikäli Vaatimuksen 11 mukainen linkki rajapintapalveluun on tyyppiä INSPIRE Pre-defined Dataset Atom,
 tulee XPath-kyselyn<br>
 <code>/*/gmd:distributionInfo[1]/*/gmd:transferOptions/*/gmd:onLine/*[./gmd:linkage/gmd:URL and ./gmd:function/gmd:CI_OnLineFunctionCode/@codeListValue='download' and ./gmd:protocol/gmx:Anchor/@xlink:href='http://inspire.ec.europa.eu/id/ats/download-service/3.1/predefined-atom']/gmd:name/gco:CharacterString/text()</code>
-palauttaa <a href="#TG_DS_31">[TG_DS_31]</a>:n
+palauttaa <a href="#TG_DS_31">[TG Download Services 3.1]</a>:n
 vaatimuksen TG Requirement 9 mukainen metatiedon kuvaaman aineiston entry:n tunnus (<code>id</code>) Atom-palvelun
 Download Service -syötteessä.</p></td>
 </tr>
@@ -1897,7 +2001,7 @@ tämän INSPIRE-vaatimuksen lisäksi.</p>
 <div class="paragraph">
 <p>Alla on listattu laatutietoihin
 liittyvät INSPIRE-vaatimukset. Näiden vaatimusten tarkemmat kuvaukset löytyvät
-dokumentista <a href="#TG_MD_20">[TG_MD_20]</a>.</p>
+dokumentista <a href="#TG_MD_20">[TG Metadata 2.0]</a>.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
 <caption class="title">Taulukko 9. Laatutietoihin kohdistuvat INSPIRE-vaatimukset</caption>
@@ -2077,35 +2181,45 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 <div class="sect1">
 <h2 id="Viitteet"><a class="anchor" href="#Viitteet"></a>Liite B: Viitteet</h2>
 <div class="sectionbody">
-<div id="ISO_19115" class="paragraph">
-<p><a href="#ISO_19115">[ISO_19115]</a> EN ISO 19115:2003, Geographic information - Metadata, <a href="https://www.iso.org/standard/26020.html" class="bare">https://www.iso.org/standard/26020.html</a></p>
-</div>
-<div id="ISO_19139" class="paragraph">
-<p><a href="#ISO_19139">[ISO_19139]</a> ISO 19139:2007 Geographic information&#8201;&#8212;&#8201;Metadata&#8201;&#8212;&#8201;XML schema implementation, <a href="https://www.iso.org/standard/32557.html" class="bare">https://www.iso.org/standard/32557.html</a></p>
-</div>
-<div id="ISO_639-2" class="paragraph">
-<p><a href="#ISO_639-2">[ISO_639-2]</a> ISO 639-2:1998 Codes for the representation of names of languages&#8201;&#8212;&#8201;Part 2: Alpha-3 code, <a href="https://www.iso.org/standard/4767.html" class="bare">https://www.iso.org/standard/4767.html</a></p>
-</div>
-<div id="TG_MD_20" class="paragraph">
-<p><a href="#TG_MD_20">[TG_MD_20]</a> Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0, <a href="https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139" class="bare">https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139</a></p>
-</div>
-<div id="TG_DS_31" class="paragraph">
-<p><a href="#TG_DS_31">[TG_DS_31]</a> Technical Guidance for the implementation of INSPIRE Download Services, version 3.1, <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" class="bare">https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services</a></p>
-</div>
-<div id="JHS_158" class="paragraph">
-<p><a href="#JHS_158">[JHS_158]</a> JHS 158 Paikkatietoaineistojen ja -palveluiden metatiedot, vuoden 2018 versio, <a href="http://www.jhs-suositukset.fi/suomi/jhs158" class="bare">http://www.jhs-suositukset.fi/suomi/jhs158</a></p>
-</div>
-<div id="JHS_197" class="paragraph">
-<p><a href="#JHS_197">[JHS_197]</a> JHS 197  EUREF-FIN -koordinaattijärjestelmät, niihin liittyvät muunnokset ja karttalehtijako, vuoden 2016 versio, <a href="http://www.jhs-suositukset.fi/suomi/jhs197" class="bare">http://www.jhs-suositukset.fi/suomi/jhs197</a></p>
-</div>
-<div id="CityGML" class="paragraph">
-<p><a href="#CityGML">[CityGML]</a> OGC City Geography Markup Language (CityGML) Encoding Standard, version 2.0, OGC 12-019, <a href="https://portal.opengeospatial.org/files/?artifact_id=47842" class="bare">https://portal.opengeospatial.org/files/?artifact_id=47842</a></p>
-</div>
-<div id="WCS_20" class="paragraph">
-<p><a href="#WCS_20">[WCS_20]</a> OGC Web Coverage Service (WCS) Interface Standard - Core, version 2.1, OGC 17-089r1, <a href="http://docs.opengeospatial.org/is/17-089r1/17-089r1.html" class="bare">http://docs.opengeospatial.org/is/17-089r1/17-089r1.html</a></p>
-</div>
-<div id="SOS_20" class="paragraph">
-<p><a href="#SOS_20">[SOS_20]</a> OGC Sensor Observation Service Interface Standard, OGC 17-089r1, <a href="https://portal.opengeospatial.org/files/?artifact_id=47599" class="bare">https://portal.opengeospatial.org/files/?artifact_id=47599</a></p>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="ISO_19115"></a>[ISO 19115] EN ISO 19115:2003, Geographic information - Metadata, <a href="https://www.iso.org/standard/26020.html" class="bare">https://www.iso.org/standard/26020.html</a></p>
+</li>
+<li>
+<p><a id="ISO_19139"></a>[ISO 19139] ISO 19139:2007 Geographic information&#8201;&#8212;&#8201;Metadata&#8201;&#8212;&#8201;XML schema implementation, <a href="https://www.iso.org/standard/32557.html" class="bare">https://www.iso.org/standard/32557.html</a></p>
+</li>
+<li>
+<p><a id="ISO_639-2"></a>[ISO 639-2] ISO 639-2:1998 Codes for the representation of names of languages&#8201;&#8212;&#8201;Part 2: Alpha-3 code, <a href="https://www.iso.org/standard/4767.html" class="bare">https://www.iso.org/standard/4767.html</a></p>
+</li>
+<li>
+<p><a id="TG_MD_20"></a>[TG Metadata 2.0] Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0, <a href="https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139" class="bare">https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139</a></p>
+</li>
+<li>
+<p><a id="TG_DS_31"></a>[TG Download Services 3.1] Technical Guidance for the implementation of INSPIRE Download Services, version 3.1, <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" class="bare">https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services</a></p>
+</li>
+<li>
+<p><a id="JHS_158"></a>[JHS 158] JHS 158 Paikkatietoaineistojen ja -palveluiden metatiedot, vuoden 2018 versio, <a href="http://www.jhs-suositukset.fi/suomi/jhs158" class="bare">http://www.jhs-suositukset.fi/suomi/jhs158</a></p>
+</li>
+<li>
+<p><a id="JHS_197"></a>[JHS 197] JHS 197  EUREF-FIN -koordinaattijärjestelmät, niihin liittyvät muunnokset ja karttalehtijako, vuoden 2016 versio, <a href="http://www.jhs-suositukset.fi/suomi/jhs197" class="bare">http://www.jhs-suositukset.fi/suomi/jhs197</a></p>
+</li>
+<li>
+<p><a id="CityGML"></a>[CityGML 2.0] OGC City Geography Markup Language (CityGML) Encoding Standard, version 2.0, OGC 12-019, <a href="https://portal.opengeospatial.org/files/?artifact_id=47842" class="bare">https://portal.opengeospatial.org/files/?artifact_id=47842</a></p>
+</li>
+<li>
+<p><a id="WCS"></a>[WCS 2.0] OGC Web Coverage Service (WCS) Interface Standard - Core, version 2.1, OGC 17-089r1, <a href="http://docs.opengeospatial.org/is/17-089r1/17-089r1.html" class="bare">http://docs.opengeospatial.org/is/17-089r1/17-089r1.html</a></p>
+</li>
+<li>
+<p><a id="SOS"></a>[SOS 2.0] OGC Sensor Observation Service Interface Standard, OGC 17-089r1, <a href="https://portal.opengeospatial.org/files/?artifact_id=47599" class="bare">https://portal.opengeospatial.org/files/?artifact_id=47599</a></p>
+</li>
+<li>
+<p><a id="Käyttötarveselvitys"></a>[Käyttötarveselvitys] Lepistö, Jukka: Paikkatietolusta - Selvitys paikkatietoaineistojen metatietoprofiilin tarpeista ja käytöstä, 2018</p>
+</li>
+<li>
+<p><a id="Älykäs_haku"></a>[Älykäs_haku] "Äly(käs) haku hoi, älä jätä! Paikkatiedot tehokäyttöön metatietojen avulla", web-artikkeli, <a href="http://www.paikkatietoalusta.fi/ajankohtaista/alykas-haku-hoi-ala-jata-paikkatiedot-tehokayttoon-metatietojen-avulla" class="bare">http://www.paikkatietoalusta.fi/ajankohtaista/alykas-haku-hoi-ala-jata-paikkatiedot-tehokayttoon-metatietojen-avulla</a></p>
+</li>
+</ul>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2164,7 +2278,7 @@ Ensure that there is a conformance class for each requirements class and a test 
 </div>
 <div id="footer">
 <div id="footer-text">
-Viimeksi päivitetty 2018-11-05 13:14:07 UTC
+Viimeksi päivitetty 2018-11-08 13:44:35 UTC
 </div>
 </div>
 </body>
