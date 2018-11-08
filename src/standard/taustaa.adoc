@@ -51,8 +51,8 @@ lataamiseksi erilaisia rajapintapalveluja käyttäen. Tähän vastaavat Vaatimuk
 johtaa puutteelisten tai virheellisten halutulosten esittämiseen. Myös aineistojen tuottajien on
 hankalaa tietää mitä sanastoja ja avainsanoja aineistojen metatiedoissa tulisi käyttää. Tarvitaan
 nykyistä parempaa ohjeistusta avainsanojen ja -sanastojen käytöstä osana paikkatietoaineitojen
-metatietoja. Tähän vastaavat Vaatimukset <<#vaatimus-asiasana-ankkkuri, 7>>,
-<<#vaatimus-asiasanasato-ankkkuri, 8>> ja <<#vaatimus-pta.-asiasanat, 9>>.
+metatietoja. Tähän vastaavat Vaatimukset <<#vaatimus-asiasana-ankkuri, 7>>,
+<<#vaatimus-asiasanasto-ankkuri, 8>> ja <<#vaatimus-pta-asiasanat, 9>>.
 
 * Metatietojen perusteella on toisinaan vaikea tietää milloin aineisto on kerätty ja minkä hetken tilannetta
 se kuvaa. Tähän vastaavat Vaatimukset <<#vaatimus-paivitystiheys,5>> ja
