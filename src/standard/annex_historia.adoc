@@ -6,5 +6,5 @@
 |===
 |Päiväys |Versio |Editori | Pääasiallinen muutos |Kuvaus
 |2018-11-06 |0.1 |Ilkka Rinne |kaikki |Ensimmäinen versio (luonnos)
-|2018-11-09 |0.5 |Ilkka Rinne |Johdantoluvut | Täydennetty luonnos
+|2018-11-09 |0.5 |Ilkka Rinne |Johdantoluvut, lisätty virheellisesti puuttunut vähintään yhden Paikkatietohakemiston hakusanaston avainsanavaatimus | Täydennetty luonnos
 |===

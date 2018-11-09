@@ -418,9 +418,12 @@ elementeissä, jotka löytyvät XPath-kyselyn
 [./pass:[*]/gmd:thesaurusName/pass:[*]/gmd:title/gmx:Anchor/@xlink:href='http://paikkatiedot.fi/def/1001001/'] +
 /pass:[*]/gmd:keyword/gmx:Anchor`
 tuloksena, Vaatimuksen {x-vaatimus-asiasana-ankkuri-nro} mukaisesti.
+
+Kunkin PTA-aineiston metatietokuvauksessa on käytettävä vähintään yhtä Paikkatietohakemiston
+hakusanaston avainsanaa.
 |===
 
-IMPORTANT: Mistä Paikkatietohakemiston hakusanaston sanat ja niiden URL-osoitteet voi löytää? Fintossa ei voi tehdä hakua,
+WARNING: Mistä Paikkatietohakemiston hakusanaston sanat ja niiden URL-osoitteet voi löytää? Fintossa ei voi tehdä hakua,
 joka palauttaisi kaikki ko. sanaston sanat, vaikka vapaasanahakua voikin rajata koskemaan vain Paikkatietohakemiston hakusanastoa.
 
 ==== Aineiston saatavuuden ja käytön rajoitteet

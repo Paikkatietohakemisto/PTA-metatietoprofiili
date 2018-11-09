@@ -524,16 +524,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tbody>
 </table>
 <h3 id="_i_lyhennelmä" class="discrete">i. Lyhennelmä</h3>
-<div class="quoteblock abstract">
-<blockquote>
 <div class="paragraph">
 <p>Paikkatietoalusta - metatietoprofiili -määrittely laajentaa <a href="#ISO_19115">[ISO 19115]</a>-
 ja <a href="#ISO_19139">[ISO 19139]</a>-standardien, INSPIRE-direktiivin teknisen ohjeistuksen (<a href="#TG_MD_20">[TG Metadata 2.0]</a>),
 ja <a href="#JHS_158">[JHS 158]</a>-suosituksen vaatimuksia vastaamaan PTA-aineistojen metatiedoilta vaadittavia
 erityispiirteitä. PTA-aineistojen metatietokuvausten tulee täyttää kaikki tämän määrittelyn
 pakolliset vaatimukset.</p>
-</div>
-</blockquote>
 </div>
 <h3 id="_ii_avainsanat" class="discrete">ii. Avainsanat</h3>
 <div class="paragraph">
@@ -763,7 +759,7 @@ tiedontuottajan kanssa, ja jolle on annettu erityinen PTA-aineisto -status.</p>
 <dt>rajapintapalvelu</dt>
 <dd>
 <p>Palvelu, joka tarjotaan sovelluksen avulla tietokoneverkon kautta muiden sovellusten saataville
-(Geoinfromatiikan sanasto)</p>
+(Geoinformatiikan sanasto)</p>
 </dd>
 <dt>Paikkatietojatkumo (coverage)</dt>
 <dd>
@@ -1468,7 +1464,7 @@ palauttaa aineiston päivitystiheystieto:<br>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tiedoksi</div>
+<div class="title">Huomautus</div>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -1543,7 +1539,7 @@ saatavissa. Erotuskyky tulee tällöin antaa joko mittakaavana (equivalent scale
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tiedoksi</div>
+<div class="title">Huomautus</div>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -1627,15 +1623,17 @@ elementeissä, jotka löytyvät XPath-kyselyn
 <code>/*/gmd:identificationInfo[1]/*/gmd:descriptiveKeywords<br>
 [./*/gmd:thesaurusName/*/gmd:title/gmx:Anchor/@xlink:href='http://paikkatiedot.fi/def/1001001/']<br>
 /*/gmd:keyword/gmx:Anchor</code>
-tuloksena, Vaatimuksen 7 mukaisesti.</p></td>
+tuloksena, Vaatimuksen 7 mukaisesti.</p>
+<p class="tableblock">Kunkin PTA-aineiston metatietokuvauksessa on käytettävä vähintään yhtä Paikkatietohakemiston
+hakusanaston avainsanaa.</p></td>
 </tr>
 </tbody>
 </table>
-<div class="admonitionblock important">
+<div class="admonitionblock warning">
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tärkeää</div>
+<div class="title">Ongelma</div>
 </td>
 <td class="content">
 Mistä Paikkatietohakemiston hakusanaston sanat ja niiden URL-osoitteet voi löytää? Fintossa ei voi tehdä hakua,
@@ -2095,7 +2093,7 @@ laatuluokituksen laskemiseen.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tiedoksi</div>
+<div class="title">Huomautus</div>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -2164,18 +2162,6 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 <div class="sect1">
 <h2 id="_vaatimuksenmukaisuuden_abstaktit_testisarjat_normatiivinen"><a class="anchor" href="#_vaatimuksenmukaisuuden_abstaktit_testisarjat_normatiivinen"></a>Liite A: Vaatimuksenmukaisuuden abstaktit testisarjat (normatiivinen)</h2>
 <div class="sectionbody">
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Tiedoksi</div>
-</td>
-<td class="content">
-Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)
-</td>
-</tr>
-</table>
-</div>
 <div class="sect2">
 <h3 id="_vaatimuksenmukaisuusluokka_pta_aineisto_2"><a class="anchor" href="#_vaatimuksenmukaisuusluokka_pta_aineisto_2"></a>A.1. Vaatimuksenmukaisuusluokka PTA-aineisto</h3>
 <h4 id="_vaatimus_1" class="discrete">Vaatimus 1:</h4>
@@ -2614,7 +2600,7 @@ Ensure that there is a conformance class for each requirements class and a test 
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">2018-11-09</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">0.5</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Ilkka Rinne</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Johdantoluvut</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Johdantoluvut, lisätty virheellisesti puuttunut vähintään yhden Paikkatietohakemiston hakusanaston avainsanavaatimus</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Täydennetty luonnos</p></td>
 </tr>
 </tbody>
@@ -2679,7 +2665,7 @@ Ensure that there is a conformance class for each requirements class and a test 
 </div>
 <div id="footer">
 <div id="footer-text">
-Viimeksi päivitetty 2018-11-09 14:55:02 UTC
+Viimeksi päivitetty 2018-11-09 20:06:44 UTC
 </div>
 </div>
 </body>

@@ -4,7 +4,7 @@
 :encoding: utf-8
 :lang: fi
 :toc: macro
-:toc-placement!:
+//:toc-placement!:
 :toclevels: 3
 :numbered:
 :sectanchors:
@@ -13,7 +13,7 @@
 :imagesdir: images
 :appendix-caption: Liitteet
 :appendix-refsig: {appendix-caption}
-:caution-caption: Huomaa
+:caution-caption: Varoitus
 :chapter-label: Luku
 //:chapter-refsig: {chapter-label}
 :example-caption: Esimerkki
@@ -22,7 +22,7 @@
 :last-update-label: Viimeksi päivitetty
 ifdef::listing-caption[:listing-caption: Listaus]
 //:manname-title: NIMI
-:note-caption: Tiedoksi
+:note-caption: Huomautus
 //:part-refsig: ???
 ifdef::preface-title[:preface-title: Esipuhe]
 //:section-refsig: ???
@@ -30,7 +30,7 @@ ifdef::preface-title[:preface-title: Esipuhe]
 :toc-title: Sisällysluettelo
 :untitled-label: Nimetön
 :version-label: Versio
-:warning-caption: Varoitus
+:warning-caption: Ongelma
 :table-caption: Taulukko
 :x-versio: 0.5
 :x-vaatimus-metatiedon-kieli-nro: 1
@@ -152,7 +152,7 @@ PTA-aineisto:: Tietoaineisto, jonka käytöstä osana Paikkatietoalustan palvelu
 tiedontuottajan kanssa, ja jolle on annettu erityinen PTA-aineisto -status.
 PTA-laatuvahti:: Paikkatietoalustan sisältämä aineistojen validointipalvelu.
 rajapintapalvelu:: Palvelu, joka tarjotaan sovelluksen avulla tietokoneverkon kautta muiden sovellusten saataville
-(Geoinfromatiikan sanasto)
+(Geoinformatiikan sanasto)
 Paikkatietojatkumo (coverage):: Alueen kattavana pintana esitetty paikkatieto (Geoinformatiikan sanasto)
 Jatkumotunnus (coverage identifier):: <<WCS_20>>-standardin mukainen yksittäisen ladattavaksi asetetun paikkatietojatkumon tunniste, joka on
 yksilöivä ko. palvelun sisällä.

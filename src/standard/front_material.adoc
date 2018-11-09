@@ -1,18 +1,15 @@
 :sectnums!:
+
 [discrete]
 === i. Lyhennelmä
-[abstract]
---
 Paikkatietoalusta - metatietoprofiili -määrittely laajentaa <<ISO_19115>>-
 ja <<ISO_19139>>-standardien, INSPIRE-direktiivin teknisen ohjeistuksen (<<TG_MD_20>>),
 ja <<JHS_158>>-suosituksen vaatimuksia vastaamaan PTA-aineistojen metatiedoilta vaadittavia
 erityispiirteitä. PTA-aineistojen metatietokuvausten tulee täyttää kaikki tämän määrittelyn
 pakolliset vaatimukset.
---
 
 [discrete]
 === ii. Avainsanat
-
 paikkatieto, metatieto, profiili, paikkatietoalusta, standardi, xml
 :keywords: paikkatieto, metatieto, profiili, paikkatietoalusta, standardi, xml
 
