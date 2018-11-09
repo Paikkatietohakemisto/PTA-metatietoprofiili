@@ -27,6 +27,6 @@ Paikkatietoalusta-hankkeessa havaittuihin aineistojen metatiedon sisältöön ja
 liittyviin kehitystarpeisiin.
 
 Laajennokset on laadittu siten, että vaatimusten ja suositusten mukaiset
-metatietokuvaukset ovat sellaisenaan <<<INSPIRE>>- ja <<JHS_158>> -vaatimusten mukaisia.
+metatietokuvaukset ovat sellaisenaan <<INSPIRE>>- ja <<JHS_158>> -vaatimusten mukaisia.
 
 :sectnums:

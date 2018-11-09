@@ -15,7 +15,7 @@
 - [[[CityGML, CityGML 2.0]]] OGC City Geography Markup Language (CityGML) Encoding Standard, version 2.0, OGC 12-019, https://portal.opengeospatial.org/files/?artifact_id=47842
 - [[[WCS, WCS 2.0]]] OGC Web Coverage Service (WCS) Interface Standard - Core, version 2.1, OGC 17-089r1, http://docs.opengeospatial.org/is/17-089r1/17-089r1.html
 - [[[SOS, SOS 2.0]]] OGC Sensor Observation Service Interface Standard, OGC 17-089r1, https://portal.opengeospatial.org/files/?artifact_id=47599
-- [[[selvitys,Käyttötarveselvitys]]] Lepistö, Jukka: Paikkatietolusta - Selvitys paikkatietoaineistojen metatietoprofiilin tarpeista ja käytöstä, 2018
+- [[[kayttotarveselvitys,Käyttötarveselvitys]]] Lepistö, Jukka: Paikkatietolusta - Selvitys paikkatietoaineistojen metatietoprofiilin tarpeista ja käytöstä, 2018
 - [[[alykas_haku, Älykäs haku]]] "Äly(käs) haku hoi, älä jätä! Paikkatiedot tehokäyttöön metatietojen avulla", web-artikkeli, http://www.paikkatietoalusta.fi/ajankohtaista/alykas-haku-hoi-ala-jata-paikkatiedot-tehokayttoon-metatietojen-avulla
 - [[[XPath_20, XPath 2.0]]] XML Path Language (XPath) 2.0 (Second Edition), World Wide Web Consortium (W3C) Recommendation, https://www.w3.org/TR/2010/REC-xpath20-20101214/
 - [[[URI]]] Uniform Resource Identifier (URI): Generic Syntax, Internet Engineering Task Force RFC 3986, https://tools.ietf.org/html/rfc3986
