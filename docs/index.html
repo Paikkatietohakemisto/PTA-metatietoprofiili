@@ -523,113 +523,272 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 </tbody>
 </table>
-<div style="page-break-after: always;"></div>
-<table class="tableblock frame-none grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong class="big">Paikkatietoalusta - metatietoprofiili</strong></p></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-none grid-none stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-center valign-top" style="background-color: #FFFFFF;">&#169; 2018 Maanmittauslaitos</th>
-</tr>
-</thead>
-</table>
+<h3 id="_i_lyhennelmä" class="discrete">i. Lyhennelmä</h3>
+<div class="quoteblock abstract">
+<blockquote>
+<div class="paragraph">
+<p>Paikkatietoalusta - metatietoprofiili -määrittely laajentaa <a href="#ISO_19115">[ISO 19115]</a>-
+ja <a href="#ISO_19139">[ISO 19139]</a>-standardien, INSPIRE-direktiivin teknisen ohjeistuksen (<a href="#TG_MD_20">[TG Metadata 2.0]</a>),
+ja <a href="#JHS_158">[JHS 158]</a>-suosituksen vaatimuksia vastaamaan PTA-aineistojen metatiedoilta vaadittavia
+erityispiirteitä. PTA-aineistojen metatietokuvausten tulee täyttää kaikki tämän määrittelyn
+pakolliset vaatimukset.</p>
+</div>
+</blockquote>
+</div>
+<h3 id="_ii_avainsanat" class="discrete">ii. Avainsanat</h3>
+<div class="paragraph">
+<p>paikkatieto, metatieto, profiili, paikkatietoalusta, standardi, xml
+:keywords: paikkatieto, metatieto, profiili, paikkatietoalusta, standardi, xml</p>
+</div>
+<h3 id="_iii_johdanto" class="discrete">iii.   Johdanto</h3>
+<div class="paragraph">
+<p>Paikkatietoalustan keskeisten tietoaineistojen, ns. PTA-aineistojen, metatietokuvausten
+tulee täyttää yleisiä metatietovaatimuksia tiukemmat vaatimukset, jotta aineistojen
+löytäminen, arvionti ja käyttöönotto olisi riittävän helppoa ja suoravaista.
+Lisävaatimukset perustuvat PTA-metatietoprofiili-projektissa tehdyssä
+käyttötarveselvityksessä raportoituihin ongelmiin ja muihin
+Paikkatietoalusta-hankkeessa havaittuihin aineistojen metatiedon sisältöön ja rakenteeseen
+liittyviin kehitystarpeisiin.</p>
+</div>
+<div class="paragraph">
+<p>Laajennokset on laadittu siten, että vaatimusten ja suositusten mukaiset
+metatietokuvaukset ovat sellaisenaan &lt;<a href="#INSPIRE">[INSPIRE]</a>- ja <a href="#JHS_158">[JHS 158]</a> -vaatimusten mukaisia.</p>
+</div>
 <div style="page-break-after: always;"></div>
 <div id="toc" class="toc">
 <div id="toctitle" class="title">Sisällysluettelo</div>
 <ul class="sectlevel1">
-<li><a href="#_taustaa">1. Taustaa</a>
-<ul class="sectlevel2">
-<li><a href="#_pta_kohtaisten_metatietovaatimusten_perustelut">1.1. PTA-kohtaisten metatietovaatimusten perustelut</a></li>
-</ul>
-</li>
+<li><a href="#_soveltamisala">1. Soveltamisala</a></li>
 <li><a href="#_vaatimuksenmukaisuus">2. Vaatimuksenmukaisuus</a></li>
-<li><a href="#_velvoittavat_viittaukset">3. Velvoittavat viittaukset</a></li>
-<li><a href="#_termit_ja_määritelmät">4. Termit ja määritelmät</a></li>
-<li><a href="#_dokumentin_konventiot">5. Dokumentin konventiot</a>
+<li><a href="#_dokumentin_konventiot">3. Dokumentin konventiot</a>
 <ul class="sectlevel2">
-<li><a href="#_tunnisteet">5.1. Tunnisteet</a></li>
+<li><a href="#_tunnisteet">3.1. Tunnisteet</a></li>
 </ul>
 </li>
-<li><a href="#_vaatimuksenmukaisuusluokka_pta_aineisto">6. Vaatimuksenmukaisuusluokka PTA-aineisto</a>
+<li><a href="#_velvoittavat_viittaukset">4. Velvoittavat viittaukset</a></li>
+<li><a href="#_termit_ja_määritelmät">5. Termit ja määritelmät</a></li>
+<li><a href="#_paikkatietoalustan_metatietoprofiili">6. Paikkatietoalustan metatietoprofiili</a>
 <ul class="sectlevel2">
-<li><a href="#_yleiset_metatiedon_xml_koodaukseen_kohdistuvat_vaatimukset">6.1. Yleiset metatiedon XML-koodaukseen kohdistuvat vaatimukset</a></li>
-<li><a href="#_metatiedon_tunnistamistiedot">6.2. Metatiedon tunnistamistiedot</a>
-<ul class="sectlevel3">
-<li><a href="#_metatiedon_kieli_ja_monikielisyys">6.2.1. Metatiedon kieli ja monikielisyys</a></li>
-<li><a href="#_metatietokuvauksen_yksilöivä_tunnus">6.2.2. Metatietokuvauksen yksilöivä tunnus</a></li>
+<li><a href="#_pta_kohtaisten_metatietovaatimusten_perustelut">6.1. PTA-kohtaisten metatietovaatimusten perustelut</a></li>
 </ul>
 </li>
-<li><a href="#_vertausjärjestelmä_referencesysteminfo">6.3. Vertausjärjestelmä (referenceSystemInfo)</a></li>
-<li><a href="#_resurssin_tunnistamistiedot_indentificationinfo">6.4. Resurssin tunnistamistiedot (indentificationInfo)</a>
-<ul class="sectlevel3">
-<li><a href="#_aineiston_yksilöivä_tunnus">6.4.1. Aineiston yksilöivä tunnus</a></li>
-<li><a href="#_aineiston_aikaviitteet">6.4.2. Aineiston aikaviitteet</a></li>
-<li><a href="#_sijainnillinen_yksityiskohtaisuus">6.4.3. Sijainnillinen yksityiskohtaisuus</a></li>
-<li><a href="#_avainsanat">6.4.4. Avainsanat</a></li>
-<li><a href="#_aineiston_saatavuuden_ja_käytön_rajoitteet">6.4.5. Aineiston saatavuuden ja käytön rajoitteet</a></li>
-</ul>
-</li>
-<li><a href="#_jakelutiedot_distributioninfo">6.5. Jakelutiedot (distributionInfo)</a>
-<ul class="sectlevel3">
-<li><a href="#_aineiston_latauspalvelujen_osoitteet">6.5.1. Aineiston latauspalvelujen osoitteet</a></li>
-<li><a href="#_aineiston_siirto_tai_tallennusmuoto">6.5.2. Aineiston siirto- tai tallennusmuoto</a></li>
-</ul>
-</li>
-<li><a href="#_laatutiedot_dataqualityinfo">6.6. Laatutiedot (dataQualityInfo)</a></li>
-</ul>
-</li>
-<li><a href="#_muutoshistoria">Liite A: Muutoshistoria</a></li>
-<li><a href="#Viitteet">Liite B: Viitteet</a></li>
-<li><a href="#_vaatimuksenmukaisuuden_abstaktit_testisarjat_normatiivinen">Liite C: Vaatimuksenmukaisuuden abstaktit testisarjat (normatiivinen)</a>
+<li><a href="#_vaatimuksenmukaisuusluokka_pta_aineisto">7. Vaatimuksenmukaisuusluokka PTA-aineisto</a>
 <ul class="sectlevel2">
-<li><a href="#_vaatimuksenmukaisuusluokka_pta_aineisto_2">C.1. Vaatimuksenmukaisuusluokka PTA-aineisto</a>
+<li><a href="#_yleiset_metatiedon_xml_koodaukseen_kohdistuvat_vaatimukset">7.1. Yleiset metatiedon XML-koodaukseen kohdistuvat vaatimukset</a></li>
+<li><a href="#_metatiedon_tunnistamistiedot">7.2. Metatiedon tunnistamistiedot</a>
 <ul class="sectlevel3">
-<li><a href="#_vaatimus_1">C.1.1. Vaatimus 1</a></li>
-<li><a href="#_vaatimus_2">C.1.2. Vaatimus 2</a></li>
+<li><a href="#_metatiedon_kieli_ja_monikielisyys">7.2.1. Metatiedon kieli ja monikielisyys</a></li>
+<li><a href="#_metatietokuvauksen_yksilöivä_tunnus">7.2.2. Metatietokuvauksen yksilöivä tunnus</a></li>
 </ul>
 </li>
+<li><a href="#_vertausjärjestelmä_referencesysteminfo">7.3. Vertausjärjestelmä (referenceSystemInfo)</a></li>
+<li><a href="#_resurssin_tunnistamistiedot_indentificationinfo">7.4. Resurssin tunnistamistiedot (indentificationInfo)</a>
+<ul class="sectlevel3">
+<li><a href="#_aineiston_yksilöivä_tunnus">7.4.1. Aineiston yksilöivä tunnus</a></li>
+<li><a href="#_aineiston_aikaviitteet">7.4.2. Aineiston aikaviitteet</a></li>
+<li><a href="#_sijainnillinen_yksityiskohtaisuus">7.4.3. Sijainnillinen yksityiskohtaisuus</a></li>
+<li><a href="#_avainsanat">7.4.4. Avainsanat</a></li>
+<li><a href="#_aineiston_saatavuuden_ja_käytön_rajoitteet">7.4.5. Aineiston saatavuuden ja käytön rajoitteet</a></li>
 </ul>
 </li>
+<li><a href="#_jakelutiedot_distributioninfo">7.5. Jakelutiedot (distributionInfo)</a>
+<ul class="sectlevel3">
+<li><a href="#_aineiston_latauspalvelujen_osoitteet">7.5.1. Aineiston latauspalvelujen osoitteet</a></li>
+<li><a href="#_aineiston_siirto_tai_tallennusmuoto">7.5.2. Aineiston siirto- tai tallennusmuoto</a></li>
+</ul>
+</li>
+<li><a href="#_laatutiedot_dataqualityinfo">7.6. Laatutiedot (dataQualityInfo)</a></li>
+</ul>
+</li>
+<li><a href="#_vaatimuksenmukaisuuden_abstaktit_testisarjat_normatiivinen">Liite A: Vaatimuksenmukaisuuden abstaktit testisarjat (normatiivinen)</a>
+<ul class="sectlevel2">
+<li><a href="#_vaatimuksenmukaisuusluokka_pta_aineisto_2">A.1. Vaatimuksenmukaisuusluokka PTA-aineisto</a></li>
+</ul>
+</li>
+<li><a href="#_muutoshistoria">Liite B: Muutoshistoria</a></li>
+<li><a href="#viiteluettelo">Liite C: Viiteluettelo</a></li>
 </ul>
 </div>
 <div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p><strong class="big">i.     Lyhennelmä</strong></p>
 </div>
-<div class="quoteblock abstract">
-<blockquote>
-<div class="paragraph">
-<p>TBA</p>
 </div>
-</blockquote>
-</div>
+<div class="sect1">
+<h2 id="_soveltamisala"><a class="anchor" href="#_soveltamisala"></a>1. Soveltamisala</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p><strong class="big">ii.    Avainsanat</strong></p>
-</div>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-<div class="paragraph">
-<p><strong class="big">iii.   Johdanto</strong></p>
-</div>
-<div class="paragraph">
-<p>TBA</p>
+<p>Tätä ohjeistusta sovelletaan PTA-aineistojen <a href="#ISO_19139">[ISO 19139]</a>-standardin mukaisten
+metatietokuvausten laatimiseen ja validointiin.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_taustaa"><a class="anchor" href="#_taustaa"></a>1. Taustaa</h2>
+<h2 id="_vaatimuksenmukaisuus"><a class="anchor" href="#_vaatimuksenmukaisuus"></a>2. Vaatimuksenmukaisuus</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tämä asiakirja määrittelee yhden vaatimuksenmukaisuusluokan '<a href="#luokka-pta-aineisto">PTA-aineisto</a>',
+jonka kohteena on <a href="#ISO_19139">[ISO 19139]</a>-standardin mukainen metatietodokumentti.
+Kaikkien PTA-aineistoja kuvaavien metatietodokumenttien tulee täyttää tämän
+vaatimuksenmukaisuusluokan kaikki vaatimukset.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dokumentin_konventiot"><a class="anchor" href="#_dokumentin_konventiot"></a>3. Dokumentin konventiot</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_tunnisteet"><a class="anchor" href="#_tunnisteet"></a>3.1. Tunnisteet</h3>
+<div class="paragraph">
+<p>Tässä asiakirjassa kuvattujen vaatimusten kokonaisuuteen viitataan absoluuttiselle URI-tunnuksella
+<code><a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5</a></code>.
+Kaikkiin tässä asiakirjassa kuvattuihin vaatimuksiin ja vaatimuksenmukaisuustesteihin viitataan osittaisilla URI-tunnuksilla,
+jotka on määritelty suhteellisina tähän koko asiakirjan URI-tunnukseen nähden. Esimerkiksi Vaatimuksen 1 absoluuttinen
+URI-tunnus on <code><a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5/vaatimukset/vaatimus-metatiedon-kieli" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5/vaatimukset/vaatimus-metatiedon-kieli</a></code>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_velvoittavat_viittaukset"><a class="anchor" href="#_velvoittavat_viittaukset"></a>4. Velvoittavat viittaukset</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Seuraavat normatiiviset asiakirjat sisältävät vaatimuksia ja ehtoja, jotka viittausten kautta ovat
+muodostavat erottamattoman osan tämän dokumentin vaatimuksia. Päivättyjen viitteiden osalta asiakirjojen
+mahdollisia kyseisen päivän jälkeen julkaistuja lisäyksiä tai korjauksia ei oteta huomioon. Päiväämättömien
+viittausten osalta tarkoitetaan kyseisen asiankirjan viimeisintä julkaistua versiota.</p>
+</div>
+<div class="paragraph">
+<p><a href="#ISO_19115">[ISO 19115]</a> EN ISO 19115: 2005, Geographic information - Metadata</p>
+</div>
+<div class="paragraph">
+<p><a href="#ISO_19139">[ISO 19139]</a> ISO/TS 19139: 2007, Geographic information - Metadata - XML schema implementation</p>
+</div>
+<div class="paragraph">
+<p><a href="#ISO_19105">[ISO_19105]</a> EN ISO 19105:2005, Geographic Information – Conformance and testing</p>
+</div>
+<div class="paragraph">
+<p><a href="#ISO_639-2">[ISO 639-2]</a> ISO 639-2:1998, Codes for the representation of names of languages – Part 2: Alpha-3 code</p>
+</div>
+<div class="paragraph">
+<p><a href="#INSPIRE">[INSPIRE]</a> Directive 2007/2/EC of the European Parliament and of the Council of 14 March
+2007 establishing an Infrastructure for Spatial Information in the European Community (INSPIRE)</p>
+</div>
+<div class="paragraph">
+<p><a href="#IR_Metadata">[IR_Metadata]</a> Commission Regulation (EC) No 1205/2008 of 3 December 2008
+implementing Directive 2007/2/EC of the European Parliament and of the Council as regards
+metadata.</p>
+</div>
+<div class="paragraph">
+<p><a href="#IR-ISDSS">[IR-ISDSS]</a> Commission Regulation (EU) No 1089/2010 of 23 November 2010
+implementing Directive 2007/2/EC of the European Parliament and of the Council as regards
+interoperability of spatial data sets and services, as amended by</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Commission Regulation (EU) No 102/2011 of 4 February 2011 amending Regulation (EU) No
+1089/2010 implementing Directive 2007/2/EC of the European Parliament and of the Council
+as regards interoperability of spatial data sets and services;</p>
+</li>
+<li>
+<p>Commission Regulation (EU) No 1253/2013 of 21 October 2013 amending Regulation (EU)
+No 1089/2010 implementing Directive 2007/2/EC as regards interoperability of spatial data
+sets and services; and</p>
+</li>
+<li>
+<p>Commission Regulation (EU) No 1312/2014 of 10 December 2014 amending Regulation (EU)
+No 1089/2010 implementing Directive 2007/2/EC of the European Parliament and of the
+Council as regards interoperability of spatial data services.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="#TG_MD_20">[TG Metadata 2.0]</a> Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0, <a href="https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139" class="bare">https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139</a></p>
+</div>
+<div class="paragraph">
+<p><a href="#JHS_158">[JHS 158]</a> JHS 158 Paikkatietoaineistojen ja -palveluiden metatiedot, vuoden 2018 versio, <a href="http://www.jhs-suositukset.fi/suomi/jhs158" class="bare">http://www.jhs-suositukset.fi/suomi/jhs158</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_termit_ja_määritelmät"><a class="anchor" href="#_termit_ja_määritelmät"></a>5. Termit ja määritelmät</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tämän asiakirjan puitteissä seuraavat termit ja määritelmät ovat voimassa:</p>
+</div>
+<div class="dlist glossary">
+<dl>
+<dt>Vaatimuksenmukaisuusluokka (conformance class)</dt>
+<dd>
+<p>Tietyn laatuvaatimustason
+täyttymiseksi vaadittavien vaatimusten joukko.</p>
+</dd>
+<dt>Abstrakti testisarja (abstract test suite)</dt>
+<dd>
+<p>Abstrakti testausmoduuli, jossa
+on määritelty kaikki nimetyn laatuvaatimustason täyttymiseen edellytettävät vaatimukset.</p>
+</dd>
+<dt>Metatietoelementti</dt>
+<dd>
+<p>Metatietokuvauksen yksittäinen tietoelementti tai sitä vastaava
+metatietokoodauksen osa (esim. XML-elementti).</p>
+</dd>
+<dt>XPath-kysely</dt>
+<dd>
+<p>W3C:n <a href="#XPath_20">[XPath 2.0]</a>-suosituksen mukainen ilmaus, jonka avulla voidaan
+tehdä tarkka sisältökysely rakenteiseen XML-dokumenttiin.</p>
+</dd>
+<dt>URI-tunnus</dt>
+<dd>
+<p>IETF:n <a href="#URI">[URI]</a>-standardin mukainen resurssin tunnus.</p>
+</dd>
+<dt>URL-osoite</dt>
+<dd>
+<p>Uniform Resource Locator, ns. web-osoite, jonka tarkoitus on osoittaa tietoverkon kautta saataville asetettuun
+resurssiin. <a href="#URL">[URL]</a>-osoite on URI-tunnuksen erikoistapaus.</p>
+</dd>
+<dt>Paikkatietoalusta (PTA)</dt>
+<dd>
+<p>Julkisen hallinnon yhteinen paikkatietoalusta -kehityshanke, ko. hankkeen tavoitteena oleva
+järjestelmä, joka mahdollistaa ihmisten, palveluiden ja sovellusten yhteydet toisiinsa.</p>
+</dd>
+<dt>PTA-aineisto</dt>
+<dd>
+<p>Tietoaineisto, jonka käytöstä osana Paikkatietoalustan palveluja on sovittu Paikatietoalustan ja
+tiedontuottajan kanssa, ja jolle on annettu erityinen PTA-aineisto -status.</p>
+</dd>
+<dt>PTA-laatuvahti</dt>
+<dd>
+<p>Paikkatietoalustan sisältämä aineistojen validointipalvelu.</p>
+</dd>
+<dt>rajapintapalvelu</dt>
+<dd>
+<p>Palvelu, joka tarjotaan sovelluksen avulla tietokoneverkon kautta muiden sovellusten saataville
+(Geoinfromatiikan sanasto)</p>
+</dd>
+<dt>Paikkatietojatkumo (coverage)</dt>
+<dd>
+<p>Alueen kattavana pintana esitetty paikkatieto (Geoinformatiikan sanasto)</p>
+</dd>
+<dt>Jatkumotunnus (coverage identifier)</dt>
+<dd>
+<p><a href="#WCS_20">[WCS_20]</a>-standardin mukainen yksittäisen ladattavaksi asetetun paikkatietojatkumon tunniste, joka on
+yksilöivä ko. palvelun sisällä.</p>
+</dd>
+<dt>INSPIRE-tunnus (INSPIRE identifier)</dt>
+<dd>
+<p>INSPIRE-aineiston yksilöivä tunnus.</p>
+</dd>
+<dt>Havaintotarjoomatunnus (observation offering identifier)</dt>
+<dd>
+<p><a href="#SOS_20">[SOS_20]</a>-standardin mukainen yksittäisen latattavaksi asetetun
+havaintoaineiston tunnus, joka on yksilöivä ko. palvelun sisällä.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_paikkatietoalustan_metatietoprofiili"><a class="anchor" href="#_paikkatietoalustan_metatietoprofiili"></a>6. Paikkatietoalustan metatietoprofiili</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Paikkatietoalusta-hankeen tavoitteena on yhtenäistää valtion, maakuntien ja kuntien paikkatiedot ja
@@ -659,7 +818,7 @@ arviointia ja käyttöä haastatelluissa organisaatioissa, sekä Paikkatietoalus
 ylläpitämiin ja julkaisemiin paikkatietoaineistoihin liittyviä onnistumisia ja parannuskohteita.</p>
 </div>
 <div class="sect2">
-<h3 id="_pta_kohtaisten_metatietovaatimusten_perustelut"><a class="anchor" href="#_pta_kohtaisten_metatietovaatimusten_perustelut"></a>1.1. PTA-kohtaisten metatietovaatimusten perustelut</h3>
+<h3 id="_pta_kohtaisten_metatietovaatimusten_perustelut"><a class="anchor" href="#_pta_kohtaisten_metatietovaatimusten_perustelut"></a>6.1. PTA-kohtaisten metatietovaatimusten perustelut</h3>
 <div class="paragraph">
 <p>Käyttötarveselvityksen tuloksia on hyödynnetty määriteltäessä PTA-metatietoprofiilin vaatimuksia.
 Metatietovaatimusten määrittely on tasapainottelua juuri sopivan kuvaustason saavuttamiseksi:
@@ -730,151 +889,7 @@ helpottamiseksi ja käyttövarmuuden parantamiseksi.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_vaatimuksenmukaisuus"><a class="anchor" href="#_vaatimuksenmukaisuus"></a>2. Vaatimuksenmukaisuus</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Tämä asiakirja määrittelee yhden vaatimuksenmukaisuusluokan '<a href="#luokka-pta-aineisto">PTA-aineisto</a>',
-jonka kohteena on <a href="#ISO_19139">[ISO 19139]</a>-standardin mukainen metatietodokumentti.
-Kaikkien PTA-aineistoja kuvaavien metatietodokumenttien tulee täyttää tämän
-vaatimuksenmukaisuusluokan kaikki vaatimukset.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_velvoittavat_viittaukset"><a class="anchor" href="#_velvoittavat_viittaukset"></a>3. Velvoittavat viittaukset</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Seuraavat normatiiviset asiakirjat sisältävät vaatimuksia ja ehtoja, jotka viittausten kautta ovat
-muodostavat erottamattoman osan tämän dokumentin vaatimuksia. Päivättyjen viitteiden osalta asiakirjojen
-mahdollisia kyseisen päivän jälkeen julkaistuja lisäyksiä tai korjauksia ei oteta huomioon. Päiväämättömien
-viittausten osalta tarkoitetaan kyseisen asiankirjan viimeisintä julkaistua versiota.</p>
-</div>
-<div class="paragraph">
-<p><a href="#ISO_19115">[ISO 19115]</a> EN ISO 19115: 2005, Geographic information - Metadata</p>
-</div>
-<div class="paragraph">
-<p><a href="#ISO_19139">[ISO 19139]</a> ISO/TS 19139: 2007, Geographic information - Metadata - XML schema implementation</p>
-</div>
-<div class="paragraph">
-<p><a href="#ISO_19105">[ISO_19105]</a> EN ISO 19105:2005, Geographic Information – Conformance and testing</p>
-</div>
-<div class="paragraph">
-<p><a href="#ISO_639-2">[ISO 639-2]</a> ISO 639-2:1998, Codes for the representation of names of languages – Part 2: Alpha-3 code</p>
-</div>
-<div class="paragraph">
-<p><a href="#INSPIRE">[INSPIRE]</a> Directive 2007/2/EC of the European Parliament and of the Council of 14 March
-2007 establishing an Infrastructure for Spatial Information in the European Community (INSPIRE)</p>
-</div>
-<div class="paragraph">
-<p><a href="#IR_Metadata">[IR_Metadata]</a> Commission Regulation (EC) No 1205/2008 of 3 December 2008
-implementing Directive 2007/2/EC of the European Parliament and of the Council as regards
-metadata.</p>
-</div>
-<div class="paragraph">
-<p><a href="#IR-ISDSS">[IR-ISDSS]</a> Commission Regulation (EU) No 1089/2010 of 23 November 2010
-implementing Directive 2007/2/EC of the European Parliament and of the Council as regards
-interoperability of spatial data sets and services, as amended by</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Commission Regulation (EU) No 102/2011 of 4 February 2011 amending Regulation (EU) No
-1089/2010 implementing Directive 2007/2/EC of the European Parliament and of the Council
-as regards interoperability of spatial data sets and services;</p>
-</li>
-<li>
-<p>Commission Regulation (EU) No 1253/2013 of 21 October 2013 amending Regulation (EU)
-No 1089/2010 implementing Directive 2007/2/EC as regards interoperability of spatial data
-sets and services; and</p>
-</li>
-<li>
-<p>Commission Regulation (EU) No 1312/2014 of 10 December 2014 amending Regulation (EU)
-No 1089/2010 implementing Directive 2007/2/EC of the European Parliament and of the
-Council as regards interoperability of spatial data services.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><a href="#TG_MD_20">[TG Metadata 2.0]</a> Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0, <a href="https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139" class="bare">https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139</a></p>
-</div>
-<div class="paragraph">
-<p><a href="#JHS_158">[JHS 158]</a> JHS 158 Paikkatietoaineistojen ja -palveluiden metatiedot, vuoden 2018 versio, <a href="http://www.jhs-suositukset.fi/suomi/jhs158" class="bare">http://www.jhs-suositukset.fi/suomi/jhs158</a></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_termit_ja_määritelmät"><a class="anchor" href="#_termit_ja_määritelmät"></a>4. Termit ja määritelmät</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Tämän asiakirjan puitteissä seuraavat termit ja määritelmät ovat voimassa:</p>
-</div>
-<div class="paragraph">
-<p><strong>PTA-aineisto</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>rajapintapalvelu</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>vaatimus</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>vaatimuksenmukaisuusluokka</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>abstrakti testisarja</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>metatietoelementti</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>INSPIRE-tunnus</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>jatkumo</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>jatkumotunnus</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>havaintotarjooma</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>havaintotarjoomatunnus</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>XPath-kysely</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>URI-tunnus</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>URL-osoite</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Paikkatietoalusta (PTA)</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>PTA-laatuvahti</strong></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_dokumentin_konventiot"><a class="anchor" href="#_dokumentin_konventiot"></a>5. Dokumentin konventiot</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_tunnisteet"><a class="anchor" href="#_tunnisteet"></a>5.1. Tunnisteet</h3>
-<div class="paragraph">
-<p>Tässä asiakirjassa kuvattujen vaatimusten kokonaisuuteen viitataan absoluuttiselle URI-tunnuksella
-<code><a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5</a></code>.
-Kaikkiin tässä asiakirjassa kuvattuihin vaatimuksiin ja vaatimuksenmukaisuustesteihin viitataan osittaisilla URI-tunnuksilla,
-jotka on määritelty suhteellisina tähän koko asiakirjan URI-tunnukseen nähden, esimerkiksi Vaatimuksen 1 absoluuttinen
-URI-tunnus on <code><a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5/vaatimukset/vaatimus-metatiedon-kieli" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5/vaatimukset/vaatimus-metatiedon-kieli</a></code>.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_vaatimuksenmukaisuusluokka_pta_aineisto"><a class="anchor" href="#_vaatimuksenmukaisuusluokka_pta_aineisto"></a>6. Vaatimuksenmukaisuusluokka PTA-aineisto</h2>
+<h2 id="_vaatimuksenmukaisuusluokka_pta_aineisto"><a class="anchor" href="#_vaatimuksenmukaisuusluokka_pta_aineisto"></a>7. Vaatimuksenmukaisuusluokka PTA-aineisto</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Paikkatietoalusta-tietoaineistojen metatietojen tulee olla kuvattu seuraavien dokumenttien tai niiden osien
@@ -909,7 +924,7 @@ niin sanottuja PTA-aineistoja. Palvelujen metatiedot on rajattu tämän vaatimuk
 <td class="tableblock halign-left valign-top" colspan="2" style="background-color: #9fc4e5;"><p class="tableblock"><strong>Vaatimuksenmukaisuusluokka PTA-aineisto</strong> </p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5/vaatimukset/luokka-pta-aineisto" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.5/vaatimukset/luokka-pta-aineisto</a></code> </p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/{versio}/vaatimukset/luokka-pta-aineisto" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/{versio}/vaatimukset/luokka-pta-aineisto</a></code> </p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Kohde</strong></p></td>
@@ -1023,7 +1038,7 @@ on käytössä yleisesti tunnettu luokittelu.</p></td>
 </tbody>
 </table>
 <div class="sect2">
-<h3 id="_yleiset_metatiedon_xml_koodaukseen_kohdistuvat_vaatimukset"><a class="anchor" href="#_yleiset_metatiedon_xml_koodaukseen_kohdistuvat_vaatimukset"></a>6.1. Yleiset metatiedon XML-koodaukseen kohdistuvat vaatimukset</h3>
+<h3 id="_yleiset_metatiedon_xml_koodaukseen_kohdistuvat_vaatimukset"><a class="anchor" href="#_yleiset_metatiedon_xml_koodaukseen_kohdistuvat_vaatimukset"></a>7.1. Yleiset metatiedon XML-koodaukseen kohdistuvat vaatimukset</h3>
 <div class="paragraph">
 <p>Alla on listattu yleiset <a href="#ISO_19139">[ISO 19139]</a>-standardin mukaisen
 metatiedon koodaukseen liittyvät INSPIRE-vaatimukset. Näiden vaatimusten tarkemmat kuvaukset löytyvät
@@ -1063,7 +1078,7 @@ dokumentista <a href="#TG_MD_20">[TG Metadata 2.0]</a>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_metatiedon_tunnistamistiedot"><a class="anchor" href="#_metatiedon_tunnistamistiedot"></a>6.2. Metatiedon tunnistamistiedot</h3>
+<h3 id="_metatiedon_tunnistamistiedot"><a class="anchor" href="#_metatiedon_tunnistamistiedot"></a>7.2. Metatiedon tunnistamistiedot</h3>
 <div class="paragraph">
 <p>Alla on listattu metatiedon tunnistamistietoihin
 liittyvät INSPIRE-vaatimukset. Näiden vaatimusten tarkemmat kuvaukset löytyvät
@@ -1106,7 +1121,7 @@ dokumentista <a href="#TG_MD_20">[TG Metadata 2.0]</a>.</p>
 <p>PTA-aineistojen suhteen esitetään lisäksi tämän luvun alilukujen sisältämät lisävaatimukset.</p>
 </div>
 <div class="sect3">
-<h4 id="_metatiedon_kieli_ja_monikielisyys"><a class="anchor" href="#_metatiedon_kieli_ja_monikielisyys"></a>6.2.1. Metatiedon kieli ja monikielisyys</h4>
+<h4 id="_metatiedon_kieli_ja_monikielisyys"><a class="anchor" href="#_metatiedon_kieli_ja_monikielisyys"></a>7.2.1. Metatiedon kieli ja monikielisyys</h4>
 <div class="paragraph">
 <p>INSPIRE-vaatimus TG Requirement C.5 vaatii ilmaisemaan luonnollisen kielen, jolla metatiedon vapaatekstisisältö on
 kuvattu. Lisäksi vaatimus TG Requirement C.4 esittää kolme sallittua vaihtoehtoa vapaateksti-arvoisten metatietoelementtien
@@ -1176,7 +1191,7 @@ kuvaavan elementin <code>/*/gmd:locale/gmd:PT_Locale</code> attribuutin <code>id
 </div>
 </div>
 <div class="sect3">
-<h4 id="_metatietokuvauksen_yksilöivä_tunnus"><a class="anchor" href="#_metatietokuvauksen_yksilöivä_tunnus"></a>6.2.2. Metatietokuvauksen yksilöivä tunnus</h4>
+<h4 id="_metatietokuvauksen_yksilöivä_tunnus"><a class="anchor" href="#_metatietokuvauksen_yksilöivä_tunnus"></a>7.2.2. Metatietokuvauksen yksilöivä tunnus</h4>
 <div class="paragraph">
 <p><a href="#TG_MD_20">[TG Metadata 2.0]</a> suosittelee pysyvien ja globaalisti yksilöivien tunnusten antamista INSPIRE-aineistojen metatietokuvauksille käyttäen elementtiä
 <code>gmd:fileIdentifier</code>.</p>
@@ -1200,7 +1215,7 @@ tulee palauttaa näin määritelty metatiedon yksilöivä tunnus.</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_vertausjärjestelmä_referencesysteminfo"><a class="anchor" href="#_vertausjärjestelmä_referencesysteminfo"></a>6.3. Vertausjärjestelmä (referenceSystemInfo)</h3>
+<h3 id="_vertausjärjestelmä_referencesysteminfo"><a class="anchor" href="#_vertausjärjestelmä_referencesysteminfo"></a>7.3. Vertausjärjestelmä (referenceSystemInfo)</h3>
 <div class="paragraph">
 <p>Alla on listattu vertausjärjestelmään
 liittyvät INSPIRE-vaatimukset. Näiden vaatimusten tarkemmat kuvaukset löytyvät
@@ -1283,7 +1298,7 @@ tulee palauttaa käytetyn ETRS-TM35FIN-koordinaatiston URI-tunnus.</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_resurssin_tunnistamistiedot_indentificationinfo"><a class="anchor" href="#_resurssin_tunnistamistiedot_indentificationinfo"></a>6.4. Resurssin tunnistamistiedot (indentificationInfo)</h3>
+<h3 id="_resurssin_tunnistamistiedot_indentificationinfo"><a class="anchor" href="#_resurssin_tunnistamistiedot_indentificationinfo"></a>7.4. Resurssin tunnistamistiedot (indentificationInfo)</h3>
 <div class="paragraph">
 <p>Alla on listattu resurssin tunnistamistietoihin
 liittyvät INSPIRE-vaatimukset. Näiden vaatimusten tarkemmat kuvaukset löytyvät
@@ -1382,7 +1397,7 @@ dokumentista <a href="#TG_MD_20">[TG Metadata 2.0]</a>.</p>
 <p>PTA-aineistojen suhteen esitetään lisäksi tämän luvun alilukujen sisältämät lisävaatimukset.</p>
 </div>
 <div class="sect3">
-<h4 id="_aineiston_yksilöivä_tunnus"><a class="anchor" href="#_aineiston_yksilöivä_tunnus"></a>6.4.1. Aineiston yksilöivä tunnus</h4>
+<h4 id="_aineiston_yksilöivä_tunnus"><a class="anchor" href="#_aineiston_yksilöivä_tunnus"></a>7.4.1. Aineiston yksilöivä tunnus</h4>
 <div class="paragraph">
 <p>INSPIRE-aineistoille on annettava yksilöivä URI-muotoinen tunnus (<a href="#TG_MD_20">[TG Metadata 2.0]</a>, TG Requirement 1.3). Lisäksi
 suositellaan, että aineiston tunnus on pysyvä (TG Recommendation 1.3), että käytettävä URI-tunnus on
@@ -1417,10 +1432,10 @@ tulee palauttaa aineiston URL-tunnus.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Suositus&#160;1</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>vaatimukset/suositus-aineiston-pta-tunnus</code><br>
-Mikäli PTA-aineistolle ei Paikkatietoalustan ulkopuolella ole annettu INSPIRE-vaatimukset ja yllä kuvatun Vaatimuksen 3
-ehdot täyttävää URL-muotoista tunnusta, on suositeltavaa käyttää aineiston yksilöivänä tunnuksena Paikkatietoalustan
-tuottamaa, aineiston PTA-tunnukseen perustuvaa pysyvää URL-osoitetta, joka uudelleenohjataan Paikkatietoalustan
-hakupalvelun kyseisen aineiston tietokorttisivulle.</p>
+Mikäli PTA-aineistolle ei Paikkatietoalustan ulkopuolella ole annettu INSPIRE-vaatimukset ja yllä kuvatun Vaatimuksen
+4 ehdot täyttävää URL-muotoista tunnusta, on suositeltavaa käyttää aineiston yksilöivänä
+tunnuksena Paikkatietoalustan tuottamaa, aineiston PTA-tunnukseen perustuvaa pysyvää URL-osoitetta, joka uudelleenohjataan
+Paikkatietoalustan hakupalvelun kyseisen aineiston tietokorttisivulle.</p>
 <p class="tableblock">Mikäli aineisto poistetaan Paikkatietoikkunasta tai se korvataan toisella
 aineistolla, jolla on eri tunnus, tulisi poistetun aineiston URL-tunnuksen osoittaa sivuun, jossa kerrotaan että
 ko. aineisto ei ole enää saatavilla Paikkatietoikkunan kautta.</p></td>
@@ -1429,7 +1444,7 @@ ko. aineisto ei ole enää saatavilla Paikkatietoikkunan kautta.</p></td>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_aineiston_aikaviitteet"><a class="anchor" href="#_aineiston_aikaviitteet"></a>6.4.2. Aineiston aikaviitteet</h4>
+<h4 id="_aineiston_aikaviitteet"><a class="anchor" href="#_aineiston_aikaviitteet"></a>7.4.2. Aineiston aikaviitteet</h4>
 <table id="vaatimus-paivitystiheys" class="tableblock frame-all grid-all" style="width: 90%;">
 <colgroup>
 <col style="width: 25%;">
@@ -1453,7 +1468,7 @@ palauttaa aineiston päivitystiheystieto:<br>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Huomio</div>
+<div class="title">Tiedoksi</div>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -1507,7 +1522,8 @@ suositeltavaa antaa joko aineiston ajallinen kattavuus tai sen luontiajankohta.<
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #e7e6c8;"><p class="tableblock"><strong>Vaatimus&#160;6</strong> </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>vaatimukset/vaatimus-viimeinen-paivitys</code><br>
-Mikäli aineistolle ei ole metatiedossa kuvattu säännöllistä päivitystiheyttä &lt;&lt;vaatimus-paivitystiheys, Vaatimuksen 5&gt; mukaisesti, on
+Mikäli aineistolle ei ole metatiedossa kuvattu säännöllistä päivitystiheyttä
+<a href="#vaatimus-paivitystiheys">Vaatimuksen 5</a> mukaisesti, on
 aineiston viimeisin päivitysajankohta on annettava. Seuraavan XPath-kyselyn tulee tällöin palauttaa aineiston
 viimeisin päivitysajankohta päivän tarkkudella:
 <code>/*/gmd:identificationInfo[1]/*/gmd:citation/*/gmd:date
@@ -1517,7 +1533,7 @@ viimeisin päivitysajankohta päivän tarkkudella:
 </table>
 </div>
 <div class="sect3">
-<h4 id="_sijainnillinen_yksityiskohtaisuus"><a class="anchor" href="#_sijainnillinen_yksityiskohtaisuus"></a>6.4.3. Sijainnillinen yksityiskohtaisuus</h4>
+<h4 id="_sijainnillinen_yksityiskohtaisuus"><a class="anchor" href="#_sijainnillinen_yksityiskohtaisuus"></a>7.4.3. Sijainnillinen yksityiskohtaisuus</h4>
 <div class="paragraph">
 <p>INSPIRE-vaatimuksen TG Requirement 1.5 mukaisesti aineiston erotyskyky on annettava, mikäli se on ko. aineistolle
 saatavissa. Erotuskyky tulee tällöin antaa joko mittakaavana (equivalent scale) tai näytetiheytenä
@@ -1527,7 +1543,7 @@ saatavissa. Erotuskyky tulee tällöin antaa joko mittakaavana (equivalent scale
 <table>
 <tr>
 <td class="icon">
-<div class="title">Huomio</div>
+<div class="title">Tiedoksi</div>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -1543,7 +1559,7 @@ vaatimuksenmukaisuus-viittausta osana laatutietoja (ks. <a href="#rec-lod">Suosi
 </div>
 </div>
 <div class="sect3">
-<h4 id="_avainsanat"><a class="anchor" href="#_avainsanat"></a>6.4.4. Avainsanat</h4>
+<h4 id="_avainsanat"><a class="anchor" href="#_avainsanat"></a>7.4.4. Avainsanat</h4>
 <div class="paragraph">
 <p>INSPIRE-suositukset TG Recommendation C.8 ja C.9 suosittelevat <code>gmx:Anchor</code>-elementin ja URI-tunnusten
 käyttöä avainsanoihin ja sanastoihin viittaamisessa. PTA-aineistojen metatietokuvauksessa tämä viittaustapa
@@ -1611,7 +1627,7 @@ elementeissä, jotka löytyvät XPath-kyselyn
 <code>/*/gmd:identificationInfo[1]/*/gmd:descriptiveKeywords<br>
 [./*/gmd:thesaurusName/*/gmd:title/gmx:Anchor/@xlink:href='http://paikkatiedot.fi/def/1001001/']<br>
 /*/gmd:keyword/gmx:Anchor</code>
-tuloksena, vaatimuksen 3 mukaisesti.</p></td>
+tuloksena, Vaatimuksen 7 mukaisesti.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1630,7 +1646,7 @@ joka palauttaisi kaikki ko. sanaston sanat, vaikka vapaasanahakua voikin rajata 
 </div>
 </div>
 <div class="sect3">
-<h4 id="_aineiston_saatavuuden_ja_käytön_rajoitteet"><a class="anchor" href="#_aineiston_saatavuuden_ja_käytön_rajoitteet"></a>6.4.5. Aineiston saatavuuden ja käytön rajoitteet</h4>
+<h4 id="_aineiston_saatavuuden_ja_käytön_rajoitteet"><a class="anchor" href="#_aineiston_saatavuuden_ja_käytön_rajoitteet"></a>7.4.5. Aineiston saatavuuden ja käytön rajoitteet</h4>
 <div class="paragraph">
 <p>INSPIRE-metatietovaatimusten mukaan aineistojen julkinen saatavuus ja käytön rajoitteet ilmaistaan erillisinä
 metatietoelementteinä (<a href="#TG_MD_20">[TG Metadata 2.0]</a>, luku 2.3.6 "Limitations on public access" ja
@@ -1740,7 +1756,7 @@ sen hyödyntämiseen tietyissä käyttötapauksissa tai sovellusalueilla.</p></t
 </div>
 </div>
 <div class="sect2">
-<h3 id="_jakelutiedot_distributioninfo"><a class="anchor" href="#_jakelutiedot_distributioninfo"></a>6.5. Jakelutiedot (distributionInfo)</h3>
+<h3 id="_jakelutiedot_distributioninfo"><a class="anchor" href="#_jakelutiedot_distributioninfo"></a>7.5. Jakelutiedot (distributionInfo)</h3>
 <div class="paragraph">
 <p>Alla on listattu täydellisyyden vuoksi jakelutietoihin
 liittyvät INSPIRE-vaatimukset. Näiden vaatimusten tarkemmat kuvaukset löytyvät
@@ -1771,7 +1787,7 @@ dokumentista <a href="#TG_MD_20">[TG Metadata 2.0]</a>.</p>
 <p>PTA-aineistojen suhteen esitetään lisäksi tämän luvun alilukujen sisältämät lisävaatimukset.</p>
 </div>
 <div class="sect3">
-<h4 id="_aineiston_latauspalvelujen_osoitteet"><a class="anchor" href="#_aineiston_latauspalvelujen_osoitteet"></a>6.5.1. Aineiston latauspalvelujen osoitteet</h4>
+<h4 id="_aineiston_latauspalvelujen_osoitteet"><a class="anchor" href="#_aineiston_latauspalvelujen_osoitteet"></a>7.5.1. Aineiston latauspalvelujen osoitteet</h4>
 <div class="paragraph">
 <p>INSPIRE-vaatimus TG Requirement 1.8 vaatii antamaan URL-osoitteen josta aineiston saa ladattua, tai mikäli aineiston
 lataus ei ole suoraan mahdollista, URL-osoitteen, jossa on aineistoa kuvaavaa lisätietoa, mikäli tällainen osoite on
@@ -1988,7 +2004,7 @@ palauttaa metatiedon kuvaaman aineiston ObservationOffering identifier <a href="
 </table>
 </div>
 <div class="sect3">
-<h4 id="_aineiston_siirto_tai_tallennusmuoto"><a class="anchor" href="#_aineiston_siirto_tai_tallennusmuoto"></a>6.5.2. Aineiston siirto- tai tallennusmuoto</h4>
+<h4 id="_aineiston_siirto_tai_tallennusmuoto"><a class="anchor" href="#_aineiston_siirto_tai_tallennusmuoto"></a>7.5.2. Aineiston siirto- tai tallennusmuoto</h4>
 <div class="paragraph">
 <p>INSPIRE-vaatimus TG Requirement 2.6 vaatii kuvaamaan metatiedossa ne siirto- tai tallennusmuodot (formaatit),
 joiden mukaisesti koodattuna aineisto on ladattavissa. PTA-aineistoille ei aseteta erityisiä vaatimuksia
@@ -1997,7 +2013,7 @@ tämän INSPIRE-vaatimuksen lisäksi.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_laatutiedot_dataqualityinfo"><a class="anchor" href="#_laatutiedot_dataqualityinfo"></a>6.6. Laatutiedot (dataQualityInfo)</h3>
+<h3 id="_laatutiedot_dataqualityinfo"><a class="anchor" href="#_laatutiedot_dataqualityinfo"></a>7.6. Laatutiedot (dataQualityInfo)</h3>
 <div class="paragraph">
 <p>Alla on listattu laatutietoihin
 liittyvät INSPIRE-vaatimukset. Näiden vaatimusten tarkemmat kuvaukset löytyvät
@@ -2079,7 +2095,7 @@ laatuluokituksen laskemiseen.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Huomio</div>
+<div class="title">Tiedoksi</div>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -2146,7 +2162,428 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </div>
 </div>
 <div class="sect1">
-<h2 id="_muutoshistoria"><a class="anchor" href="#_muutoshistoria"></a>Liite A: Muutoshistoria</h2>
+<h2 id="_vaatimuksenmukaisuuden_abstaktit_testisarjat_normatiivinen"><a class="anchor" href="#_vaatimuksenmukaisuuden_abstaktit_testisarjat_normatiivinen"></a>Liite A: Vaatimuksenmukaisuuden abstaktit testisarjat (normatiivinen)</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tiedoksi</div>
+</td>
+<td class="content">
+Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_vaatimuksenmukaisuusluokka_pta_aineisto_2"><a class="anchor" href="#_vaatimuksenmukaisuusluokka_pta_aineisto_2"></a>A.1. Vaatimuksenmukaisuusluokka PTA-aineisto</h3>
+<h4 id="_vaatimus_1" class="discrete">Vaatimus 1:</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>testit/vaatimus-metatiedon-kieli</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="#vaatimus-metatiedon-kieli">vaatimukset/vaatimus-metatiedon-kieli</a></code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_vaatimus_2" class="discrete">Vaatimus 2:</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>testit/vaatimus-metatiedon-tunnus</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="#vaatimus-metatiedon-tunnus">vaatimukset/vaatimus-metatiedon-tunnus</a></code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_vaatimus_3" class="discrete">Vaatimus 3:</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>testit/vaatimus-tm35fin-tunnus</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="#vaatimus-tm35fin-tunnus">vaatimukset/vaatimus-tm35fin-tunnus</a></code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_vaatimus_4" class="discrete">Vaatimus 4:</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>testit/vaatimus-aineiston-tunnus</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="#vaatimus-aineiston-tunnus">vaatimukset/vaatimus-aineiston-tunnus</a></code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_vaatimus_5" class="discrete">Vaatimus 5:</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>testit/vaatimus-paivitystiheys</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="#vaatimus-paivitystiheys">vaatimukset/vaatimus-paivitystiheys</a></code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_vaatimus_6" class="discrete">Vaatimus 6:</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>testit/vaatimus-viimeinen-paivitys</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="#vaatimus-viimeinen-paivitys">vaatimukset/vaatimus-viimeinen-paivitys</a></code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_vaatimus_7" class="discrete">Vaatimus 7:</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>testit/vaatimus-asiasana-ankkuri</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="#vaatimus-asiasana-ankkuri">vaatimukset/vaatimus-asiasana-ankkuri</a></code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_vaatimus_8" class="discrete">Vaatimus 8:</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>testit/vaatimus-asiasanasto-ankkuri</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="#vaatimus-asiasanasto-ankkuri">vaatimukset/vaatimus-asiasanasto-ankkuri</a></code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_vaatimus_9" class="discrete">Vaatimus 9:</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>testit/vaatimus-pta-asiasanat</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="#vaatimus-pta-asiasanat">vaatimukset/vaatimus-pta-asiasanat</a></code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_vaatimus_10" class="discrete">Vaatimus 10:</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>testit/vaatimus-kayton-rajoitukset</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="#vaatimus-kayton-rajoitukset">vaatimukset/vaatimus-kayton-rajoitukset</a></code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_vaatimus_11" class="discrete">Vaatimus 11:</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>testit/vaatimus-latauspalvelu-linkki</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="#vaatimus-latauspalvelu-linkki">vaatimukset/vaatimus-latauspalvelu-linkki</a></code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_vaatimus_12" class="discrete">Vaatimus 12:</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>testit/vaatimus-latauspalvelu-linkki-predefined-wfs</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="#vaatimus-latauspalvelu-linkki-predefined-wfs">vaatimukset/vaatimus-latauspalvelu-linkki-predefined-wfs</a></code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_vaatimus_13" class="discrete">Vaatimus 13:</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>testit/vaatimus-latauspalvelu-linkki-predefined-atom</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="#vaatimus-latauspalvelu-linkki-predefined-atom">vaatimukset/vaatimus-latauspalvelu-linkki-predefined-atom</a></code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_vaatimus_14" class="discrete">Vaatimus 14:</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>testit/vaatimus-latauspalvelu-linkki-wcs</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="#vaatimus-latauspalvelu-linkki-wcs">vaatimukset/vaatimus-latauspalvelu-linkki-wcs</a></code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_vaatimus_15" class="discrete">Vaatimus 15:</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>testit/vaatimus-latauspalvelu-linkki-sos</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="#vaatimus-latauspalvelu-linkki-sos">vaatimukset/vaatimus-latauspalvelu-linkki-sos</a></code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_vaatimus_16" class="discrete">Vaatimus 16:</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>testit/vaatimus-pta-vaatimuksenmukaisuus</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="#vaatimus-pta-vaatimuksenmukaisuus">vaatimukset/vaatimus-pta-vaatimuksenmukaisuus</a></code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_muutoshistoria"><a class="anchor" href="#_muutoshistoria"></a>Liite B: Muutoshistoria</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all" style="width: 90%;">
 <colgroup>
@@ -2161,7 +2598,7 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 <th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Päiväys</th>
 <th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Versio</th>
 <th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Editori</th>
-<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Muutoksen kohde</th>
+<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Pääasiallinen muutos</th>
 <th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Kuvaus</th>
 </tr>
 </thead>
@@ -2173,13 +2610,20 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">kaikki</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Ensimmäinen versio (luonnos)</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">2018-11-09</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">0.5</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Ilkka Rinne</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Johdantoluvut</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Täydennetty luonnos</p></td>
+</tr>
 </tbody>
 </table>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="Viitteet"><a class="anchor" href="#Viitteet"></a>Liite B: Viitteet</h2>
+<h2 id="viiteluettelo"><a class="anchor" href="#viiteluettelo"></a>Liite C: Viiteluettelo</h2>
 <div class="sectionbody">
 <div class="ulist bibliography">
 <ul class="bibliography">
@@ -2214,71 +2658,28 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 <p><a id="SOS"></a>[SOS 2.0] OGC Sensor Observation Service Interface Standard, OGC 17-089r1, <a href="https://portal.opengeospatial.org/files/?artifact_id=47599" class="bare">https://portal.opengeospatial.org/files/?artifact_id=47599</a></p>
 </li>
 <li>
-<p><a id="Käyttötarveselvitys"></a>[Käyttötarveselvitys] Lepistö, Jukka: Paikkatietolusta - Selvitys paikkatietoaineistojen metatietoprofiilin tarpeista ja käytöstä, 2018</p>
+<p><a id="selvitys"></a>[Käyttötarveselvitys] Lepistö, Jukka: Paikkatietolusta - Selvitys paikkatietoaineistojen metatietoprofiilin tarpeista ja käytöstä, 2018</p>
 </li>
 <li>
-<p><a id="Älykäs_haku"></a>[Älykäs_haku] "Äly(käs) haku hoi, älä jätä! Paikkatiedot tehokäyttöön metatietojen avulla", web-artikkeli, <a href="http://www.paikkatietoalusta.fi/ajankohtaista/alykas-haku-hoi-ala-jata-paikkatiedot-tehokayttoon-metatietojen-avulla" class="bare">http://www.paikkatietoalusta.fi/ajankohtaista/alykas-haku-hoi-ala-jata-paikkatiedot-tehokayttoon-metatietojen-avulla</a></p>
+<p><a id="alykas_haku"></a>[Älykäs haku] "Äly(käs) haku hoi, älä jätä! Paikkatiedot tehokäyttöön metatietojen avulla", web-artikkeli, <a href="http://www.paikkatietoalusta.fi/ajankohtaista/alykas-haku-hoi-ala-jata-paikkatiedot-tehokayttoon-metatietojen-avulla" class="bare">http://www.paikkatietoalusta.fi/ajankohtaista/alykas-haku-hoi-ala-jata-paikkatiedot-tehokayttoon-metatietojen-avulla</a></p>
+</li>
+<li>
+<p><a id="XPath_20"></a>[XPath 2.0] XML Path Language (XPath) 2.0 (Second Edition), World Wide Web Consortium (W3C) Recommendation, <a href="https://www.w3.org/TR/2010/REC-xpath20-20101214/" class="bare">https://www.w3.org/TR/2010/REC-xpath20-20101214/</a></p>
+</li>
+<li>
+<p><a id="URI"></a>[URI] Uniform Resource Identifier (URI): Generic Syntax, Internet Engineering Task Force RFC 3986, <a href="https://tools.ietf.org/html/rfc3986" class="bare">https://tools.ietf.org/html/rfc3986</a></p>
+</li>
+<li>
+<p><a id="URL"></a>[URL] URL, Living Standard - Last Updated 25 October 2018, Web Hypertext Application Technology Working Group (WHATWG), <a href="https://url.spec.whatwg.org/" class="bare">https://url.spec.whatwg.org/</a> (viitattu 9.11.2018)</p>
 </li>
 </ul>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_vaatimuksenmukaisuuden_abstaktit_testisarjat_normatiivinen"><a class="anchor" href="#_vaatimuksenmukaisuuden_abstaktit_testisarjat_normatiivinen"></a>Liite C: Vaatimuksenmukaisuuden abstaktit testisarjat (normatiivinen)</h2>
-<div class="sectionbody">
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Huomio</div>
-</td>
-<td class="content">
-Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)
-</td>
-</tr>
-</table>
-</div>
-<div class="sect2">
-<h3 id="_vaatimuksenmukaisuusluokka_pta_aineisto_2"><a class="anchor" href="#_vaatimuksenmukaisuusluokka_pta_aineisto_2"></a>C.1. Vaatimuksenmukaisuusluokka PTA-aineisto</h3>
-<div class="sect3">
-<h4 id="_vaatimus_1"><a class="anchor" href="#_vaatimus_1"></a>C.1.1. Vaatimus 1</h4>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
-<tr>
-<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tunnus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/conf/conf-class-a/req-name-1</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vaatimus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/req-class-a/req-name-1</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Verify that&#8230;&#8203;</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Inspect&#8230;&#8203;</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_vaatimus_2"><a class="anchor" href="#_vaatimus_2"></a>C.1.2. Vaatimus 2</h4>
-
-</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Viimeksi päivitetty 2018-11-08 13:44:35 UTC
+Viimeksi päivitetty 2018-11-09 14:30:25 UTC
 </div>
 </div>
 </body>

@@ -1,4 +1,4 @@
-== Taustaa
+== Paikkatietoalustan metatietoprofiili
 Paikkatietoalusta-hankeen tavoitteena on yhtenäistää valtion, maakuntien ja kuntien paikkatiedot ja
 tuoda ne myös yritysten ja yhteisöjen saataville. Vuonna 2017 alkanut hanke on osa hallituksen Digitalisoidaan julkiset
 palvelut -kärkihankekokonaisuutta. Tavoitteena on yhtenäistää ja parantaa julkisen hallinnon sähköisiä

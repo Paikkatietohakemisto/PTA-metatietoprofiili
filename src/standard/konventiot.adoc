@@ -1,8 +1,0 @@
-== Dokumentin konventiot
-
-=== Tunnisteet
-Tässä asiakirjassa kuvattujen vaatimusten kokonaisuuteen viitataan absoluuttiselle URI-tunnuksella
-`http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/{versio}`.
-Kaikkiin tässä asiakirjassa kuvattuihin vaatimuksiin ja vaatimuksenmukaisuustesteihin viitataan osittaisilla URI-tunnuksilla,
-jotka on määritelty suhteellisina tähän koko asiakirjan URI-tunnukseen nähden, esimerkiksi Vaatimuksen 1 absoluuttinen
-URI-tunnus on `http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/{versio}/vaatimukset/vaatimus-metatiedon-kieli`.

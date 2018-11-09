@@ -20,44 +20,44 @@ niin sanottuja PTA-aineistoja. Palvelujen metatiedot on rajattu tämän vaatimuk
 |*Kohde* |ISO 19139 -standardin mukainen metatietodokumentti
 |*Riippuvuus* |http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/isdss
 |*Riippuvuus* |http://www.jhs-suositukset.fi/suomi/jhs158/jhs-metatietoprofiili
-|*Vaatimus{nbsp}1*  | `<<#vaatimus-metatiedon-kieli,vaatimukset/vaatimus-metatiedon-kieli>>` +
+|*Vaatimus{nbsp}{x-vaatimus-metatiedon-kieli-nro}*  | `<<#vaatimus-metatiedon-kieli,vaatimukset/vaatimus-metatiedon-kieli>>` +
 Metatiedon kieli on annettava ja monikielinen metatieto on koodattava käyttäen PT_FreeText-elementtejä.
-|*Vaatimus{nbsp}2*  | `<<#vaatimus-metatiedon-tunnus,vaatimukset/vaatimus-metatiedon-tunnus>>` +
+|*Vaatimus{nbsp}{x-vaatimus-metatiedon-tunnus-nro}*  | `<<#vaatimus-metatiedon-tunnus,vaatimukset/vaatimus-metatiedon-tunnus>>` +
 Metatietodokumentille on annettava yksilöivä UUID-muotoinen tunnus.
-|*Vaatimus{nbsp}3*  | `<<#vaatimus-tm35fin-tunnus,vaatimukset/vaatimus-tm35fin-tunnus>>` +
+|*Vaatimus{nbsp}{x-vaatimus-tm35fin-tunnus-nro}*  | `<<#vaatimus-tm35fin-tunnus,vaatimukset/vaatimus-tm35fin-tunnus>>` +
 ETRS-TM35FIN-järjestelmän mukainen koodinaatisto tulee esittää URI-tunnusta käyttäen.
-|*Vaatimus{nbsp}4*  | `<<#vaatimus-aineiston-tunnus,vaatimukset/vaatimus-aineiston-tunnus>>` +
+|*Vaatimus{nbsp}{x-vaatimus-aineiston-tunnus-nro}*  | `<<#vaatimus-aineiston-tunnus,vaatimukset/vaatimus-aineiston-tunnus>>` +
 Aineistolle on annettava yksilöivä, pysyvä URL-muotoinen tunnus.
-|*Vaatimus{nbsp}5*  | `<<#vaatimus-paivitystiheys,vaatimukset/vaatimus-paivitystiheys>>` +
+|*Vaatimus{nbsp}{x-vaatimus-paivitystiheys-nro}*  | `<<#vaatimus-paivitystiheys,vaatimukset/vaatimus-paivitystiheys>>` +
 Aineiston säännöllinen päivitystiheys on annettava, mikäli se on määritelty.
-|*Vaatimus{nbsp}6*  | `<<#vaatimus-viimeinen-paivitys,vaatimukset/vaatimus-viimeinen-paivitys>>` +
+|*Vaatimus{nbsp}{x-vaatimus-viimeinen-paivitys-nro}*  | `<<#vaatimus-viimeinen-paivitys,vaatimukset/vaatimus-viimeinen-paivitys>>` +
 Aineiston viimeisin päivitysajankohta on annettava, mikäli päivitystiheyttä ei ole annettu.
-|*Vaatimus{nbsp}7*  | `<<#vaatimus-asiasana-ankkuri,vaatimukset/vaatimus-asiasana-ankkuri>>` +
+|*Vaatimus{nbsp}{x-vaatimus-asiasana-ankkuri-nro}*  | `<<#vaatimus-asiasana-ankkuri,vaatimukset/vaatimus-asiasana-ankkuri>>` +
 Avainsanojen URI-tunnukset on annettava, mikäli ne ovat tiedossa.
-|*Vaatimus{nbsp}8*  | `<<#vaatimus-asiasanasto-ankkuri,vaatimukset/vaatimus-asiasanasto-ankkuri>>` +
+|*Vaatimus{nbsp}{x-vaatimus-asiasanasto-ankkuri-nro}*  | `<<#vaatimus-asiasanasto-ankkuri,vaatimukset/vaatimus-asiasanasto-ankkuri>>` +
 Avainsanastojen URI-tunnukset on annettava, mikäli ne ovat tiedossa.
-|*Vaatimus{nbsp}9*  | `<<#vaatimus-pta-asiasanat,vaatimukset/vaatimus-pta-asiasanat>>` +
+|*Vaatimus{nbsp}{x-vaatimus-pta-asiasanat-nro}*  | `<<#vaatimus-pta-asiasanat,vaatimukset/vaatimus-pta-asiasanat>>` +
 Vähintään yksi asiasana Paikkatietohakemiston hakusanastosta on annettava.
-|*Vaatimus{nbsp}10*  | `<<#vaatimus-kayton-rajoitukset,vaatimukset/vaatimus-kayton-rajoitukset>>` +
+|*Vaatimus{nbsp}{x-vaatimus-kayton-rajoitukset-nro}*  | `<<#vaatimus-kayton-rajoitukset,vaatimukset/vaatimus-kayton-rajoitukset>>` +
 Sopimustekniset rajoitukset aineistojen käytölle on annettava useConstraints-elementin avulla.
-|*Vaatimus{nbsp}11*  | `<<#vaatimus-latauspalvelu-linkki,vaatimukset/vaatimus-latauspalvelu-linkki>>` +
+|*Vaatimus{nbsp}{x-vaatimus-latauspalvelu-linkki-nro}*  | `<<#vaatimus-latauspalvelu-linkki,vaatimukset/vaatimus-latauspalvelu-linkki>>` +
 Vähintään yksi linkki aineistoa tarjoavaan rajapintapalveluun on annettava.
-|*Vaatimus{nbsp}12*  | `<<#vaatimus-latauspalvelu-linkki-predefined-wfs,vaatimukset/vaatimus-latauspalvelu-linkki-predefined-wfs>>` +
+|*Vaatimus{nbsp}{x-vaatimus-latauspalvelu-linkki-predefined-wfs-nro}*  | `<<#vaatimus-latauspalvelu-linkki-predefined-wfs,vaatimukset/vaatimus-latauspalvelu-linkki-predefined-wfs>>` +
 Aineiston INSPIRE-tunnus on annettava INSPIRE Pre-defined WFS -palveluun linkitettäessä.
-|*Vaatimus{nbsp}13*  | `<<#vaatimus-latauspalvelu-linkki-predefined-atom,vaatimukset/vaatimus-latauspalvelu-linkki-predefined-atom>>` +
+|*Vaatimus{nbsp}{x-vaatimus-latauspalvelu-linkki-predefined-atom-nro}*  | `<<#vaatimus-latauspalvelu-linkki-predefined-atom,vaatimukset/vaatimus-latauspalvelu-linkki-predefined-atom>>` +
 Aineiston palvelusyötteen kuvattavan aineiston kohdan tunnus on annettava INSPIRE Pre-defined Atom -palveluun linkitettäessä.
-|*Vaatimus{nbsp}14*  | `<<#vaatimus-latauspalvelu-linkki-wcs,vaatimukset/vaatimus-latauspalvelu-linkki-wcs>>` +
+|*Vaatimus{nbsp}{x-vaatimus-latauspalvelu-linkki-wcs-nro}*  | `<<#vaatimus-latauspalvelu-linkki-wcs,vaatimukset/vaatimus-latauspalvelu-linkki-wcs>>` +
 Aineiston jatkumotunnus (coverageId) on annettava Web Coverage Service -palveluun linkitettäessä.
-|*Vaatimus{nbsp}15*  | `<<#vaatimus-latauspalvelu-linkki-sos,vaatimukset/vaatimus-latauspalvelu-linkki-sos>>` +
+|*Vaatimus{nbsp}{x-vaatimus-latauspalvelu-linkki-sos-nro}*  | `<<#vaatimus-latauspalvelu-linkki-sos,vaatimukset/vaatimus-latauspalvelu-linkki-sos>>` +
 Aineiston havaintotarjoomatunnus (ObservationOffering Identifier) on annettava Sensor Observation Service -palveluun linkitettäessä.
-|*Vaatimus{nbsp}16*  | `<<#vaatimus-pta-vaatimuksenmukaisuus,vaatimukset/vaatimus-pta-vaatimuksenmukaisuus>>` +
+|*Vaatimus{nbsp}{x-vaatimus-pta-vaatimuksenmukaisuus-nro}*  | `<<#vaatimus-pta-vaatimuksenmukaisuus,vaatimukset/vaatimus-pta-vaatimuksenmukaisuus>>` +
 Aineistolle ajettujen laaduntarkastustestien tulokset on annettava vaatimuksenmukaisuusluokkakohtaisesti.
-|*Suositus{nbsp}1*  | `<<#suositus-aineiston-pta-tunnus,vaatimukset/suositus-aineiston-pta-tunnus>>` +
+|*Suositus{nbsp}{x-suositus-aineiston-pta-tunnus-nro}*  | `<<#suositus-aineiston-pta-tunnus,vaatimukset/suositus-aineiston-pta-tunnus>>` +
 Suositellaan käytettäväksi Paikkatietoalustan aineistotunnukseen perustuvaa URI-tunnusta aineiston tunnuksena, ellei
 ole erityistä tarvetta käyttää muuta tunnusta.
-|*Suositus{nbsp}2*  | `<<#suositus-aikaviite,vaatimukset/suositus-aikaviite>>` +
+|*Suositus{nbsp}{x-suositus-aikaviite-nro}*  | `<<#suositus-aikaviite,vaatimukset/suositus-aikaviite>>` +
 Mikäli viimeisintä päivitysajankohtaa anneta, suositellaan aikaviitteeksi suositellaan joko aineiston ajallista kattavuutta tai sen luontiajankohtaa.
-|*Suositus{nbsp}3*  | `<<#suositus-yksityiskohtaisuus-luokittelu,vaatimukset/suositus-yksityiskohtaisuus-luokittelu>>` +
+|*Suositus{nbsp}{x-suositus-yksityiskohtaisuus-luokittelu-nro}*  | `<<#suositus-yksityiskohtaisuus-luokittelu,vaatimukset/suositus-yksityiskohtaisuus-luokittelu>>` +
 Aineiston yksityiskohtaisuus suositellaan kuvattavan laatutiedoissa, mikäli yksityiskohtaisuuden kuvaamiseen
 on käytössä yleisesti tunnettu luokittelu.
 |===
@@ -107,7 +107,7 @@ metatietodokumentissa alkuperäisen sisällön kanssa.
 [#vaatimus-metatiedon-kieli]
 [width="90%",cols="2,6"]
 |===
-|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-metatiedon-kieli` +
+|*Vaatimus{nbsp}{x-vaatimus-metatiedon-kieli-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-metatiedon-kieli` +
 {set:cellbgcolor:#FFFFFF}
 Mikäli PTA-aineiston metatietokuvaus on saatavilla useammalla kuin yhdellä kielellä, tulee niistä yksi valita
 metatiedon kieleksi INSPIRE-vaatimuksen TG Requirement C.5 mukaisesti.
@@ -170,7 +170,7 @@ kuvaavan elementin `/pass:[*]/gmd:locale/gmd:PT_Locale` attribuutin `id` arvo.
 [#vaatimus-metatiedon-tunnus]
 [width="90%",cols="2,6"]
 |===
-|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-metatiedon-tunnus` +
+|*Vaatimus{nbsp}{x-vaatimus-metatiedon-tunnus-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-metatiedon-tunnus` +
 {set:cellbgcolor:#FFFFFF}
 PTA-aineistojen <<ISO_19139, ISO 19139>> -muotoisissa metatietokuvauksille on annettava globaalisti
 yksilöivä merkkijonomuotoinen UUID-tunnus. XPath-kyselyn
@@ -204,7 +204,7 @@ mukaiset koordinaatistot eivät sisälly <<TG_MD_20>>:n Annex D.4:n taulukkoon.
 [#vaatimus-tm35fin-tunnus]
 [width="90%",cols="2,6"]
 |===
-|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-tm35fin-tunnus` +
+|*Vaatimus{nbsp}{x-vaatimus-tm35fin-tunnus-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-tm35fin-tunnus` +
 {set:cellbgcolor:#FFFFFF}
 Mikäli aineistossa käytetty spatiaalinen vertausjärjestelmä on ETRS-TM35FIN, tulee se ilmaista
 metatiedossa käyttäen jompaa kumpaa taulukon 5 HTTP URI -muotoisista tunnuksista, riippuen käytetystä
@@ -268,7 +268,7 @@ ilmaista käyttäen `gmd:MD_Identifier`-elementtiä (TG Recommendation 1.1).
 [#vaatimus-aineiston-tunnus]
 [width="90%",cols="2,6"]
 |===
-|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-aineiston-tunnus` +
+|*Vaatimus{nbsp}{x-vaatimus-aineiston-tunnus-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-aineiston-tunnus` +
 {set:cellbgcolor:#FFFFFF}
 PTA-aineistolle tulee antaa pysyvä URL-muotoinen tunnus. URL-osoitteen protokollan tulee olla joko `HTTP` tai `HTTPS`,
 ja sen tulee osoittaa ko. protokollan mukaisesti joko suoraan tai uudelleenohjauksen avulla julkisessa Internetissä sijaitsevaan dokumentiin, joka antaa
@@ -283,11 +283,11 @@ tulee palauttaa aineiston URL-tunnus.
 [#suositus-aineiston-pta-tunnus]
 [width="90%",cols="2,6"]
 |===
-|*Suositus{nbsp}{counter:rec}* | `vaatimukset/suositus-aineiston-pta-tunnus` +
-Mikäli PTA-aineistolle ei Paikkatietoalustan ulkopuolella ole annettu INSPIRE-vaatimukset ja yllä kuvatun Vaatimuksen 3
-ehdot täyttävää URL-muotoista tunnusta, on suositeltavaa käyttää aineiston yksilöivänä tunnuksena Paikkatietoalustan
-tuottamaa, aineiston PTA-tunnukseen perustuvaa pysyvää URL-osoitetta, joka uudelleenohjataan Paikkatietoalustan
-hakupalvelun kyseisen aineiston tietokorttisivulle.
+|*Suositus{nbsp}{x-suositus-aineiston-pta-tunnus-nro}* | `vaatimukset/suositus-aineiston-pta-tunnus` +
+Mikäli PTA-aineistolle ei Paikkatietoalustan ulkopuolella ole annettu INSPIRE-vaatimukset ja yllä kuvatun Vaatimuksen
+{x-vaatimus-aineiston-tunnus-nro} ehdot täyttävää URL-muotoista tunnusta, on suositeltavaa käyttää aineiston yksilöivänä
+tunnuksena Paikkatietoalustan tuottamaa, aineiston PTA-tunnukseen perustuvaa pysyvää URL-osoitetta, joka uudelleenohjataan
+Paikkatietoalustan hakupalvelun kyseisen aineiston tietokorttisivulle.
 
 Mikäli aineisto poistetaan Paikkatietoikkunasta tai se korvataan toisella
 aineistolla, jolla on eri tunnus, tulisi poistetun aineiston URL-tunnuksen osoittaa sivuun, jossa kerrotaan että
@@ -299,7 +299,7 @@ ko. aineisto ei ole enää saatavilla Paikkatietoikkunan kautta.
 [#vaatimus-paivitystiheys]
 [width="90%",cols="2,6"]
 |===
-|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-paivitystiheys` +
+|*Vaatimus{nbsp}{x-vaatimus-paivitystiheys-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-paivitystiheys` +
 {set:cellbgcolor:#FFFFFF}
 Mikäli aineistolle on määritelty säännöllinen päivitystiheys, ja se voidaan ilmaista
 ISO 19139 -standardin koodilistan `MD_MaintenanceFrequencyCode` arvojen avulla, on
@@ -327,7 +327,7 @@ Siten pelkkä aineiston päivitystiheyden kuvaaminen ei riitä täyttämään IN
 [#suositus-aikaviite]
 [width="90%",cols="2,6"]
 |===
-|*Suositus{nbsp}{counter:rec}* | `vaatimukset/suositus-aikaviite` +
+|*Suositus{nbsp}{x-suositus-aikaviite-nro}* | `vaatimukset/suositus-aikaviite` +
 Mikäli aineistolle on kuvattu metatiedossa päivitystiheys, eikä aineiston
 viimeisintä päivitysajankohtaa ole mielekästä pitää ajantasalla, on
 suositeltavaa antaa joko aineiston ajallinen kattavuus tai sen luontiajankohta.
@@ -336,9 +336,10 @@ suositeltavaa antaa joko aineiston ajallinen kattavuus tai sen luontiajankohta.
 [#vaatimus-viimeinen-paivitys]
 [width="90%",cols="2,6"]
 |===
-|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-viimeinen-paivitys` +
+|*Vaatimus{nbsp}{x-vaatimus-viimeinen-paivitys-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-viimeinen-paivitys` +
 {set:cellbgcolor:#FFFFFF}
-Mikäli aineistolle ei ole metatiedossa kuvattu säännöllistä päivitystiheyttä <<vaatimus-paivitystiheys, Vaatimuksen 5> mukaisesti, on
+Mikäli aineistolle ei ole metatiedossa kuvattu säännöllistä päivitystiheyttä
+<<vaatimus-paivitystiheys, Vaatimuksen {x-vaatimus-paivitystiheys-nro}>> mukaisesti, on
 aineiston viimeisin päivitysajankohta on annettava. Seuraavan XPath-kyselyn tulee tällöin palauttaa aineiston
 viimeisin päivitysajankohta päivän tarkkudella:
 `/pass:[*]/gmd:identificationInfo[1]/pass:[*]/gmd:citation/pass:[*]/gmd:date
@@ -369,7 +370,7 @@ on pakollinen, mikäli yleisesti tunnettu URI-tunnus käytettyihin sanastoihin j
 [#vaatimus-asiasana-ankkuri]
 [width="90%",cols="2,6"]
 |===
-|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-asiasana-ankkuri` +
+|*Vaatimus{nbsp}{x-vaatimus-asiasana-ankkuri-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-asiasana-ankkuri` +
 {set:cellbgcolor:#FFFFFF}
 Metatietokuvauksessa aineistoa kuvaavat avainsanat on ilmaistava sekä
 itse avainsanan sisältävänä tekstinä että ko. avainsanan URI-tunnuksena,
@@ -389,7 +390,7 @@ arvona.
 [#vaatimus-asiasanasto-ankkuri]
 [width="90%",cols="2,6"]
 |===
-|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-asiasanasto-ankkuri` +
+|*Vaatimus{nbsp}{x-vaatimus-asiasanasto-ankkuri-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-asiasanasto-ankkuri` +
 {set:cellbgcolor:#FFFFFF}
 Metatietokuvauksessa avainsanojen sanastot on ilmaistava sekä
 sanaston otsikon sisältävänä tekstinä että tai sanaston URI-tunnuksena,
@@ -409,14 +410,14 @@ arvona.
 [#vaatimus-pta-asiasanat]
 [width="90%",cols="2,6"]
 |===
-|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-pta-asiasanat` +
+|*Vaatimus{nbsp}{x-vaatimus-pta-asiasanat-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-pta-asiasanat` +
 {set:cellbgcolor:#FFFFFF}
 Kaikki Paikkatietohakemiston hakusanastoon sisältyvät avainsanat on määriteltävä
 elementeissä, jotka löytyvät XPath-kyselyn
 `/pass:[*]/gmd:identificationInfo[1]/pass:[*]/gmd:descriptiveKeywords +
 [./pass:[*]/gmd:thesaurusName/pass:[*]/gmd:title/gmx:Anchor/@xlink:href='http://paikkatiedot.fi/def/1001001/'] +
 /pass:[*]/gmd:keyword/gmx:Anchor`
-tuloksena, vaatimuksen 3 mukaisesti.
+tuloksena, Vaatimuksen {x-vaatimus-asiasana-ankkuri-nro} mukaisesti.
 |===
 
 IMPORTANT: Mistä Paikkatietohakemiston hakusanaston sanat ja niiden URL-osoitteet voi löytää? Fintossa ei voi tehdä hakua,
@@ -478,7 +479,7 @@ lisenssiehtojen tai muiden sopimusteknisten rajoittavien vaatimusten ilmaisemise
 [#vaatimus-kayton-rajoitukset]
 [width="90%",cols="2,6"]
 |===
-|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-kayton-rajoitukset` +
+|*Vaatimus{nbsp}{x-vaatimus-kayton-rajoitukset-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-kayton-rajoitukset` +
 {set:cellbgcolor:#FFFFFF}
 Rajoitukset aineistojen käytölle, kuten vaadittavat lisenssiehdot tai muut sopimustekniset vaatimukset,
 tulee esittää XPath-kyselyn
@@ -539,7 +540,7 @@ aina vähintään ko. aineiston PTA-latauspalveluun viittaavan suoran osoitteen.
 [#vaatimus-latauspalvelu-linkki]
 [width="90%",cols="2,6"]
 |===
-|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-latauspalvelu-linkki` +
+|*Vaatimus{nbsp}{x-vaatimus-latauspalvelu-linkki-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-latauspalvelu-linkki` +
 {set:cellbgcolor:#FFFFFF}
 
 Linkit rajapintapalveluihin, joista aineisto on ladattavissa, tulee antaa aineiston metatiedoissa.
@@ -569,10 +570,10 @@ Vähintään yksi tämän vaatimuksen mukainen metatietoelementti on annettava k
 [#vaatimus-latauspalvelu-linkki-predefined-wfs]
 [width="90%",cols="2,6"]
 |===
-|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-latauspalvelu-linkki-predefined-wfs` +
+|*Vaatimus{nbsp}{x-vaatimus-latauspalvelu-linkki-predefined-wfs-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-latauspalvelu-linkki-predefined-wfs` +
 {set:cellbgcolor:#FFFFFF}
 
-Mikäli Vaatimuksen 11 mukainen linkki rajapintapalveluun on tyyppiä INSPIRE Pre-defined Dataset WFS 2.0,
+Mikäli Vaatimuksen {x-vaatimus-latauspalvelu-linkki-nro} mukainen linkki rajapintapalveluun on tyyppiä INSPIRE Pre-defined Dataset WFS 2.0,
 tulee XPath-kyselyn +
 `/pass:[*]/gmd:distributionInfo[1]/pass:[*]/gmd:transferOptions/pass:[*]/gmd:onLine/pass:[*][./gmd:linkage/gmd:URL and ./gmd:function/gmd:CI_OnLineFunctionCode/@codeListValue='download' and ./gmd:protocol/gmx:Anchor/@xlink:href='http://inspire.ec.europa.eu/id/ats/download-service/3.1/predefined-wfs']/gmd:name/gco:CharacterString/text()`
 palauttaa aineiston INSPIRE-tunnus. Tämän tunnuksen avulla kyseisestä WFS-rajapalvelusta voidaan hakea metatiedon
@@ -608,10 +609,10 @@ kuvaama aineisto tallennetun kyselyn avulla <<TG_DS_31>>:n vaatimusten TG Requir
 [#vaatimus-latauspalvelu-linkki-predefined-atom]
 [width="90%",cols="2,6"]
 |===
-|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-latauspalvelu-linkki-predefined-atom` +
+|*Vaatimus{nbsp}{x-vaatimus-latauspalvelu-linkki-predefined-atom-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-latauspalvelu-linkki-predefined-atom` +
 {set:cellbgcolor:#FFFFFF}
 
-Mikäli Vaatimuksen 11 mukainen linkki rajapintapalveluun on tyyppiä INSPIRE Pre-defined Dataset Atom,
+Mikäli Vaatimuksen {x-vaatimus-latauspalvelu-linkki-nro} mukainen linkki rajapintapalveluun on tyyppiä INSPIRE Pre-defined Dataset Atom,
 tulee XPath-kyselyn +
 `/pass:[*]/gmd:distributionInfo[1]/pass:[*]/gmd:transferOptions/pass:[*]/gmd:onLine/pass:[*][./gmd:linkage/gmd:URL and ./gmd:function/gmd:CI_OnLineFunctionCode/@codeListValue='download' and ./gmd:protocol/gmx:Anchor/@xlink:href='http://inspire.ec.europa.eu/id/ats/download-service/3.1/predefined-atom']/gmd:name/gco:CharacterString/text()`
 palauttaa <<TG_DS_31>>:n
@@ -649,10 +650,10 @@ Download Service -syötteessä.
 [#vaatimus-latauspalvelu-linkki-wcs]
 [width="90%",cols="2,6"]
 |===
-|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-latauspalvelu-linkki-wcs` +
+|*Vaatimus{nbsp}{x-vaatimus-latauspalvelu-linkki-wcs-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-latauspalvelu-linkki-wcs` +
 {set:cellbgcolor:#FFFFFF}
 
-Mikäli Vaatimuksen 11 mukaisen linkin osoittama rajapintapalvelu on tyyppiä OGC Web Coverage Service (WCS),
+Mikäli Vaatimuksen {x-vaatimus-latauspalvelu-linkki-nro} mukaisen linkin osoittama rajapintapalvelu on tyyppiä OGC Web Coverage Service (WCS),
 tulee XPath-kyselyn +
 `/pass:[*]/gmd:distributionInfo[1]/pass:[*]/gmd:transferOptions/pass:[*]/gmd:onLine/pass:[*][./gmd:linkage/gmd:URL and ./gmd:function/gmd:CI_OnLineFunctionCode/@codeListValue='download' and /gmd:protocol/gmx:Anchor/starts-with(@xlink:href,'http://inspire.ec.europa.eu/id/ats/download-service-wcs/')]/gmd:name/gco:CharacterString/text()`
 palauttaa metatiedon kuvaaman aineiston `coverageId` <<WCS_20>>:n vaatimuksen Requirement 22 mukaisesti.
@@ -688,10 +689,10 @@ palauttaa metatiedon kuvaaman aineiston `coverageId` <<WCS_20>>:n vaatimuksen Re
 [#vaatimus-latauspalvelu-linkki-sos]
 [width="90%",cols="2,6"]
 |===
-|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-latauspalvelu-linkki-sos` +
+|*Vaatimus{nbsp}{x-vaatimus-latauspalvelu-linkki-sos-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-latauspalvelu-linkki-sos` +
 {set:cellbgcolor:#FFFFFF}
 
-Mikäli Vaatimuksen 11 mukaisen linkin osoittama rajapintapalvelu on tyyppiä OGC Sensor Observation Service (SOS),
+Mikäli Vaatimuksen {x-vaatimus-latauspalvelu-linkki-nro} mukaisen linkin osoittama rajapintapalvelu on tyyppiä OGC Sensor Observation Service (SOS),
 tulee XPath-kyselyn +
 `/pass:[*]/gmd:distributionInfo[1]/pass:[*]/gmd:transferOptions/pass:[*]/gmd:onLine/pass:[*][./gmd:linkage/gmd:URL and ./gmd:function/gmd:CI_OnLineFunctionCode/@codeListValue='download' and /gmd:protocol/gmx:Anchor/starts-with(@xlink:href,'http://inspire.ec.europa.eu/id/ats/download-service-sos/')]/gmd:name/gco:CharacterString/text()`
 palauttaa metatiedon kuvaaman aineiston ObservationOffering identifier <<SOS_20>>:n vaatimuksen Requirement 21 mukaisesti.
@@ -726,7 +727,7 @@ PTA-aineistojen suhteen esitetään lisäksi tämän luvun sisältämät lisäva
 [#vaatimus-pta-vaatimuksenmukaisuus]
 [width="90%",cols="2,6"]
 |===
-|*Vaatimus{nbsp}{counter:req}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-pta-vaatimuksenmukaisuus` +
+|*Vaatimus{nbsp}{x-vaatimus-pta-vaatimuksenmukaisuus-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-pta-vaatimuksenmukaisuus` +
 {set:cellbgcolor:#FFFFFF}
 PTA-aineistojen metatietoihin tulee kirjata merkinnät
 PTA-vaatimuksenmukaisuusluokkien sisältävien laatutestien tuloksista. Metatiedon tulee sisältää yksi
@@ -788,7 +789,7 @@ dokumentin piiriin.
 [#suositus-yksityiskohtaisuus-luokittelu]
 [width="90%",cols="2,6"]
 |===
-|*Suositus{nbsp}{counter:rec}* | `vaatimukset/suositus-yksityiskohtaisuus-luokittelu` +
+|*Suositus{nbsp}{x-suositus-yksityiskohtaisuus-luokittelu-nro}* | `vaatimukset/suositus-yksityiskohtaisuus-luokittelu` +
 Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti käytetty luokittelu, on suositeltavaa ilmaista kuvattavan aineiston yksityiskohtaisuuden taso
  vaatimuksenmukaisuusviittauksella kyseiseen luokitteluun laatutietoelementin alla:
  `/pass:[*]/gmd:dataQualityInfo/pass:[*]/gmd:report/gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult`

@@ -3,7 +3,7 @@
 :doctype: book
 :encoding: utf-8
 :lang: fi
-:toc:
+:toc: macro
 :toc-placement!:
 :toclevels: 3
 :numbered:
@@ -13,7 +13,7 @@
 :imagesdir: images
 :appendix-caption: Liitteet
 :appendix-refsig: {appendix-caption}
-:caution-caption: Huom
+:caution-caption: Huomaa
 :chapter-label: Luku
 //:chapter-refsig: {chapter-label}
 :example-caption: Esimerkki
@@ -22,7 +22,7 @@
 :last-update-label: Viimeksi päivitetty
 ifdef::listing-caption[:listing-caption: Listaus]
 //:manname-title: NIMI
-:note-caption: Huomio
+:note-caption: Tiedoksi
 //:part-refsig: ???
 ifdef::preface-title[:preface-title: Esipuhe]
 //:section-refsig: ???
@@ -32,9 +32,27 @@ ifdef::preface-title[:preface-title: Esipuhe]
 :version-label: Versio
 :warning-caption: Varoitus
 :table-caption: Taulukko
-:versio: 0.5
+:x-versio: 0.5
+:x-vaatimus-metatiedon-kieli-nro: 1
+:x-vaatimus-metatiedon-tunnus-nro: 2
+:x-vaatimus-tm35fin-tunnus-nro: 3
+:x-vaatimus-aineiston-tunnus-nro: 4
+:x-vaatimus-paivitystiheys-nro: 5
+:x-vaatimus-viimeinen-paivitys-nro: 6
+:x-vaatimus-asiasana-ankkuri-nro: 7
+:x-vaatimus-asiasanasto-ankkuri-nro: 8
+:x-vaatimus-pta-asiasanat-nro: 9
+:x-vaatimus-kayton-rajoitukset-nro: 10
+:x-vaatimus-latauspalvelu-linkki-nro: 11
+:x-vaatimus-latauspalvelu-linkki-predefined-wfs-nro: 12
+:x-vaatimus-latauspalvelu-linkki-predefined-atom-nro: 13
+:x-vaatimus-latauspalvelu-linkki-wcs-nro: 14
+:x-vaatimus-latauspalvelu-linkki-sos-nro: 15
+:x-vaatimus-pta-vaatimuksenmukaisuus-nro: 16
+:x-suositus-aineiston-pta-tunnus-nro: 1
+:x-suositus-aikaviite-nro: 2
+:x-suositus-yksityiskohtaisuus-luokittelu-nro: 3
 = {title}
-
 
 <<<
 [cols = "<",frame = "none",grid = "none"]
@@ -43,45 +61,111 @@ ifdef::preface-title[:preface-title: Esipuhe]
 |[big]*Maanmittauslaitos*
 |Hyväksytty:   <yyyy-mm-dd>
 |Julkaistu:   <yyyy-mm-dd>
-|Dokumentin tunniste: http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/{versio}
-|Versio: {versio}
+|Dokumentin tunniste: http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/{x-versio}
+|Versio: {x-versio}
 |Kieli: suomi
 |Editori:   Ilkka Rinne / Spatineo Oy
 |===
 
-<<<
-[cols = "^", frame = "none"]
-|===
-|[big]*{titletext}*
-|===
-
-[cols = "^", frame = "none", grid = "none"]
-|===
-|(C) 2018 Maanmittauslaitos
-
-|===
-
+include::front_material.adoc[]
 
 <<<
 toc::[]
 <<<
 
-////
-Make sure to complete each included document
-////
-include::front_material.adoc[]
+== Soveltamisala
+Tätä ohjeistusta sovelletaan PTA-aineistojen <<ISO_19139>>-standardin mukaisten
+metatietokuvausten laatimiseen ja validointiin.
+
+== Vaatimuksenmukaisuus
+Tämä asiakirja määrittelee yhden vaatimuksenmukaisuusluokan '<<#luokka-pta-aineisto,PTA-aineisto>>',
+jonka kohteena on <<ISO_19139>>-standardin mukainen metatietodokumentti.
+Kaikkien PTA-aineistoja kuvaavien metatietodokumenttien tulee täyttää tämän
+vaatimuksenmukaisuusluokan kaikki vaatimukset.
+
+== Dokumentin konventiot
+
+=== Tunnisteet
+Tässä asiakirjassa kuvattujen vaatimusten kokonaisuuteen viitataan absoluuttiselle URI-tunnuksella
+`http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/{x-versio}`.
+Kaikkiin tässä asiakirjassa kuvattuihin vaatimuksiin ja vaatimuksenmukaisuustesteihin viitataan osittaisilla URI-tunnuksilla,
+jotka on määritelty suhteellisina tähän koko asiakirjan URI-tunnukseen nähden. Esimerkiksi Vaatimuksen {x-vaatimus-metatiedon-kieli-nro} absoluuttinen
+URI-tunnus on `http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/{x-versio}/vaatimukset/vaatimus-metatiedon-kieli`.
+
+== Velvoittavat viittaukset
+Seuraavat normatiiviset asiakirjat sisältävät vaatimuksia ja ehtoja, jotka viittausten kautta ovat
+muodostavat erottamattoman osan tämän dokumentin vaatimuksia. Päivättyjen viitteiden osalta asiakirjojen
+mahdollisia kyseisen päivän jälkeen julkaistuja lisäyksiä tai korjauksia ei oteta huomioon. Päiväämättömien
+viittausten osalta tarkoitetaan kyseisen asiankirjan viimeisintä julkaistua versiota.
+
+<<ISO_19115>> EN ISO 19115: 2005, Geographic information - Metadata
+
+<<ISO_19139>> ISO/TS 19139: 2007, Geographic information - Metadata - XML schema implementation
+
+<<ISO_19105>> EN ISO 19105:2005, Geographic Information – Conformance and testing
+
+<<ISO_639-2>> ISO 639-2:1998, Codes for the representation of names of languages – Part 2: Alpha-3 code
+
+<<INSPIRE>> Directive 2007/2/EC of the European Parliament and of the Council of 14 March
+2007 establishing an Infrastructure for Spatial Information in the European Community (INSPIRE)
+
+<<IR_Metadata>> Commission Regulation (EC) No 1205/2008 of 3 December 2008
+implementing Directive 2007/2/EC of the European Parliament and of the Council as regards
+metadata.
+
+<<IR-ISDSS>> Commission Regulation (EU) No 1089/2010 of 23 November 2010
+implementing Directive 2007/2/EC of the European Parliament and of the Council as regards
+interoperability of spatial data sets and services, as amended by
+
+* Commission Regulation (EU) No 102/2011 of 4 February 2011 amending Regulation (EU) No
+1089/2010 implementing Directive 2007/2/EC of the European Parliament and of the Council
+as regards interoperability of spatial data sets and services;
+* Commission Regulation (EU) No 1253/2013 of 21 October 2013 amending Regulation (EU)
+No 1089/2010 implementing Directive 2007/2/EC as regards interoperability of spatial data
+sets and services; and
+* Commission Regulation (EU) No 1312/2014 of 10 December 2014 amending Regulation (EU)
+No 1089/2010 implementing Directive 2007/2/EC of the European Parliament and of the
+Council as regards interoperability of spatial data services.
+
+<<TG_MD_20>> Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0, https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139
+
+<<JHS_158>> JHS 158 Paikkatietoaineistojen ja -palveluiden metatiedot, vuoden 2018 versio, http://www.jhs-suositukset.fi/suomi/jhs158
+
+== Termit ja määritelmät
+Tämän asiakirjan puitteissä seuraavat termit ja määritelmät ovat voimassa:
+
+[glossary]
+Vaatimuksenmukaisuusluokka (conformance class):: Tietyn laatuvaatimustason
+täyttymiseksi vaadittavien vaatimusten joukko.
+Abstrakti testisarja (abstract test suite):: Abstrakti testausmoduuli, jossa
+on määritelty kaikki nimetyn laatuvaatimustason täyttymiseen edellytettävät vaatimukset.
+Metatietoelementti:: Metatietokuvauksen yksittäinen tietoelementti tai sitä vastaava
+metatietokoodauksen osa (esim. XML-elementti).
+XPath-kysely:: W3C:n <<XPath_20>>-suosituksen mukainen ilmaus, jonka avulla voidaan
+tehdä tarkka sisältökysely rakenteiseen XML-dokumenttiin.
+URI-tunnus:: IETF:n <<URI>>-standardin mukainen resurssin tunnus.
+URL-osoite:: Uniform Resource Locator, ns. web-osoite, jonka tarkoitus on osoittaa tietoverkon kautta saataville asetettuun
+resurssiin. <<URL>>-osoite on URI-tunnuksen erikoistapaus.
+Paikkatietoalusta (PTA):: Julkisen hallinnon yhteinen paikkatietoalusta -kehityshanke, ko. hankkeen tavoitteena oleva
+järjestelmä, joka mahdollistaa ihmisten, palveluiden ja sovellusten yhteydet toisiinsa.
+PTA-aineisto:: Tietoaineisto, jonka käytöstä osana Paikkatietoalustan palveluja on sovittu Paikatietoalustan ja
+tiedontuottajan kanssa, ja jolle on annettu erityinen PTA-aineisto -status.
+PTA-laatuvahti:: Paikkatietoalustan sisältämä aineistojen validointipalvelu.
+rajapintapalvelu:: Palvelu, joka tarjotaan sovelluksen avulla tietokoneverkon kautta muiden sovellusten saataville
+(Geoinfromatiikan sanasto)
+Paikkatietojatkumo (coverage):: Alueen kattavana pintana esitetty paikkatieto (Geoinformatiikan sanasto)
+Jatkumotunnus (coverage identifier):: <<WCS_20>>-standardin mukainen yksittäisen ladattavaksi asetetun paikkatietojatkumon tunniste, joka on
+yksilöivä ko. palvelun sisällä.
+INSPIRE-tunnus (INSPIRE identifier):: INSPIRE-aineiston yksilöivä tunnus.
+Havaintotarjoomatunnus (observation offering identifier):: <<SOS_20>>-standardin mukainen yksittäisen latattavaksi asetetun
+havaintoaineiston tunnus, joka on yksilöivä ko. palvelun sisällä.
 
 include::taustaa.adoc[]
 
-include::vaatimuksenmukaisuus.adoc[]
-
-include::viitteet.adoc[]
-
-include::termit_ja_maaritelmat.adoc[]
-
-include::konventiot.adoc[]
-
 include::pta_aineisto.adoc[]
+
+include::annex_a_ATS.adoc[]
+<<<
 
 ////
 Revision History should be the last annex before the Bibliography
@@ -91,6 +175,3 @@ include::annex_historia.adoc[]
 
 <<<
 include::annex_kirjallisuus.adoc[]
-
-<<<
-include::annex_a_ATS.adoc[]

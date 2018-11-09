@@ -6,14 +6,147 @@
 Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)
 
 === Vaatimuksenmukaisuusluokka PTA-aineisto
-
-==== Vaatimus 1
+[discrete]
+==== Vaatimus {x-vaatimus-metatiedon-kieli-nro}:
 [cols=">20h,<80d",width="100%"]
 |===
-|Testin tunnus: |/conf/conf-class-a/req-name-1
-|Vaatimus: |/req/req-class-a/req-name-1
-|Testin tarkoitus: | Verify that...
-|Testimenetelmä: | Inspect...
+|Testin tunnus: | `testit/vaatimus-metatiedon-kieli`
+|Vaatimus: |  `<<#vaatimus-metatiedon-kieli,vaatimukset/vaatimus-metatiedon-kieli>>`
+|Testin tarkoitus: |
+|Testimenetelmä: |
 |===
-
-==== Vaatimus 2
+[discrete]
+==== Vaatimus {x-vaatimus-metatiedon-tunnus-nro}:
+[cols=">20h,<80d",width="100%"]
+|===
+|Testin tunnus: | `testit/vaatimus-metatiedon-tunnus`
+|Vaatimus: |  `<<#vaatimus-metatiedon-tunnus,vaatimukset/vaatimus-metatiedon-tunnus>>`
+|Testin tarkoitus: |
+|Testimenetelmä: |
+|===
+[discrete]
+==== Vaatimus {x-vaatimus-tm35fin-tunnus-nro}:
+[cols=">20h,<80d",width="100%"]
+|===
+|Testin tunnus: | `testit/vaatimus-tm35fin-tunnus`
+|Vaatimus: |  `<<#vaatimus-tm35fin-tunnus,vaatimukset/vaatimus-tm35fin-tunnus>>`
+|Testin tarkoitus: |
+|Testimenetelmä: |
+|===
+[discrete]
+==== Vaatimus {x-vaatimus-aineiston-tunnus-nro}:
+[cols=">20h,<80d",width="100%"]
+|===
+|Testin tunnus: | `testit/vaatimus-aineiston-tunnus`
+|Vaatimus: |  `<<#vaatimus-aineiston-tunnus,vaatimukset/vaatimus-aineiston-tunnus>>`
+|Testin tarkoitus: |
+|Testimenetelmä: |
+|===
+[discrete]
+==== Vaatimus {x-vaatimus-paivitystiheys-nro}:
+[cols=">20h,<80d",width="100%"]
+|===
+|Testin tunnus: | `testit/vaatimus-paivitystiheys`
+|Vaatimus: |  `<<#vaatimus-paivitystiheys,vaatimukset/vaatimus-paivitystiheys>>`
+|Testin tarkoitus: |
+|Testimenetelmä: |
+|===
+[discrete]
+==== Vaatimus {x-vaatimus-viimeinen-paivitys-nro}:
+[cols=">20h,<80d",width="100%"]
+|===
+|Testin tunnus: | `testit/vaatimus-viimeinen-paivitys`
+|Vaatimus: |  `<<#vaatimus-viimeinen-paivitys,vaatimukset/vaatimus-viimeinen-paivitys>>`
+|Testin tarkoitus: |
+|Testimenetelmä: |
+|===
+[discrete]
+==== Vaatimus {x-vaatimus-asiasana-ankkuri-nro}:
+[cols=">20h,<80d",width="100%"]
+|===
+|Testin tunnus: | `testit/vaatimus-asiasana-ankkuri`
+|Vaatimus: |  `<<#vaatimus-asiasana-ankkuri,vaatimukset/vaatimus-asiasana-ankkuri>>`
+|Testin tarkoitus: |
+|Testimenetelmä: |
+|===
+[discrete]
+==== Vaatimus {x-vaatimus-asiasanasto-ankkuri-nro}:
+[cols=">20h,<80d",width="100%"]
+|===
+|Testin tunnus: | `testit/vaatimus-asiasanasto-ankkuri`
+|Vaatimus: |  `<<#vaatimus-asiasanasto-ankkuri,vaatimukset/vaatimus-asiasanasto-ankkuri>>`
+|Testin tarkoitus: |
+|Testimenetelmä: |
+|===
+[discrete]
+==== Vaatimus {x-vaatimus-pta-asiasanat-nro}:
+[cols=">20h,<80d",width="100%"]
+|===
+|Testin tunnus: | `testit/vaatimus-pta-asiasanat`
+|Vaatimus: |  `<<#vaatimus-pta-asiasanat,vaatimukset/vaatimus-pta-asiasanat>>`
+|Testin tarkoitus: |
+|Testimenetelmä: |
+|===
+[discrete]
+==== Vaatimus {x-vaatimus-kayton-rajoitukset-nro}:
+[cols=">20h,<80d",width="100%"]
+|===
+|Testin tunnus: | `testit/vaatimus-kayton-rajoitukset`
+|Vaatimus: |  `<<#vaatimus-kayton-rajoitukset,vaatimukset/vaatimus-kayton-rajoitukset>>`
+|Testin tarkoitus: |
+|Testimenetelmä: |
+|===
+[discrete]
+==== Vaatimus {x-vaatimus-latauspalvelu-linkki-nro}:
+[cols=">20h,<80d",width="100%"]
+|===
+|Testin tunnus: | `testit/vaatimus-latauspalvelu-linkki`
+|Vaatimus: |  `<<#vaatimus-latauspalvelu-linkki,vaatimukset/vaatimus-latauspalvelu-linkki>>`
+|Testin tarkoitus: |
+|Testimenetelmä: |
+|===
+[discrete]
+==== Vaatimus {x-vaatimus-latauspalvelu-linkki-predefined-wfs-nro}:
+[cols=">20h,<80d",width="100%"]
+|===
+|Testin tunnus: | `testit/vaatimus-latauspalvelu-linkki-predefined-wfs`
+|Vaatimus: |  `<<#vaatimus-latauspalvelu-linkki-predefined-wfs,vaatimukset/vaatimus-latauspalvelu-linkki-predefined-wfs>>`
+|Testin tarkoitus: |
+|Testimenetelmä: |
+|===
+[discrete]
+==== Vaatimus {x-vaatimus-latauspalvelu-linkki-predefined-atom-nro}:
+[cols=">20h,<80d",width="100%"]
+|===
+|Testin tunnus: | `testit/vaatimus-latauspalvelu-linkki-predefined-atom`
+|Vaatimus: |  `<<#vaatimus-latauspalvelu-linkki-predefined-atom,vaatimukset/vaatimus-latauspalvelu-linkki-predefined-atom>>`
+|Testin tarkoitus: |
+|Testimenetelmä: |
+|===
+[discrete]
+==== Vaatimus {x-vaatimus-latauspalvelu-linkki-wcs-nro}:
+[cols=">20h,<80d",width="100%"]
+|===
+|Testin tunnus: | `testit/vaatimus-latauspalvelu-linkki-wcs`
+|Vaatimus: |  `<<#vaatimus-latauspalvelu-linkki-wcs,vaatimukset/vaatimus-latauspalvelu-linkki-wcs>>`
+|Testin tarkoitus: |
+|Testimenetelmä: |
+|===
+[discrete]
+==== Vaatimus {x-vaatimus-latauspalvelu-linkki-sos-nro}:
+[cols=">20h,<80d",width="100%"]
+|===
+|Testin tunnus: | `testit/vaatimus-latauspalvelu-linkki-sos`
+|Vaatimus: |  `<<#vaatimus-latauspalvelu-linkki-sos,vaatimukset/vaatimus-latauspalvelu-linkki-sos>>`
+|Testin tarkoitus: |
+|Testimenetelmä: |
+|===
+[discrete]
+==== Vaatimus {x-vaatimus-pta-vaatimuksenmukaisuus-nro}:
+[cols=">20h,<80d",width="100%"]
+|===
+|Testin tunnus: | `testit/vaatimus-pta-vaatimuksenmukaisuus`
+|Vaatimus: |  `<<#vaatimus-pta-vaatimuksenmukaisuus,vaatimukset/vaatimus-pta-vaatimuksenmukaisuus>>`
+|Testin tarkoitus: |
+|Testimenetelmä: |
+|===

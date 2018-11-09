@@ -4,6 +4,7 @@
 
 [width="90%",options="header"]
 |===
-|Päiväys |Versio |Editori | Muutoksen kohde |Kuvaus
+|Päiväys |Versio |Editori | Pääasiallinen muutos |Kuvaus
 |2018-11-06 |0.1 |Ilkka Rinne |kaikki |Ensimmäinen versio (luonnos)
+|2018-11-09 |0.5 |Ilkka Rinne |Johdantoluvut | Täydennetty luonnos
 |===

@@ -1,15 +1,32 @@
-[big]*i.     Lyhennelmä*
+:sectnums!:
+[discrete]
+=== i. Lyhennelmä
 [abstract]
 --
-TBA
+Paikkatietoalusta - metatietoprofiili -määrittely laajentaa <<ISO_19115>>-
+ja <<ISO_19139>>-standardien, INSPIRE-direktiivin teknisen ohjeistuksen (<<TG_MD_20>>),
+ja <<JHS_158>>-suosituksen vaatimuksia vastaamaan PTA-aineistojen metatiedoilta vaadittavia
+erityispiirteitä. PTA-aineistojen metatietokuvausten tulee täyttää kaikki tämän määrittelyn
+pakolliset vaatimukset.
 --
 
-[big]*ii.    Avainsanat*
+[discrete]
+=== ii. Avainsanat
 
-TBA
+paikkatieto, metatieto, profiili, paikkatietoalusta, standardi, xml
+:keywords: paikkatieto, metatieto, profiili, paikkatietoalusta, standardi, xml
 
-:keywords: sana1, sana2
+[discrete]
+=== iii.   Johdanto
+Paikkatietoalustan keskeisten tietoaineistojen, ns. PTA-aineistojen, metatietokuvausten
+tulee täyttää yleisiä metatietovaatimuksia tiukemmat vaatimukset, jotta aineistojen
+löytäminen, arvionti ja käyttöönotto olisi riittävän helppoa ja suoravaista.
+Lisävaatimukset perustuvat PTA-metatietoprofiili-projektissa tehdyssä
+käyttötarveselvityksessä raportoituihin ongelmiin ja muihin
+Paikkatietoalusta-hankkeessa havaittuihin aineistojen metatiedon sisältöön ja rakenteeseen
+liittyviin kehitystarpeisiin.
 
-[big]*iii.   Johdanto*
+Laajennokset on laadittu siten, että vaatimusten ja suositusten mukaiset
+metatietokuvaukset ovat sellaisenaan <<<INSPIRE>>- ja <<JHS_158>> -vaatimusten mukaisia.
 
-TBA
+:sectnums:
