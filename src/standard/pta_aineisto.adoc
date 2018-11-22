@@ -8,7 +8,7 @@ sisältämien vaatimusten mukaisesti:
 Lisäksi PTA-aineistojen metatietojen kuvaamisessa tulee noudattaa tässä luvussa kuvattuja PTA-kohtaisia
 lisävaatimuksia.
 
-Tämä vaatimuksenmukaisuusluokka koskee Paikkatietoalusta-palvelun keskeisiä tietoainestoja, eli
+Tämä vaatimuksenmukaisuusluokka koskee Paikkatietoalusta-palvelun keskeisiä tietoaineistoja, eli
 niin sanottuja PTA-aineistoja. Palvelujen metatiedot on rajattu tämän vaatimuksenmukaisuusluokan ulkopuolelle.
 
 [#luokka-pta-aineisto]
@@ -56,7 +56,7 @@ Aineistolle ajettujen laaduntarkastustestien tulokset on annettava vaatimuksenmu
 Suositellaan käytettäväksi Paikkatietoalustan aineistotunnukseen perustuvaa URI-tunnusta aineiston tunnuksena, ellei
 ole erityistä tarvetta käyttää muuta tunnusta.
 |*Suositus{nbsp}{x-suositus-aikaviite-nro}*  | `<<#suositus-aikaviite,vaatimukset/suositus-aikaviite>>` +
-Mikäli viimeisintä päivitysajankohtaa anneta, suositellaan aikaviitteeksi suositellaan joko aineiston ajallista kattavuutta tai sen luontiajankohtaa.
+Mikäli viimeisintä päivitysajankohtaa ei anneta, suositellaan aikaviitteeksi joko aineiston ajallista kattavuutta tai sen luontiajankohtaa.
 |*Suositus{nbsp}{x-suositus-yksityiskohtaisuus-luokittelu-nro}*  | `<<#suositus-yksityiskohtaisuus-luokittelu,vaatimukset/suositus-yksityiskohtaisuus-luokittelu>>` +
 Aineiston yksityiskohtaisuus suositellaan kuvattavan laatutiedoissa, mikäli yksityiskohtaisuuden kuvaamiseen
 on käytössä yleisesti tunnettu luokittelu.

@@ -32,7 +32,7 @@ ifdef::preface-title[:preface-title: Esipuhe]
 :version-label: Versio
 :warning-caption: Ongelma
 :table-caption: Taulukko
-:x-versio: 0.5
+:x-versio: 0.9
 :x-vaatimus-metatiedon-kieli-nro: 1
 :x-vaatimus-metatiedon-tunnus-nro: 2
 :x-vaatimus-tm35fin-tunnus-nro: 3
@@ -86,14 +86,14 @@ vaatimuksenmukaisuusluokan kaikki vaatimukset.
 == Dokumentin konventiot
 
 === Tunnisteet
-Tässä asiakirjassa kuvattujen vaatimusten kokonaisuuteen viitataan absoluuttiselle URI-tunnuksella
+Tässä asiakirjassa kuvattujen vaatimusten kokonaisuuteen viitataan absoluuttisella URI-tunnuksella
 `http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/{x-versio}`.
 Kaikkiin tässä asiakirjassa kuvattuihin vaatimuksiin ja vaatimuksenmukaisuustesteihin viitataan osittaisilla URI-tunnuksilla,
 jotka on määritelty suhteellisina tähän koko asiakirjan URI-tunnukseen nähden. Esimerkiksi Vaatimuksen {x-vaatimus-metatiedon-kieli-nro} absoluuttinen
 URI-tunnus on `http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/{x-versio}/vaatimukset/vaatimus-metatiedon-kieli`.
 
 == Velvoittavat viittaukset
-Seuraavat normatiiviset asiakirjat sisältävät vaatimuksia ja ehtoja, jotka viittausten kautta ovat
+Seuraavat normatiiviset asiakirjat sisältävät vaatimuksia ja ehtoja, jotka viittausten kautta
 muodostavat erottamattoman osan tämän dokumentin vaatimuksia. Päivättyjen viitteiden osalta asiakirjojen
 mahdollisia kyseisen päivän jälkeen julkaistuja lisäyksiä tai korjauksia ei oteta huomioon. Päiväämättömien
 viittausten osalta tarkoitetaan kyseisen asiankirjan viimeisintä julkaistua versiota.
@@ -148,12 +148,12 @@ URL-osoite:: Uniform Resource Locator, ns. web-osoite, jonka tarkoitus on osoitt
 resurssiin. <<URL>>-osoite on URI-tunnuksen erikoistapaus.
 Paikkatietoalusta (PTA):: Julkisen hallinnon yhteinen paikkatietoalusta -kehityshanke, ko. hankkeen tavoitteena oleva
 järjestelmä, joka mahdollistaa ihmisten, palveluiden ja sovellusten yhteydet toisiinsa.
-PTA-aineisto:: Tietoaineisto, jonka käytöstä osana Paikkatietoalustan palveluja on sovittu Paikatietoalustan ja
-tiedontuottajan kanssa, ja jolle on annettu erityinen PTA-aineisto -status.
+PTA-aineisto:: Tietoaineisto, jonka käytöstä osana Paikkatietoalustan palveluja on sovittu Paikkatietoalustan ja
+tiedontuottajan välillä, ja jolle on annettu erityinen PTA-aineisto -status.
 PTA-laatuvahti:: Paikkatietoalustan sisältämä aineistojen validointipalvelu.
 rajapintapalvelu:: Palvelu, joka tarjotaan sovelluksen avulla tietokoneverkon kautta muiden sovellusten saataville
-(Geoinformatiikan sanasto)
-Paikkatietojatkumo (coverage):: Alueen kattavana pintana esitetty paikkatieto (Geoinformatiikan sanasto)
+(<<GI_sanasto>>)
+Paikkatietojatkumo (coverage):: Alueen kattavana pintana esitetty paikkatieto (<<GI_sanasto>>)
 Jatkumotunnus (coverage identifier):: <<WCS_20>>-standardin mukainen yksittäisen ladattavaksi asetetun paikkatietojatkumon tunniste, joka on
 yksilöivä ko. palvelun sisällä.
 INSPIRE-tunnus (INSPIRE identifier):: INSPIRE-aineiston yksilöivä tunnus.

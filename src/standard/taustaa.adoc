@@ -16,7 +16,7 @@ joka helpottaa Paikkatietoalustan käyttäjäryhmien aineistojen löytämistä j
 käyttötapauksissaan.
 
 Käyttäjien metatiedon käyttöön ja paikkatietoaineistojen löytämiseen liittyvien
-tarpeiden selvittämiseksi tehtiin käyttötarveselvitys elo-lokakussa 2018. Selvityksen aikana yksilö- ja
+tarpeiden selvittämiseksi tehtiin käyttötarveselvitys elo-lokakuussa 2018. Selvityksen aikana yksilö- ja
 ryhmähaastatteluihin osallistui yhteensä 22 henkilöä seitsemästä eri julkishallinnon ja yksityisen sektorin
 organisaatiosta (<<kayttotarveselvitys>>). Käyttötarveselvityksen tuloksena syntyi raportti, joka kuvaa paikkatietoaineistojen hankintaa,
 arviointia ja käyttöä haastatelluissa organisaatioissa, sekä Paikkatietoalustaan ja julkishallinnon
@@ -36,7 +36,7 @@ Erityisesti PTA-metatietoprofiilin laadinnassa on pyritty ratkaisemaan seuraavia
 ilmenneitä metatietojen käytön ongelmia ja puutteita:
 
 * Käyttäjien on vaikeaa hahmottaa mitä aineistoja Paikkatietoalustan kautta on saatavilla, millaisin
-käyttöehdoin ne saa käyttöön ja millaia mahdollisia rajoitteita ne sisältävät. Tähän vastaa
+käyttöehdoin ne saa käyttöön ja millaisia mahdollisia rajoitteita ne sisältävät. Tähän vastaa
 <<#vaatimus-kayton-rajoitukset,Vaatimus 10>>.
 
 * Paikkatietoalustan ja Paikkatietohakemiston kautta aineistoa etsittäessä on usein vaikeaa
@@ -61,7 +61,7 @@ se kuvaa. Tähän vastaavat Vaatimukset <<#vaatimus-paivitystiheys,5>> ja
 * Metatietojen perusteella on usein vaikeaa tietää minkälainen aineiston yksityiskohtaisuuden tai
 spatiaalisen tarkkuuden taso on. Vektoripohjaisten aineistojen yksityiskohtaisuuden
 arviointi nykyisten metatietokuvausten perusteella on vaikeaa, ja erityisen vaikeaa tämä tieto
-on päätelllä automaattisesti, sillä mahdollinen yksityiskohtaisuudesta kertova tieto on
+on päätellä automaattisesti, sillä mahdollinen yksityiskohtaisuudesta kertova tieto on
 usein annettu vapaatekstinä. Tähän vastaa <<#suositus-yksityiskohtaisuus-luokittelu, Suositus 3>>.
 
 * Paikkatietoaineistojen sisällön laatua on vaikeaa arvioida metatietojen perusteella. Käytännössä
