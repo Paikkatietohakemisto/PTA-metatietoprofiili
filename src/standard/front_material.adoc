@@ -2,28 +2,26 @@
 
 [discrete]
 === i. Lyhennelmä
+Paikkatietoalustan keskeisten tietoaineistojen, ns. PTA-aineistojen, metatietokuvausten
+tulee täyttää yleisiä metatietovaatimuksia tiukemmat vaatimukset, jotta aineistojen
+löytäminen, arvionti ja käyttöönotto olisi riittävän helppoa ja suoravaista.
+Tämän dokumentin lisävaatimukset perustuvat PTA-metatietoprofiili-projektissa tehdyssä
+käyttötarveselvityksessä raportoituihin ongelmiin ja muihin
+Paikkatietoalusta-hankkeessa havaittuihin aineistojen metatiedon sisältöön ja rakenteeseen
+liittyviin kehitystarpeisiin.
+
 Paikkatietoalusta - metatietoprofiili -määrittely laajentaa <<ISO_19115>>-
 ja <<ISO_19139>>-standardien, INSPIRE-direktiivin teknisen ohjeistuksen (<<TG_MD_20>>),
 ja <<JHS_158>>-suosituksen vaatimuksia vastaamaan PTA-aineistojen metatiedoilta vaadittavia
 erityispiirteitä. PTA-aineistojen metatietokuvausten tulee täyttää kaikki tämän määrittelyn
 pakolliset vaatimukset.
 
+Laajennokset on laadittu siten, että vaatimusten ja suositusten mukaiset
+metatietokuvaukset ovat sellaisenaan <<INSPIRE>>- ja <<JHS_158>> -vaatimusten mukaisia.
+
 [discrete]
 === ii. Avainsanat
 paikkatieto, metatieto, profiili, paikkatietoalusta, standardi, xml
 :keywords: paikkatieto, metatieto, profiili, paikkatietoalusta, standardi, xml
-
-[discrete]
-=== iii.   Johdanto
-Paikkatietoalustan keskeisten tietoaineistojen, ns. PTA-aineistojen, metatietokuvausten
-tulee täyttää yleisiä metatietovaatimuksia tiukemmat vaatimukset, jotta aineistojen
-löytäminen, arvionti ja käyttöönotto olisi riittävän helppoa ja suoravaista.
-Lisävaatimukset perustuvat PTA-metatietoprofiili-projektissa tehdyssä
-käyttötarveselvityksessä raportoituihin ongelmiin ja muihin
-Paikkatietoalusta-hankkeessa havaittuihin aineistojen metatiedon sisältöön ja rakenteeseen
-liittyviin kehitystarpeisiin.
-
-Laajennokset on laadittu siten, että vaatimusten ja suositusten mukaiset
-metatietokuvaukset ovat sellaisenaan <<INSPIRE>>- ja <<JHS_158>> -vaatimusten mukaisia.
 
 :sectnums:

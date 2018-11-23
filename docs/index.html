@@ -510,7 +510,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Julkaistu:   &lt;yyyy-mm-dd&gt;</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dokumentin tunniste: <a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.9" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.9</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dokumentin tunniste: <a href="http://paikkatiedot.fi/def/pta-metatietoprofiili/0.9" class="bare">http://paikkatiedot.fi/def/pta-metatietoprofiili/0.9</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Versio: 0.9</p></td>
@@ -525,30 +525,29 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </table>
 <h3 id="_i_lyhennelmä" class="discrete">i. Lyhennelmä</h3>
 <div class="paragraph">
+<p>Paikkatietoalustan keskeisten tietoaineistojen, ns. PTA-aineistojen, metatietokuvausten
+tulee täyttää yleisiä metatietovaatimuksia tiukemmat vaatimukset, jotta aineistojen
+löytäminen, arvionti ja käyttöönotto olisi riittävän helppoa ja suoravaista.
+Tämän dokumentin lisävaatimukset perustuvat PTA-metatietoprofiili-projektissa tehdyssä
+käyttötarveselvityksessä raportoituihin ongelmiin ja muihin
+Paikkatietoalusta-hankkeessa havaittuihin aineistojen metatiedon sisältöön ja rakenteeseen
+liittyviin kehitystarpeisiin.</p>
+</div>
+<div class="paragraph">
 <p>Paikkatietoalusta - metatietoprofiili -määrittely laajentaa <a href="#ISO_19115">[ISO 19115]</a>-
 ja <a href="#ISO_19139">[ISO 19139]</a>-standardien, INSPIRE-direktiivin teknisen ohjeistuksen (<a href="#TG_MD_20">[TG Metadata 2.0]</a>),
 ja <a href="#JHS_158">[JHS 158]</a>-suosituksen vaatimuksia vastaamaan PTA-aineistojen metatiedoilta vaadittavia
 erityispiirteitä. PTA-aineistojen metatietokuvausten tulee täyttää kaikki tämän määrittelyn
 pakolliset vaatimukset.</p>
 </div>
+<div class="paragraph">
+<p>Laajennokset on laadittu siten, että vaatimusten ja suositusten mukaiset
+metatietokuvaukset ovat sellaisenaan <a href="#INSPIRE">[INSPIRE]</a>- ja <a href="#JHS_158">[JHS 158]</a> -vaatimusten mukaisia.</p>
+</div>
 <h3 id="_ii_avainsanat" class="discrete">ii. Avainsanat</h3>
 <div class="paragraph">
 <p>paikkatieto, metatieto, profiili, paikkatietoalusta, standardi, xml
 :keywords: paikkatieto, metatieto, profiili, paikkatietoalusta, standardi, xml</p>
-</div>
-<h3 id="_iii_johdanto" class="discrete">iii.   Johdanto</h3>
-<div class="paragraph">
-<p>Paikkatietoalustan keskeisten tietoaineistojen, ns. PTA-aineistojen, metatietokuvausten
-tulee täyttää yleisiä metatietovaatimuksia tiukemmat vaatimukset, jotta aineistojen
-löytäminen, arvionti ja käyttöönotto olisi riittävän helppoa ja suoravaista.
-Lisävaatimukset perustuvat PTA-metatietoprofiili-projektissa tehdyssä
-käyttötarveselvityksessä raportoituihin ongelmiin ja muihin
-Paikkatietoalusta-hankkeessa havaittuihin aineistojen metatiedon sisältöön ja rakenteeseen
-liittyviin kehitystarpeisiin.</p>
-</div>
-<div class="paragraph">
-<p>Laajennokset on laadittu siten, että vaatimusten ja suositusten mukaiset
-metatietokuvaukset ovat sellaisenaan <a href="#INSPIRE">[INSPIRE]</a>- ja <a href="#JHS_158">[JHS 158]</a> -vaatimusten mukaisia.</p>
 </div>
 <div style="page-break-after: always;"></div>
 <div id="toc" class="toc">
@@ -559,13 +558,15 @@ metatietokuvaukset ovat sellaisenaan <a href="#INSPIRE">[INSPIRE]</a>- ja <a hre
 <li><a href="#_dokumentin_konventiot">3. Dokumentin konventiot</a>
 <ul class="sectlevel2">
 <li><a href="#_tunnisteet">3.1. Tunnisteet</a></li>
+<li><a href="#_graafiset_elementit">3.2. Graafiset elementit</a></li>
 </ul>
 </li>
 <li><a href="#_velvoittavat_viittaukset">4. Velvoittavat viittaukset</a></li>
 <li><a href="#_termit_ja_määritelmät">5. Termit ja määritelmät</a></li>
-<li><a href="#_paikkatietoalustan_metatietoprofiili">6. Paikkatietoalustan metatietoprofiili</a>
+<li><a href="#_johdanto">6. Johdanto</a>
 <ul class="sectlevel2">
-<li><a href="#_pta_kohtaisten_metatietovaatimusten_perustelut">6.1. PTA-kohtaisten metatietovaatimusten perustelut</a></li>
+<li><a href="#_pta_metatietoprofiilin_käyttäjät_ja_käyttötarkoitus">6.1. PTA-metatietoprofiilin käyttäjät ja käyttötarkoitus</a></li>
+<li><a href="#_pta_kohtaisten_metatietovaatimusten_perustelut">6.2. PTA-kohtaisten metatietovaatimusten perustelut</a></li>
 </ul>
 </li>
 <li><a href="#_vaatimuksenmukaisuusluokka_pta_aineisto">7. Vaatimuksenmukaisuusluokka PTA-aineisto</a>
@@ -613,7 +614,7 @@ metatietokuvaukset ovat sellaisenaan <a href="#INSPIRE">[INSPIRE]</a>- ja <a hre
 <div class="sectionbody">
 <div class="paragraph">
 <p>Tätä ohjeistusta sovelletaan PTA-aineistojen <a href="#ISO_19139">[ISO 19139]</a>-standardin mukaisten
-metatietokuvausten laatimiseen ja validointiin.</p>
+metatietokuvausten laatimiseen, validointiin ja esittämiseen hakupalveluissa.</p>
 </div>
 </div>
 </div>
@@ -621,7 +622,7 @@ metatietokuvausten laatimiseen ja validointiin.</p>
 <h2 id="_vaatimuksenmukaisuus"><a class="anchor" href="#_vaatimuksenmukaisuus"></a>2. Vaatimuksenmukaisuus</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Tämä asiakirja määrittelee yhden vaatimuksenmukaisuusluokan '<a href="#luokka-pta-aineisto">PTA-aineisto</a>',
+<p>Tämä dokumentti määrittelee yhden vaatimuksenmukaisuusluokan '<a href="#luokka-pta-aineisto">PTA-aineisto</a>',
 jonka kohteena on <a href="#ISO_19139">[ISO 19139]</a>-standardin mukainen metatietodokumentti.
 Kaikkien PTA-aineistoja kuvaavien metatietodokumenttien tulee täyttää tämän
 vaatimuksenmukaisuusluokan kaikki vaatimukset.</p>
@@ -634,12 +635,68 @@ vaatimuksenmukaisuusluokan kaikki vaatimukset.</p>
 <div class="sect2">
 <h3 id="_tunnisteet"><a class="anchor" href="#_tunnisteet"></a>3.1. Tunnisteet</h3>
 <div class="paragraph">
-<p>Tässä asiakirjassa kuvattujen vaatimusten kokonaisuuteen viitataan absoluuttisella URI-tunnuksella
-<code><a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.9" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.9</a></code>.
-Kaikkiin tässä asiakirjassa kuvattuihin vaatimuksiin ja vaatimuksenmukaisuustesteihin viitataan osittaisilla URI-tunnuksilla,
-jotka on määritelty suhteellisina tähän koko asiakirjan URI-tunnukseen nähden. Esimerkiksi Vaatimuksen 1 absoluuttinen
-URI-tunnus on <code><a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.9/vaatimukset/vaatimus-metatiedon-kieli" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/0.9/vaatimukset/vaatimus-metatiedon-kieli</a></code>.</p>
+<p>Tähän dokumenttiin viitataan URI-tunnuksella <code><a href="http://paikkatiedot.fi/def/pta-metatietoprofiili/0.9" class="bare">http://paikkatiedot.fi/def/pta-metatietoprofiili/0.9</a></code>.</p>
 </div>
+<div class="paragraph">
+<p>Tässä dokumentissa kuvattujen vaatimusten ja suositusten kokonaisuuteen, eli vaatimuksenmukaisuusluokkaan, viitataan URI-tunnuksella
+<code><a href="http://paikkatiedot.fi/def/pta-metatietoprofiili/0.9/vaatimukset/luokka-pta-aineisto" class="bare">http://paikkatiedot.fi/def/pta-metatietoprofiili/0.9/vaatimukset/luokka-pta-aineisto</a></code>.</p>
+</div>
+<div class="paragraph">
+<p>Tässä dokumentissa kuvattuihin vaatimuksille ja vaatimuksenmukaisuustesteille on annettu tekstissä osittaiset,
+niin sanotut suhteelliset URI-tunnukset, joista tulee viittausta varten koostaa absoluuttiset URI-tunnukset
+liittämällä osittaiset tunnukset koko dokumentin URI-tunnuksen perään. Esimerkiksi Vaatimukseen 1
+viittauskelpoinen URI-tunnus on <code><a href="http://paikkatiedot.fi/def/pta-metatietoprofiili/0.9/vaatimukset/vaatimus-metatiedon-kieli" class="bare">http://paikkatiedot.fi/def/pta-metatietoprofiili/0.9/vaatimukset/vaatimus-metatiedon-kieli</a></code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_graafiset_elementit"><a class="anchor" href="#_graafiset_elementit"></a>3.2. Graafiset elementit</h3>
+<div class="paragraph">
+<p>Vaatimuksenmukaisuusluokka kuvataan tekstissä graafisesti seuravaavankaltaisella taulukolla:</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #9fc4e5;"><p class="tableblock"><strong>Vaatimuksenmukaisuusluokka PTA-aineisto</strong> </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="http://paikkatiedot.fi/def/pta-metatietoprofiili/0.9/vaatimukset/luokka-pta-aineisto" class="bare">http://paikkatiedot.fi/def/pta-metatietoprofiili/0.9/vaatimukset/luokka-pta-aineisto</a></code> </p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Vaatimus kuvataan tekstissä graafisesti seuravaavankaltaisella taulukolla:</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #e7e6c8;"><p class="tableblock"><strong>Vaatimus&#160;1</strong> </p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>vaatimukset/vaatimus-metatiedon-kieli</code><br></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Suositus kuvataan tekstissä graafisesti seuravaavankaltaisella taulukolla:</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Suositus&#160;1</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>vaatimukset/suositus-aineiston-pta-tunnus</code><br></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -709,7 +766,7 @@ Council as regards interoperability of spatial data services.</p>
 <h2 id="_termit_ja_määritelmät"><a class="anchor" href="#_termit_ja_määritelmät"></a>5. Termit ja määritelmät</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Tämän asiakirjan puitteissä seuraavat termit ja määritelmät ovat voimassa:</p>
+<p>Tämän dokumentin puitteissä seuraavat termit ja määritelmät ovat voimassa:</p>
 </div>
 <div class="dlist glossary">
 <dl>
@@ -749,8 +806,8 @@ järjestelmä, joka mahdollistaa ihmisten, palveluiden ja sovellusten yhteydet t
 </dd>
 <dt>PTA-aineisto</dt>
 <dd>
-<p>Tietoaineisto, jonka käytöstä osana Paikkatietoalustan palveluja on sovittu Paikkatietoalustan ja
-tiedontuottajan välillä, ja jolle on annettu erityinen PTA-aineisto -status.</p>
+<p>Tietoaineisto, jonka käytöstä osana Paikkatietoalustan palveluja on sovittu Maanmittauslaitoksen ja
+tiedontuottajan välillä, ja jolle on yhteisesti sovittu erityinen PTA-aineisto -status.</p>
 </dd>
 <dt>PTA-laatuvahti</dt>
 <dd>
@@ -784,7 +841,7 @@ havaintoaineiston tunnus, joka on yksilöivä ko. palvelun sisällä.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_paikkatietoalustan_metatietoprofiili"><a class="anchor" href="#_paikkatietoalustan_metatietoprofiili"></a>6. Paikkatietoalustan metatietoprofiili</h2>
+<h2 id="_johdanto"><a class="anchor" href="#_johdanto"></a>6. Johdanto</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Paikkatietoalusta-hankeen tavoitteena on yhtenäistää valtion, maakuntien ja kuntien paikkatiedot ja
@@ -800,21 +857,50 @@ avulla voidaan toteuttaa hyvin toimivia ja täsmällisiä tuloksia antavia ainei
 kuten Paikkatietoalustan ontologioiden hyödyntämiseen ja koneoppimiseen perustuva älykäs hakukone (<a href="#alykas_haku">[Älykäs haku]</a>).</p>
 </div>
 <div class="paragraph">
-<p>Paikkatietoalustan oman metatietoprofiilin, niin sanotun PTA-metatietoprofiilin, tarkoituksena on
-ohjata Paikkatietoalustalla julkaistavien aineistojen tuottajia kuvaamaan aineistojen metatiedot tavalla,
-joka helpottaa Paikkatietoalustan käyttäjäryhmien aineistojen löytämistä ja arviointia heidän keskeisissä
-käyttötapauksissaan.</p>
-</div>
-<div class="paragraph">
-<p>Käyttäjien metatiedon käyttöön ja paikkatietoaineistojen löytämiseen liittyvien
-tarpeiden selvittämiseksi tehtiin käyttötarveselvitys elo-lokakuussa 2018. Selvityksen aikana yksilö- ja
+<p>Tämän dokumentin kuvaama metatietoprofiili laaditiin osana Paikkatietoalusta-hankkeen
+keskeisten PTA-aineistojen metatietojen laadun ja kattavuuden parantamiseen tähtäävää työtä.
+Paikkatietoalustan nykyisten ja potentiaalisten käyttäjien metatiedon käyttöön ja paikkatietoaineistojen
+löytämiseen liittyvien tarpeiden selvittämiseksi tehtiin käyttötarveselvitys elo-lokakuussa 2018.
+Selvityksen aikana yksilö- ja
 ryhmähaastatteluihin osallistui yhteensä 22 henkilöä seitsemästä eri julkishallinnon ja yksityisen sektorin
 organisaatiosta (<a href="#kayttotarveselvitys">[Käyttötarveselvitys]</a>). Käyttötarveselvityksen tuloksena syntyi raportti, joka kuvaa paikkatietoaineistojen hankintaa,
 arviointia ja käyttöä haastatelluissa organisaatioissa, sekä Paikkatietoalustaan ja julkishallinnon
 ylläpitämiin ja julkaisemiin paikkatietoaineistoihin liittyviä onnistumisia ja parannuskohteita.</p>
 </div>
 <div class="sect2">
-<h3 id="_pta_kohtaisten_metatietovaatimusten_perustelut"><a class="anchor" href="#_pta_kohtaisten_metatietovaatimusten_perustelut"></a>6.1. PTA-kohtaisten metatietovaatimusten perustelut</h3>
+<h3 id="_pta_metatietoprofiilin_käyttäjät_ja_käyttötarkoitus"><a class="anchor" href="#_pta_metatietoprofiilin_käyttäjät_ja_käyttötarkoitus"></a>6.1. PTA-metatietoprofiilin käyttäjät ja käyttötarkoitus</h3>
+<div class="paragraph">
+<p>Paikkatietoalustan metatietoprofiilin tarkoituksena on
+ohjata Paikkatietoalustalla julkaistavien aineistojen tuottajia kuvaamaan aineistojen metatiedot tavalla,
+joka helpottaa aineistojen löytämistä ja niiden arviointia. PTA-metatietoprofiili ei sellaisenaan
+ole tarkoitettu ohjeeksi tiedontuottajille aineistojen metatietojen tarkoituksenmukaista kuvaamista varten. Useimmat
+Paikkatietoalustan käyttäjät ja monet tiedontuottajatkaan eivät suoraan
+lue tai kirjoita XML-muotoisia metatietokuvauksia, vaan he hyödyntävät web- tai työpöytäsovelluksia,
+jotka esittävät metatietokentät helpommin luetavassa muodossa ja helpottavat metatietojen muokkausta niille
+asetettujen vaatimusten mukaisiksi.</p>
+</div>
+<div class="paragraph">
+<p>Tässä dokumentissa kuvattu metatietoprofiili on ensisijaisesti tarkoitettu kuvaamaan PTA-aineistojen
+metatiedon välittämisen minimitietosisältö ja -muoto teknisen yhteentoimivuuden takaavalla tasolla. Vaatimukset on laadittu silmälläpitäen
+sekä käyttötapauksia, joissa PTA-aineistojen metatieto tuodaan Paikkatietoalustaan tiedontuottajien omista tai muista ulkopuolisista
+tietojärjestelmistä, että käyttötapauksia, joissa metatiedot kuvataan ja niitä ylläpidetään Paikkatietoalustan tarjoamilla
+työvälineillä ja sovelluksilla. Osa vaaditusta metatietosisällöstä, kuten Paikkatietoalustan Laatuvahti-palvelun
+laatutestien tulokset (ks. <a href="#vaatimus-pta-vaatimuksenmukaisuus">vaatimukset/vaatimus-pta-vaatimuksenmukaisuus</a>), on
+suunniteltu sisällöksi, jonka Paikkatietoalusta tuottaa automaattisesti osaksi aineiston metatietokuvausta. Muutoinkin
+on tavoitteena, että Paikkatietoalustan aineistojen metatietoja ylläpidetään mahdollisimman automaattisesti.</p>
+</div>
+<div class="paragraph">
+<p>Paikkatietoalustan metatietoprofiili on tässä dokumentissa kuvattu käyttäen <a href="#ISO_19139">[ISO 19139]</a>-standardin
+mukaista metatietojen XML-tietorakennetta. Vaatimukset ja suositukset
+on esitetty käyttäen <a href="#XPath_20">[XPath 2.0]</a>-kyselykielisiä ilmauksia, jotta niiden merkitys jäisi
+mahdollisimman vähän tulkinnanvaraiseksi, eikä erillisiä tulkintaohjeista tarvita teknisen yhteentoimivuuden
+takaamiseksi. Koska asetettujen vaatimusten kieli jää näin hyvin tekniseksi, on suositeltavaa huomioida
+suoraan tiedontuottajille tarkoitetun ohjeistuksen tarpeet Paikkatietoalustan metatiedonkäsittelyvälineiden
+kehityksessä ja dokumentoinnissa.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pta_kohtaisten_metatietovaatimusten_perustelut"><a class="anchor" href="#_pta_kohtaisten_metatietovaatimusten_perustelut"></a>6.2. PTA-kohtaisten metatietovaatimusten perustelut</h3>
 <div class="paragraph">
 <p>Käyttötarveselvityksen tuloksia on hyödynnetty määriteltäessä PTA-metatietoprofiilin vaatimuksia.
 Metatietovaatimusten määrittely on tasapainottelua juuri sopivan kuvaustason saavuttamiseksi:
@@ -867,8 +953,9 @@ usein annettu vapaatekstinä. Tähän vastaa <a href="#suositus-yksityiskohtaisu
 <li>
 <p>Paikkatietoaineistojen sisällön laatua on vaikeaa arvioida metatietojen perusteella. Käytännössä
 arvioinnissa luotetaan usein siihen, että kun aineiston on tuottanut ja/tai julkaissut laadukkaista
-aineistoista tunnettu taho, niin oletetaan sen täyttävän järkevät laatuvaatimukset. Laatutestien
-tulosten ilmaisemiseen osana metatietoja liittyy <a href="#vaatimus-pta-vaatimuksenmukaisuus">Vaatimus 16</a>.</p>
+aineistoista tunnettu taho, niin oletetaan sen täyttävän järkevät laatuvaatimukset.
+<a href="#vaatimus-pta-vaatimuksenmukaisuus">Vaatimus 16</a> liittyy laatutestien
+tulosten ilmaisemiseen osana PTA-aineistojen metatietoja.</p>
 </li>
 </ul>
 </div>
@@ -920,7 +1007,7 @@ niin sanottuja PTA-aineistoja. Palvelujen metatiedot on rajattu tämän vaatimuk
 <td class="tableblock halign-left valign-top" colspan="2" style="background-color: #9fc4e5;"><p class="tableblock"><strong>Vaatimuksenmukaisuusluokka PTA-aineisto</strong> </p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/{versio}/vaatimukset/luokka-pta-aineisto" class="bare">http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/{versio}/vaatimukset/luokka-pta-aineisto</a></code> </p></td>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock"><code><a href="http://paikkatiedot.fi/def/pta-metatietoprofiili/0.9/vaatimukset/luokka-pta-aineisto" class="bare">http://paikkatiedot.fi/def/pta-metatietoprofiili/0.9/vaatimukset/luokka-pta-aineisto</a></code> </p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Kohde</strong></p></td>
@@ -1121,9 +1208,13 @@ dokumentista <a href="#TG_MD_20">[TG Metadata 2.0]</a>.</p>
 <div class="paragraph">
 <p>INSPIRE-vaatimus TG Requirement C.5 vaatii ilmaisemaan luonnollisen kielen, jolla metatiedon vapaatekstisisältö on
 kuvattu. Lisäksi vaatimus TG Requirement C.4 esittää kolme sallittua vaihtoehtoa vapaateksti-arvoisten metatietoelementtien
-ilmaisemiseen. PTA-aineistojen suhteen monikielisen metatietosisällön tarjoamista koskevaa INSPIRE-vaatimusta tiukennetaan
+ilmaisemiseen. Yksi sallituista vaihtoehdoista on monenkielisten metatietojen antaminen samassa
+meatietodokumentissa tekstikenttien dynaamisen uudelleentyypittämisen avulla (vaihtoehto 3).</p>
+</div>
+<div class="paragraph">
+<p>PTA-aineistojen suhteen monikielisen metatietosisällön tarjoamista koskevaa INSPIRE-vaatimusta tiukennetaan
 siten, että mahdolliset käännökset metatiedon kielellä ilmaistuille sisällöille esitetään aina samassa
-metatietodokumentissa alkuperäisen sisällön kanssa.</p>
+metatietodokumentissa alkuperäisen sisällön kanssa TG Requirement C.4 vaihtoehdon 3 mukaisesti.</p>
 </div>
 <table id="vaatimus-metatiedon-kieli" class="tableblock frame-all grid-all" style="width: 90%;">
 <colgroup>
@@ -1184,6 +1275,34 @@ kuvaavan elementin <code>/*/gmd:locale/gmd:PT_Locale</code> attribuutin <code>id
             <span class="tok-nt">&lt;/gmd:PT_FreeText&gt;</span>
          <span class="tok-nt">&lt;/gmd:title&gt;</span></code></pre>
 </div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Huomautus</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>INSPIRE-hakupalvelujen teknisen ohjeen <a href="#TG_DISC_31">[TG Discovery Services 3.1]</a> vaatimuksen "Implementation Requirement 24" mukaan
+INSPIRE-vaatimusten mukaisen CSW-hakupalvelurajapinnan tulee tukea luonnollisen kielen valintaa
+erityisen kielivalintapyyntöparametrin avulla. Mikäli palvelun käyttäjä antaa palvelun tukeman kielen
+mukaisen kielivalintaparametrin osana palvelupyyntöä, tulee palvelun palauttaa vastauksen luonnollisella
+kielellä kuvattujen kenttien arvot pyydetyllä kielellä.</p>
+</div>
+<div class="paragraph">
+<p>Tämän vaatimuksen ei katsota olevan ristiriidassa PTA-metatietoprofiilin vaatimuksen
+<a href="#vaatimus-metatiedon-kieli">vaatimukset/vaatimus-metatiedon-kieli</a> kanssa, sillä
+CSW-palvelu voi muokata palautettavaa metatietodokumenttia siten, että pyydetynkielinen
+sisältö palautetaan metatietokenttien oletussisältönä ja metatiedon kieli -kentän arvo
+asetetaan pyydetyn kielen mukaiseksi. Kaikkien tarjottavien metatiedon
+kieliversioiden tekstisisältöjen kuvaaminen samassa siirtotietorakenteessa helpottaa
+metatietojen pysymistä yhtenäisinä, kun kukin aineisto kuvataan vain yhdellä
+metatietotietueella.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect3">
@@ -1431,7 +1550,7 @@ tulee palauttaa aineiston URL-tunnus.</p></td>
 Mikäli PTA-aineistolle ei Paikkatietoalustan ulkopuolella ole annettu INSPIRE-vaatimukset ja yllä kuvatun Vaatimuksen
 4 ehdot täyttävää URL-muotoista tunnusta, on suositeltavaa käyttää aineiston yksilöivänä
 tunnuksena Paikkatietoalustan tuottamaa, aineiston PTA-tunnukseen perustuvaa pysyvää URL-osoitetta, joka uudelleenohjataan
-Paikkatietoalustan hakupalvelun kyseisen aineiston tietokorttisivulle.</p>
+esimerkiksi Paikkatietoalustan tuottamalle kyseisen aineiston tietokorttisivulle.</p>
 <p class="tableblock">Mikäli aineisto poistetaan Paikkatietoikkunasta tai se korvataan toisella
 aineistolla, jolla on eri tunnus, tulisi poistetun aineiston URL-tunnuksen osoittaa sivuun, jossa kerrotaan että
 ko. aineisto ei ole enää saatavilla Paikkatietoikkunan kautta.</p></td>
@@ -1629,19 +1748,6 @@ hakusanaston avainsanaa.</p></td>
 </tr>
 </tbody>
 </table>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Ongelma</div>
-</td>
-<td class="content">
-Mistä Paikkatietohakemiston hakusanaston sanat ja niiden URL-osoitteet voi löytää? Fintossa ei voi tehdä hakua,
-joka palauttaisi kaikki ko. sanaston sanat, vaikka vapaasanahakua voikin rajata koskemaan vain Paikkatietohakemiston hakusanastoa.
-</td>
-</tr>
-</table>
-</div>
 </div>
 <div class="sect3">
 <h4 id="_aineiston_saatavuuden_ja_käytön_rajoitteet"><a class="anchor" href="#_aineiston_saatavuuden_ja_käytön_rajoitteet"></a>7.4.5. Aineiston saatavuuden ja käytön rajoitteet</h4>
@@ -2075,11 +2181,12 @@ dokumentista <a href="#TG_MD_20">[TG Metadata 2.0]</a>.</p>
 <td class="tableblock halign-left valign-top" style="background-color: #e7e6c8;"><p class="tableblock"><strong>Vaatimus&#160;16</strong> </p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><code>vaatimukset/vaatimus-pta-vaatimuksenmukaisuus</code><br>
 PTA-aineistojen metatietoihin tulee kirjata merkinnät
-PTA-vaatimuksenmukaisuusluokkien sisältävien laatutestien tuloksista. Metatiedon tulee sisältää yksi
+PTA-vaatimuksenmukaisuusluokkien sisältävien laatutestien tuloksista, mikäli näitä testejä on ajettu kyseiselle
+aineistolle. Metatiedon tulee sisältää yksi
 vaatimuksenmukaisuusmerkintä kutakin kyseiselle aineistolle pakollista vaatimuksenmukaisuusluokkaa kohti.
 XPath-kyselyn
 <code>/*/gmd:dataQualityInfo/*/gmd:report/gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult
-[./gmd:specification/*/gmd:title/gmx:Anchor/starts-with(@xlink:href,'http://paikkatietoalusta.fi/id/vaatimuksenmukaisuusluokka/')]
+[./gmd:specification/*/gmd:title/gmx:Anchor/starts-with(@xlink:href,'http://paikkatiedot.fi/def/pta-aineisto/vaatimukset/')]
 /gmd:pass/gco:Boolean/text()</code> tulee palauttaa kaikkien PTA-laatutestien vaatimuksenmukaisuusmerkintöjen läpäisystä kertovat
 totuusarvot (true/false).</p></td>
 </tr>
@@ -2114,7 +2221,7 @@ dokumentin piiriin.</p>
            <span class="tok-nt">&lt;gmd:specification&gt;</span>
               <span class="tok-nt">&lt;gmd:CI_Citation&gt;</span>
                  <span class="tok-nt">&lt;gmd:title&gt;</span>
-                    <span class="tok-nt">&lt;gmx:Anchor</span> <span class="tok-na">xlink:href=</span><span class="tok-s">&quot;http://paikkatietoalusta.fi/id/vaatimuksenmukaisuusluokka/topologia&quot;</span><span class="tok-nt">&gt;</span>Topologia<span class="tok-nt">&lt;/gmx:Anchor&gt;</span>
+                    <span class="tok-nt">&lt;gmx:Anchor</span> <span class="tok-na">xlink:href=</span><span class="tok-s">&quot;http://paikkatiedot.fi/def/pta-aineisto/vaatimukset/luokka-topologia&quot;</span><span class="tok-nt">&gt;</span>Topologia<span class="tok-nt">&lt;/gmx:Anchor&gt;</span>
                  <span class="tok-nt">&lt;/gmd:title&gt;</span>
                  <span class="tok-nt">&lt;gmd:date&gt;</span>
                     <span class="tok-nt">&lt;gmd:CI_Date&gt;</span>
@@ -2181,11 +2288,11 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -2206,11 +2313,11 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -2231,11 +2338,11 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -2256,11 +2363,11 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -2281,11 +2388,11 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -2306,11 +2413,11 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -2331,11 +2438,11 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -2356,11 +2463,11 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -2381,11 +2488,11 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -2406,11 +2513,11 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -2431,11 +2538,11 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -2456,11 +2563,11 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -2481,11 +2588,11 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -2506,11 +2613,11 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -2531,11 +2638,11 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -2556,11 +2663,11 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testin tarkoitus:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Testimenetelmä:</p></th>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&lt;puuttuu&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -2607,7 +2714,7 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">2018-11-23</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">0.9</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Ilkka Rinne</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Korjattu kirjoitusvirheitä, lisätty Geoinformatiikan sanaston viiteluetteloon</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Korjattu kirjoitusvirheitä, lisätty Geoinformatiikan sanaston viiteluetteloon, lisätty tarkennuksia tekstiin. Johdantoa täydennetty</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Kommenttikierroksen muutokset</p></td>
 </tr>
 </tbody>
@@ -2631,6 +2738,9 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </li>
 <li>
 <p><a id="TG_MD_20"></a>[TG Metadata 2.0] Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0, <a href="https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139" class="bare">https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139</a></p>
+</li>
+<li>
+<p><a id="TG_DISC_31"></a>[TG Discovery Services 3.1] Technical Guidance for the implementation of INSPIRE Discovery Services, version 3.1, <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-discovery-services-0" class="bare">https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-discovery-services-0</a></p>
 </li>
 <li>
 <p><a id="TG_DS_31"></a>[TG Download Services 3.1] Technical Guidance for the implementation of INSPIRE Download Services, version 3.1, <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" class="bare">https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services</a></p>
@@ -2666,7 +2776,7 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 <p><a id="URL"></a>[URL] URL, Living Standard - Last Updated 25 October 2018, Web Hypertext Application Technology Working Group (WHATWG), <a href="https://url.spec.whatwg.org/" class="bare">https://url.spec.whatwg.org/</a> (viitattu 9.11.2018)</p>
 </li>
 <li>
-<p><a id="GI_sanasto"></a>[Geoinformatiikan sanasto] Geoinformatiikan sanasto, Sanastokeskus TSK, TSK 51, 2018</p>
+<p><a id="GI_sanasto"></a>[Geoinformatiikan sanasto] Geoinformatiikan sanasto, Sanastokeskus TSK, TSK 51, 2018, <a href="http://www.tsk.fi/tsk/fi/geoinformatiikan_sanaston_4_laitos_tsk_51-1110.html" class="bare">http://www.tsk.fi/tsk/fi/geoinformatiikan_sanaston_4_laitos_tsk_51-1110.html</a></p>
 </li>
 </ul>
 </div>
@@ -2675,7 +2785,7 @@ Mikäli aineiston yksityiskohtaisuuden kuvaamiseen on käytettävissä yleisesti
 </div>
 <div id="footer">
 <div id="footer-text">
-Viimeksi päivitetty 2018-11-22 15:17:16 UTC
+Viimeksi päivitetty 2018-11-23 14:46:36 UTC
 </div>
 </div>
 </body>

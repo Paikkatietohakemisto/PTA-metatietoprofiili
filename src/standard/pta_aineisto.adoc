@@ -16,7 +16,7 @@ niin sanottuja PTA-aineistoja. Palvelujen metatiedot on rajattu tämän vaatimuk
 [cols="1,4",width="90%"]
 |===
 2+|*Vaatimuksenmukaisuusluokka PTA-aineisto* {set:cellbgcolor:#9fc4e5}
-2+| `http://paikkatietoalusta.fi/id/dok/pta-metatietoprofiili/{versio}/vaatimukset/luokka-pta-aineisto` {set:cellbgcolor:#FFFFFF}
+2+| `http://paikkatiedot.fi/def/pta-metatietoprofiili/{x-versio}/vaatimukset/luokka-pta-aineisto` {set:cellbgcolor:#FFFFFF}
 |*Kohde* |ISO 19139 -standardin mukainen metatietodokumentti
 |*Riippuvuus* |http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/isdss
 |*Riippuvuus* |http://www.jhs-suositukset.fi/suomi/jhs158/jhs-metatietoprofiili
@@ -100,9 +100,12 @@ PTA-aineistojen suhteen esitetään lisäksi tämän luvun alilukujen sisältäm
 ==== Metatiedon kieli ja monikielisyys
 INSPIRE-vaatimus TG Requirement C.5 vaatii ilmaisemaan luonnollisen kielen, jolla metatiedon vapaatekstisisältö on
 kuvattu. Lisäksi vaatimus TG Requirement C.4 esittää kolme sallittua vaihtoehtoa vapaateksti-arvoisten metatietoelementtien
-ilmaisemiseen. PTA-aineistojen suhteen monikielisen metatietosisällön tarjoamista koskevaa INSPIRE-vaatimusta tiukennetaan
+ilmaisemiseen. Yksi sallituista vaihtoehdoista on monenkielisten metatietojen antaminen samassa
+meatietodokumentissa tekstikenttien dynaamisen uudelleentyypittämisen avulla (vaihtoehto 3).
+
+PTA-aineistojen suhteen monikielisen metatietosisällön tarjoamista koskevaa INSPIRE-vaatimusta tiukennetaan
 siten, että mahdolliset käännökset metatiedon kielellä ilmaistuille sisällöille esitetään aina samassa
-metatietodokumentissa alkuperäisen sisällön kanssa.
+metatietodokumentissa alkuperäisen sisällön kanssa TG Requirement C.4 vaihtoehdon 3 mukaisesti.
 
 [#vaatimus-metatiedon-kieli]
 [width="90%",cols="2,6"]
@@ -161,6 +164,24 @@ kuvaavan elementin `/pass:[*]/gmd:locale/gmd:PT_Locale` attribuutin `id` arvo.
             </gmd:PT_FreeText>
          </gmd:title>
 ----
+
+[NOTE]
+====
+INSPIRE-hakupalvelujen teknisen ohjeen <<TG_DISC_31>> vaatimuksen "Implementation Requirement 24" mukaan
+INSPIRE-vaatimusten mukaisen CSW-hakupalvelurajapinnan tulee tukea luonnollisen kielen valintaa
+erityisen kielivalintapyyntöparametrin avulla. Mikäli palvelun käyttäjä antaa palvelun tukeman kielen
+mukaisen kielivalintaparametrin osana palvelupyyntöä, tulee palvelun palauttaa vastauksen luonnollisella
+kielellä kuvattujen kenttien arvot pyydetyllä kielellä.
+
+Tämän vaatimuksen ei katsota olevan ristiriidassa PTA-metatietoprofiilin vaatimuksen
+<<#vaatimus-metatiedon-kieli,vaatimukset/vaatimus-metatiedon-kieli>> kanssa, sillä
+CSW-palvelu voi muokata palautettavaa metatietodokumenttia siten, että pyydetynkielinen
+sisältö palautetaan metatietokenttien oletussisältönä ja metatiedon kieli -kentän arvo
+asetetaan pyydetyn kielen mukaiseksi. Kaikkien tarjottavien metatiedon
+kieliversioiden tekstisisältöjen kuvaaminen samassa siirtotietorakenteessa helpottaa
+metatietojen pysymistä yhtenäisinä, kun kukin aineisto kuvataan vain yhdellä
+metatietotietueella.
+====
 
 ==== Metatietokuvauksen yksilöivä tunnus
 
@@ -287,7 +308,7 @@ tulee palauttaa aineiston URL-tunnus.
 Mikäli PTA-aineistolle ei Paikkatietoalustan ulkopuolella ole annettu INSPIRE-vaatimukset ja yllä kuvatun Vaatimuksen
 {x-vaatimus-aineiston-tunnus-nro} ehdot täyttävää URL-muotoista tunnusta, on suositeltavaa käyttää aineiston yksilöivänä
 tunnuksena Paikkatietoalustan tuottamaa, aineiston PTA-tunnukseen perustuvaa pysyvää URL-osoitetta, joka uudelleenohjataan
-Paikkatietoalustan hakupalvelun kyseisen aineiston tietokorttisivulle.
+esimerkiksi Paikkatietoalustan tuottamalle kyseisen aineiston tietokorttisivulle.
 
 Mikäli aineisto poistetaan Paikkatietoikkunasta tai se korvataan toisella
 aineistolla, jolla on eri tunnus, tulisi poistetun aineiston URL-tunnuksen osoittaa sivuun, jossa kerrotaan että
@@ -422,9 +443,6 @@ tuloksena, Vaatimuksen {x-vaatimus-asiasana-ankkuri-nro} mukaisesti.
 Kunkin PTA-aineiston metatietokuvauksessa on käytettävä vähintään yhtä Paikkatietohakemiston
 hakusanaston avainsanaa.
 |===
-
-WARNING: Mistä Paikkatietohakemiston hakusanaston sanat ja niiden URL-osoitteet voi löytää? Fintossa ei voi tehdä hakua,
-joka palauttaisi kaikki ko. sanaston sanat, vaikka vapaasanahakua voikin rajata koskemaan vain Paikkatietohakemiston hakusanastoa.
 
 ==== Aineiston saatavuuden ja käytön rajoitteet
 
@@ -733,11 +751,12 @@ PTA-aineistojen suhteen esitetään lisäksi tämän luvun sisältämät lisäva
 |*Vaatimus{nbsp}{x-vaatimus-pta-vaatimuksenmukaisuus-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-pta-vaatimuksenmukaisuus` +
 {set:cellbgcolor:#FFFFFF}
 PTA-aineistojen metatietoihin tulee kirjata merkinnät
-PTA-vaatimuksenmukaisuusluokkien sisältävien laatutestien tuloksista. Metatiedon tulee sisältää yksi
+PTA-vaatimuksenmukaisuusluokkien sisältävien laatutestien tuloksista, mikäli näitä testejä on ajettu kyseiselle
+aineistolle. Metatiedon tulee sisältää yksi
 vaatimuksenmukaisuusmerkintä kutakin kyseiselle aineistolle pakollista vaatimuksenmukaisuusluokkaa kohti.
 XPath-kyselyn
 `/pass:[*]/gmd:dataQualityInfo/pass:[*]/gmd:report/gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult
-[./gmd:specification/pass:[*]/gmd:title/gmx:Anchor/starts-with(@xlink:href,'http://paikkatietoalusta.fi/id/vaatimuksenmukaisuusluokka/')]
+[./gmd:specification/pass:[*]/gmd:title/gmx:Anchor/starts-with(@xlink:href,'http://paikkatiedot.fi/def/pta-aineisto/vaatimukset/')]
 /gmd:pass/gco:Boolean/text()` tulee palauttaa kaikkien PTA-laatutestien vaatimuksenmukaisuusmerkintöjen läpäisystä kertovat
 totuusarvot (true/false).
 |===
@@ -762,7 +781,7 @@ dokumentin piiriin.
            <gmd:specification>
               <gmd:CI_Citation>
                  <gmd:title>
-                    <gmx:Anchor xlink:href="http://paikkatietoalusta.fi/id/vaatimuksenmukaisuusluokka/topologia">Topologia</gmx:Anchor>
+                    <gmx:Anchor xlink:href="http://paikkatiedot.fi/def/pta-aineisto/vaatimukset/luokka-topologia">Topologia</gmx:Anchor>
                  </gmd:title>
                  <gmd:date>
                     <gmd:CI_Date>

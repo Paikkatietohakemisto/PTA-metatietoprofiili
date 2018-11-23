@@ -1,4 +1,4 @@
-== Paikkatietoalustan metatietoprofiili
+== Johdanto
 Paikkatietoalusta-hankeen tavoitteena on yhtenäistää valtion, maakuntien ja kuntien paikkatiedot ja
 tuoda ne myös yritysten ja yhteisöjen saataville. Vuonna 2017 alkanut hanke on osa hallituksen Digitalisoidaan julkiset
 palvelut -kärkihankekokonaisuutta. Tavoitteena on yhtenäistää ja parantaa julkisen hallinnon sähköisiä
@@ -10,17 +10,42 @@ niiden soveltuvuuden ja laadun arvioinnissa on tärkeä. Vain laadukkaan ja hyvi
 avulla voidaan toteuttaa hyvin toimivia ja täsmällisiä tuloksia antavia aineiston hakupalveluita,
 kuten Paikkatietoalustan ontologioiden hyödyntämiseen ja koneoppimiseen perustuva älykäs hakukone (<<alykas_haku>>).
 
-Paikkatietoalustan oman metatietoprofiilin, niin sanotun PTA-metatietoprofiilin, tarkoituksena on
-ohjata Paikkatietoalustalla julkaistavien aineistojen tuottajia kuvaamaan aineistojen metatiedot tavalla,
-joka helpottaa Paikkatietoalustan käyttäjäryhmien aineistojen löytämistä ja arviointia heidän keskeisissä
-käyttötapauksissaan.
-
-Käyttäjien metatiedon käyttöön ja paikkatietoaineistojen löytämiseen liittyvien
-tarpeiden selvittämiseksi tehtiin käyttötarveselvitys elo-lokakuussa 2018. Selvityksen aikana yksilö- ja
+Tämän dokumentin kuvaama metatietoprofiili laaditiin osana Paikkatietoalusta-hankkeen
+keskeisten PTA-aineistojen metatietojen laadun ja kattavuuden parantamiseen tähtäävää työtä.
+Paikkatietoalustan nykyisten ja potentiaalisten käyttäjien metatiedon käyttöön ja paikkatietoaineistojen
+löytämiseen liittyvien tarpeiden selvittämiseksi tehtiin käyttötarveselvitys elo-lokakuussa 2018.
+Selvityksen aikana yksilö- ja
 ryhmähaastatteluihin osallistui yhteensä 22 henkilöä seitsemästä eri julkishallinnon ja yksityisen sektorin
 organisaatiosta (<<kayttotarveselvitys>>). Käyttötarveselvityksen tuloksena syntyi raportti, joka kuvaa paikkatietoaineistojen hankintaa,
 arviointia ja käyttöä haastatelluissa organisaatioissa, sekä Paikkatietoalustaan ja julkishallinnon
 ylläpitämiin ja julkaisemiin paikkatietoaineistoihin liittyviä onnistumisia ja parannuskohteita.
+
+=== PTA-metatietoprofiilin käyttäjät ja käyttötarkoitus
+Paikkatietoalustan metatietoprofiilin tarkoituksena on
+ohjata Paikkatietoalustalla julkaistavien aineistojen tuottajia kuvaamaan aineistojen metatiedot tavalla,
+joka helpottaa aineistojen löytämistä ja niiden arviointia. PTA-metatietoprofiili ei sellaisenaan
+ole tarkoitettu ohjeeksi tiedontuottajille aineistojen metatietojen tarkoituksenmukaista kuvaamista varten. Useimmat
+Paikkatietoalustan käyttäjät ja monet tiedontuottajatkaan eivät suoraan
+lue tai kirjoita XML-muotoisia metatietokuvauksia, vaan he hyödyntävät web- tai työpöytäsovelluksia,
+jotka esittävät metatietokentät helpommin luetavassa muodossa ja helpottavat metatietojen muokkausta niille
+asetettujen vaatimusten mukaisiksi.
+
+Tässä dokumentissa kuvattu metatietoprofiili on ensisijaisesti tarkoitettu kuvaamaan PTA-aineistojen
+metatiedon välittämisen minimitietosisältö ja -muoto teknisen yhteentoimivuuden takaavalla tasolla. Vaatimukset on laadittu silmälläpitäen
+sekä käyttötapauksia, joissa PTA-aineistojen metatieto tuodaan Paikkatietoalustaan tiedontuottajien omista tai muista ulkopuolisista
+tietojärjestelmistä, että käyttötapauksia, joissa metatiedot kuvataan ja niitä ylläpidetään Paikkatietoalustan tarjoamilla
+työvälineillä ja sovelluksilla. Osa vaaditusta metatietosisällöstä, kuten Paikkatietoalustan Laatuvahti-palvelun
+laatutestien tulokset (ks. <<#vaatimus-pta-vaatimuksenmukaisuus,vaatimukset/vaatimus-pta-vaatimuksenmukaisuus>>), on
+suunniteltu sisällöksi, jonka Paikkatietoalusta tuottaa automaattisesti osaksi aineiston metatietokuvausta. Muutoinkin
+on tavoitteena, että Paikkatietoalustan aineistojen metatietoja ylläpidetään mahdollisimman automaattisesti.
+
+Paikkatietoalustan metatietoprofiili on tässä dokumentissa kuvattu käyttäen <<ISO_19139>>-standardin
+mukaista metatietojen XML-tietorakennetta. Vaatimukset ja suositukset
+on esitetty käyttäen <<XPath_20>>-kyselykielisiä ilmauksia, jotta niiden merkitys jäisi
+mahdollisimman vähän tulkinnanvaraiseksi, eikä erillisiä tulkintaohjeista tarvita teknisen yhteentoimivuuden
+takaamiseksi. Koska asetettujen vaatimusten kieli jää näin hyvin tekniseksi, on suositeltavaa huomioida
+suoraan tiedontuottajille tarkoitetun ohjeistuksen tarpeet Paikkatietoalustan metatiedonkäsittelyvälineiden
+kehityksessä ja dokumentoinnissa.
 
 === PTA-kohtaisten metatietovaatimusten perustelut
 
@@ -66,8 +91,9 @@ usein annettu vapaatekstinä. Tähän vastaa <<#suositus-yksityiskohtaisuus-luok
 
 * Paikkatietoaineistojen sisällön laatua on vaikeaa arvioida metatietojen perusteella. Käytännössä
 arvioinnissa luotetaan usein siihen, että kun aineiston on tuottanut ja/tai julkaissut laadukkaista
-aineistoista tunnettu taho, niin oletetaan sen täyttävän järkevät laatuvaatimukset. Laatutestien
-tulosten ilmaisemiseen osana metatietoja liittyy <<#vaatimus-pta-vaatimuksenmukaisuus, Vaatimus 16>>.
+aineistoista tunnettu taho, niin oletetaan sen täyttävän järkevät laatuvaatimukset.
+<<#vaatimus-pta-vaatimuksenmukaisuus, Vaatimus 16>> liittyy laatutestien
+tulosten ilmaisemiseen osana PTA-aineistojen metatietoja.
 
 PTA-metatietoprofiili perustuu kansainvälisiin <<ISO_19115>> - ja <<ISO_19139>> -standardeihin
 ja niitä tarkentavien INSPIRE-direktiivin metatieto-ohjeistus - (<<TG_MD_20>>) ja

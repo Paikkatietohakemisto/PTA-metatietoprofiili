@@ -7,5 +7,5 @@
 |Päiväys |Versio |Editori | Pääasiallinen muutos |Kuvaus
 |2018-11-06 |0.1 |Ilkka Rinne |kaikki |Ensimmäinen versio (luonnos)
 |2018-11-09 |0.5 |Ilkka Rinne |Johdantoluvut, lisätty virheellisesti puuttunut vähintään yhden Paikkatietohakemiston hakusanaston avainsanavaatimus | Täydennetty luonnos
-|2018-11-23 |0.9 |Ilkka Rinne |Korjattu kirjoitusvirheitä, lisätty Geoinformatiikan sanaston viiteluetteloon | Kommenttikierroksen muutokset
+|2018-11-23 |0.9 |Ilkka Rinne |Korjattu kirjoitusvirheitä, lisätty Geoinformatiikan sanaston viiteluetteloon, lisätty tarkennuksia tekstiin. Johdantoa täydennetty | Kommenttikierroksen muutokset
 |===

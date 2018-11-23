@@ -9,6 +9,7 @@
 - [[[ISO_19139, ISO 19139]]] ISO 19139:2007 Geographic information -- Metadata -- XML schema implementation, https://www.iso.org/standard/32557.html
 - [[[ISO_639-2, ISO 639-2]]] ISO 639-2:1998 Codes for the representation of names of languages -- Part 2: Alpha-3 code, https://www.iso.org/standard/4767.html
 - [[[TG_MD_20, TG Metadata 2.0]]] Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0, https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139
+- [[[TG_DISC_31, TG Discovery Services 3.1]]] Technical Guidance for the implementation of INSPIRE Discovery Services, version 3.1, https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-discovery-services-0
 - [[[TG_DS_31, TG Download Services 3.1]]] Technical Guidance for the implementation of INSPIRE Download Services, version 3.1, https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services
 - [[[JHS_158, JHS 158]]] JHS 158 Paikkatietoaineistojen ja -palveluiden metatiedot, vuoden 2018 versio, http://www.jhs-suositukset.fi/suomi/jhs158
 - [[[JHS_197, JHS 197]]] JHS 197  EUREF-FIN -koordinaattijärjestelmät, niihin liittyvät muunnokset ja karttalehtijako, vuoden 2016 versio, http://www.jhs-suositukset.fi/suomi/jhs197
@@ -20,4 +21,4 @@
 - [[[XPath_20,XPath 2.0]]] XML Path Language (XPath) 2.0 (Second Edition), World Wide Web Consortium (W3C) Recommendation, https://www.w3.org/TR/2010/REC-xpath20-20101214/
 - [[[URI]]] Uniform Resource Identifier (URI): Generic Syntax, Internet Engineering Task Force RFC 3986, https://tools.ietf.org/html/rfc3986
 - [[[URL]]] URL, Living Standard - Last Updated 25 October 2018, Web Hypertext Application Technology Working Group (WHATWG), https://url.spec.whatwg.org/ (viitattu 9.11.2018)
-- [[[GI_sanasto,Geoinformatiikan sanasto]]] Geoinformatiikan sanasto, Sanastokeskus TSK, TSK 51, 2018
+- [[[GI_sanasto,Geoinformatiikan sanasto]]] Geoinformatiikan sanasto, Sanastokeskus TSK, TSK 51, 2018, http://www.tsk.fi/tsk/fi/geoinformatiikan_sanaston_4_laitos_tsk_51-1110.html

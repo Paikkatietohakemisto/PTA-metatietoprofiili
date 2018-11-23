@@ -9,8 +9,8 @@
 |===
 |Testin tunnus: | `testit/vaatimus-metatiedon-kieli`
 |Vaatimus: |  `<<#vaatimus-metatiedon-kieli,vaatimukset/vaatimus-metatiedon-kieli>>`
-|Testin tarkoitus: |
-|Testimenetelmä: |
+|Testin tarkoitus: | <puuttuu>
+|Testimenetelmä: | <puuttuu>
 |===
 [discrete]
 ==== Vaatimus {x-vaatimus-metatiedon-tunnus-nro}:
@@ -18,8 +18,8 @@
 |===
 |Testin tunnus: | `testit/vaatimus-metatiedon-tunnus`
 |Vaatimus: |  `<<#vaatimus-metatiedon-tunnus,vaatimukset/vaatimus-metatiedon-tunnus>>`
-|Testin tarkoitus: |
-|Testimenetelmä: |
+|Testin tarkoitus: | <puuttuu>
+|Testimenetelmä: | <puuttuu>
 |===
 [discrete]
 ==== Vaatimus {x-vaatimus-tm35fin-tunnus-nro}:
@@ -27,8 +27,8 @@
 |===
 |Testin tunnus: | `testit/vaatimus-tm35fin-tunnus`
 |Vaatimus: |  `<<#vaatimus-tm35fin-tunnus,vaatimukset/vaatimus-tm35fin-tunnus>>`
-|Testin tarkoitus: |
-|Testimenetelmä: |
+|Testin tarkoitus: | <puuttuu>
+|Testimenetelmä: | <puuttuu>
 |===
 [discrete]
 ==== Vaatimus {x-vaatimus-aineiston-tunnus-nro}:
@@ -36,8 +36,8 @@
 |===
 |Testin tunnus: | `testit/vaatimus-aineiston-tunnus`
 |Vaatimus: |  `<<#vaatimus-aineiston-tunnus,vaatimukset/vaatimus-aineiston-tunnus>>`
-|Testin tarkoitus: |
-|Testimenetelmä: |
+|Testin tarkoitus: | <puuttuu>
+|Testimenetelmä: | <puuttuu>
 |===
 [discrete]
 ==== Vaatimus {x-vaatimus-paivitystiheys-nro}:
@@ -45,8 +45,8 @@
 |===
 |Testin tunnus: | `testit/vaatimus-paivitystiheys`
 |Vaatimus: |  `<<#vaatimus-paivitystiheys,vaatimukset/vaatimus-paivitystiheys>>`
-|Testin tarkoitus: |
-|Testimenetelmä: |
+|Testin tarkoitus: | <puuttuu>
+|Testimenetelmä: | <puuttuu>
 |===
 [discrete]
 ==== Vaatimus {x-vaatimus-viimeinen-paivitys-nro}:
@@ -54,8 +54,8 @@
 |===
 |Testin tunnus: | `testit/vaatimus-viimeinen-paivitys`
 |Vaatimus: |  `<<#vaatimus-viimeinen-paivitys,vaatimukset/vaatimus-viimeinen-paivitys>>`
-|Testin tarkoitus: |
-|Testimenetelmä: |
+|Testin tarkoitus: | <puuttuu>
+|Testimenetelmä: | <puuttuu>
 |===
 [discrete]
 ==== Vaatimus {x-vaatimus-asiasana-ankkuri-nro}:
@@ -63,8 +63,8 @@
 |===
 |Testin tunnus: | `testit/vaatimus-asiasana-ankkuri`
 |Vaatimus: |  `<<#vaatimus-asiasana-ankkuri,vaatimukset/vaatimus-asiasana-ankkuri>>`
-|Testin tarkoitus: |
-|Testimenetelmä: |
+|Testin tarkoitus: | <puuttuu>
+|Testimenetelmä: | <puuttuu>
 |===
 [discrete]
 ==== Vaatimus {x-vaatimus-asiasanasto-ankkuri-nro}:
@@ -72,8 +72,8 @@
 |===
 |Testin tunnus: | `testit/vaatimus-asiasanasto-ankkuri`
 |Vaatimus: |  `<<#vaatimus-asiasanasto-ankkuri,vaatimukset/vaatimus-asiasanasto-ankkuri>>`
-|Testin tarkoitus: |
-|Testimenetelmä: |
+|Testin tarkoitus: | <puuttuu>
+|Testimenetelmä: | <puuttuu>
 |===
 [discrete]
 ==== Vaatimus {x-vaatimus-pta-asiasanat-nro}:
@@ -81,8 +81,8 @@
 |===
 |Testin tunnus: | `testit/vaatimus-pta-asiasanat`
 |Vaatimus: |  `<<#vaatimus-pta-asiasanat,vaatimukset/vaatimus-pta-asiasanat>>`
-|Testin tarkoitus: |
-|Testimenetelmä: |
+|Testin tarkoitus: | <puuttuu>
+|Testimenetelmä: | <puuttuu>
 |===
 [discrete]
 ==== Vaatimus {x-vaatimus-kayton-rajoitukset-nro}:
@@ -90,8 +90,8 @@
 |===
 |Testin tunnus: | `testit/vaatimus-kayton-rajoitukset`
 |Vaatimus: |  `<<#vaatimus-kayton-rajoitukset,vaatimukset/vaatimus-kayton-rajoitukset>>`
-|Testin tarkoitus: |
-|Testimenetelmä: |
+|Testin tarkoitus: | <puuttuu>
+|Testimenetelmä: | <puuttuu>
 |===
 [discrete]
 ==== Vaatimus {x-vaatimus-latauspalvelu-linkki-nro}:
@@ -99,8 +99,8 @@
 |===
 |Testin tunnus: | `testit/vaatimus-latauspalvelu-linkki`
 |Vaatimus: |  `<<#vaatimus-latauspalvelu-linkki,vaatimukset/vaatimus-latauspalvelu-linkki>>`
-|Testin tarkoitus: |
-|Testimenetelmä: |
+|Testin tarkoitus: | <puuttuu>
+|Testimenetelmä: | <puuttuu>
 |===
 [discrete]
 ==== Vaatimus {x-vaatimus-latauspalvelu-linkki-predefined-wfs-nro}:
@@ -108,8 +108,8 @@
 |===
 |Testin tunnus: | `testit/vaatimus-latauspalvelu-linkki-predefined-wfs`
 |Vaatimus: |  `<<#vaatimus-latauspalvelu-linkki-predefined-wfs,vaatimukset/vaatimus-latauspalvelu-linkki-predefined-wfs>>`
-|Testin tarkoitus: |
-|Testimenetelmä: |
+|Testin tarkoitus: | <puuttuu>
+|Testimenetelmä: | <puuttuu>
 |===
 [discrete]
 ==== Vaatimus {x-vaatimus-latauspalvelu-linkki-predefined-atom-nro}:
@@ -117,8 +117,8 @@
 |===
 |Testin tunnus: | `testit/vaatimus-latauspalvelu-linkki-predefined-atom`
 |Vaatimus: |  `<<#vaatimus-latauspalvelu-linkki-predefined-atom,vaatimukset/vaatimus-latauspalvelu-linkki-predefined-atom>>`
-|Testin tarkoitus: |
-|Testimenetelmä: |
+|Testin tarkoitus: | <puuttuu>
+|Testimenetelmä: | <puuttuu>
 |===
 [discrete]
 ==== Vaatimus {x-vaatimus-latauspalvelu-linkki-wcs-nro}:
@@ -126,8 +126,8 @@
 |===
 |Testin tunnus: | `testit/vaatimus-latauspalvelu-linkki-wcs`
 |Vaatimus: |  `<<#vaatimus-latauspalvelu-linkki-wcs,vaatimukset/vaatimus-latauspalvelu-linkki-wcs>>`
-|Testin tarkoitus: |
-|Testimenetelmä: |
+|Testin tarkoitus: | <puuttuu>
+|Testimenetelmä: | <puuttuu>
 |===
 [discrete]
 ==== Vaatimus {x-vaatimus-latauspalvelu-linkki-sos-nro}:
@@ -135,8 +135,8 @@
 |===
 |Testin tunnus: | `testit/vaatimus-latauspalvelu-linkki-sos`
 |Vaatimus: |  `<<#vaatimus-latauspalvelu-linkki-sos,vaatimukset/vaatimus-latauspalvelu-linkki-sos>>`
-|Testin tarkoitus: |
-|Testimenetelmä: |
+|Testin tarkoitus: | <puuttuu>
+|Testimenetelmä: | <puuttuu>
 |===
 [discrete]
 ==== Vaatimus {x-vaatimus-pta-vaatimuksenmukaisuus-nro}:
@@ -144,6 +144,6 @@
 |===
 |Testin tunnus: | `testit/vaatimus-pta-vaatimuksenmukaisuus`
 |Vaatimus: |  `<<#vaatimus-pta-vaatimuksenmukaisuus,vaatimukset/vaatimus-pta-vaatimuksenmukaisuus>>`
-|Testin tarkoitus: |
-|Testimenetelmä: |
+|Testin tarkoitus: | <puuttuu>
+|Testimenetelmä: | <puuttuu>
 |===
