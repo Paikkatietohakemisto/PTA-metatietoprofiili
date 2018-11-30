@@ -57,6 +57,8 @@ Suositellaan käytettäväksi Paikkatietoalustan aineistotunnukseen perustuvaa U
 ole erityistä tarvetta käyttää muuta tunnusta.
 |*Suositus{nbsp}{x-suositus-aikaviite-nro}*  | `<<#suositus-aikaviite,vaatimukset/suositus-aikaviite>>` +
 Mikäli viimeisintä päivitysajankohtaa ei anneta, suositellaan aikaviitteeksi joko aineiston ajallista kattavuutta tai sen luontiajankohtaa.
+|*Suositus{nbsp}{x-suositus-maantieteellinen-kattavuus-nimi-nro}*  | `<<#suositus-maantieteellinen-kattavuus-nimi,vaatimukset/suositus-maantieteellinen-kattavuus-nimi>>` +
+Maantietellinen kattavuus suositellaan annettavaksi myös paikannimien avulla.
 |*Suositus{nbsp}{x-suositus-yksityiskohtaisuus-luokittelu-nro}*  | `<<#suositus-yksityiskohtaisuus-luokittelu,vaatimukset/suositus-yksityiskohtaisuus-luokittelu>>` +
 Aineiston yksityiskohtaisuus suositellaan kuvattavan laatutiedoissa, mikäli yksityiskohtaisuuden kuvaamiseen
 on käytössä yleisesti tunnettu luokittelu.
@@ -91,7 +93,6 @@ dokumentista <<TG_MD_20>>.
 |TG{nbsp}Requirement{nbsp}C.5 {set:cellbgcolor:#FFFFFF}| http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/req/common/metadata-language-code
 |TG{nbsp}Requirement{nbsp}C.6 | http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/req/common/md-point-of-contact
 |TG{nbsp}Requirement{nbsp}C.7 | http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/req/common/md-date
-|TG{nbsp}Requirement{nbsp}C.19 | http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/req/common/bounding-box
 |TG{nbsp}Requirement{nbsp}1.1 | http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/req/datasets-and-series/resource-type
 |===
 
@@ -267,6 +268,7 @@ dokumentista <<TG_MD_20>>.
 |TG{nbsp}Requirement{nbsp}C.16 | http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/req/common/metadata/2.0/req/common/group-keywords-by-cv
 |TG{nbsp}Requirement{nbsp}C.17 | http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/req/common/metadata/2.0/req/common/limitations-on-public-access
 |TG{nbsp}Requirement{nbsp}C.18 | http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/req/common/metadata/2.0/req/common/conditions-for-access-and-use
+|TG{nbsp}Requirement{nbsp}C.19 | http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/req/common/bounding-box
 |TG{nbsp}Requirement{nbsp}1.2 | http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/req/datasets-and-series/only-one-md-data-identification
 |TG{nbsp}Requirement{nbsp}1.3 | http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/req/datasets-and-series/dataset-uid
 |TG{nbsp}Requirement{nbsp}1.4 | http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0/req/datasets-and-series/inspire-theme-keyword
@@ -379,7 +381,7 @@ Mittakaava tai näytetiheys ei ole kaikista tarkoituksenmukaisin tapa ilmaista k
 yksityiskohtaisuuden tasoa. Esimerkiksi rakennetun ympäristön CityGML-aineistoissa yksityiskohtaisuus
 ilmaistaan CityGML-standardissa määritellyillä level of detail -tasoilla (LOD0 - LOD4) <<CityGML>>.
 PTA-metatietokuvauksessa suositellaan tällaisissa tapauksissa käytettäväksi
-vaatimuksenmukaisuus-viittausta osana laatutietoja (ks. <<rec-lod, Suositus 3>>)
+vaatimuksenmukaisuus-viittausta osana laatutietoja (ks. <<#suositus-yksityiskohtaisuus-luokittelu,vaatimukset/suositus-yksityiskohtaisuus-luokittelu>>)
 ====
 
 ==== Avainsanat
@@ -434,7 +436,7 @@ arvona.
 |*Vaatimus{nbsp}{x-vaatimus-pta-asiasanat-nro}* {set:cellbgcolor:#e7e6c8}| `vaatimukset/vaatimus-pta-asiasanat` +
 {set:cellbgcolor:#FFFFFF}
 Kaikki Paikkatietohakemiston hakusanastoon sisältyvät avainsanat on määriteltävä
-elementeissä, jotka löytyvät XPath-kyselyn
+elementeissä, jotka palautuvat XPath-kyselyn
 `/pass:[*]/gmd:identificationInfo[1]/pass:[*]/gmd:descriptiveKeywords +
 [./pass:[*]/gmd:thesaurusName/pass:[*]/gmd:title/gmx:Anchor/@xlink:href='http://paikkatiedot.fi/def/1001001/'] +
 /pass:[*]/gmd:keyword/gmx:Anchor`
@@ -533,6 +535,83 @@ sen hyödyntämiseen tietyissä käyttötapauksissa tai sovellusalueilla.
       </gmd:otherConstraints>
    </gmd:MD_LegalConstraints>
 </gmd:resourceConstraints>
+----
+
+==== Aineiston maantieteellinen kattavuus
+INSPIRE-vaatimus TG Requirement C.19 edellyttää aineiston maantieteellisen kattavuuden kuvaamista rajaavana
+suorakaiteena (bounding box). Aineiston kattaman alueen tai alueiden kuvaaminen myös sanallisesti helpottaa
+aineiston löytämistä, mikäli alueiden nimiä käytetään hakusanoina. Alueiden nimien avulla voidaan myös helposti
+tarkentaa pelkällä suorakaiteella ilmaistavan aineiston kohdealueen kuvausta.
+
+[#suositus-maantieteellinen-kattavuus-nimi]
+[width="90%",cols="2,6"]
+|===
+|*Suositus{nbsp}{x-suositus-maantieteellinen-kattavuus-nimi-nro}* | `vaatimukset/suositus-maantieteellinen-kattavuus-nimi` +
+PTA-aineistojen suhteen suositellaan hakutulososuvuuden parantamiseksi lisäksi
+kuvaamaan aineiston maantieteellinen kattavuus merkkijonomuotoisina aineiston kattamien hallinnollisten alueiden
+niminä. Alueiden nimet susitellaan esitettäviksi XPath-kyselyn
+`/pass:[*]/gmd:identificationInfo[1]/pass:[*]/gmd:extent/pass:[*]/gmd:geographicElement/pass:[*]/gmd:geographicIdentifier/pass:[*]/gmd:code`
+palauttamien elementtien avulla.
+
+Alueen nimi ilmaistaan `gmd:code`-elementin sisällä ensisijaisesti
+merkkijonona ja viittauksena ulkoiseen koodilistaan tai alueen kuvaukseen (`gmx:Anchor`) ja toissijaisesti vain
+merkkijonona (joko monikielinen nimi ks. <<#vaatimus-metatiedon-kieli,vaatimukset/vaatimus-metatiedon-kieli>> tai vain yksi
+metatietokuvauksen kielinen nimi, `gco:CharacterString`). Kukin alueen nimi annetaan omana `gmd:geographicElement`-elementtinään.
+|===
+
+Käytettävien hallinnollisten alueiden nimien tulee olla alueiden virallisia nimiä, ja nimihierarkian taso tulee
+valita aineiston tarkkuuden mukaisesti. Esimerkiksi yhden kaupungin aluetta koskevassa aineistossa on mahdollisesti
+mielekästä käyttää kaupungin nimen lisäksi kaupungienosien tai osa-alueiden nimiä. Useita eri
+Suomen paikkakunnilla sijaitsevia kohteita koskevassa aineistossa taas olisi suositeltavaa antaa kaikkien kyseisten
+paikkakuntien nimet.
+
+.Esimerkki{nbsp}{counter:example}: Aineiston maantieteellinen kuvaus sekä suorakaiteen että kahden paikannimen avulla
+[source,xml]
+----
+/*/gmd:identificationInfo/*/gmd:extent:
+
+<gmd:extent>
+  <gmd:EX_Extent>
+     <gmd:geographicElement>
+        <gmd:EX_GeographicDescription>
+           <gmd:geographicIdentifier>
+              <gmd:MD_Identifier>
+                 <gmd:code>
+                    <gmx:Anchor xlink:href="https://sws.geonames.org/9610677/about.rdf">Helsinki</gmx:Anchor>
+                 </gmd:code>
+              </gmd:MD_Identifier>
+           </gmd:geographicIdentifier>
+        </gmd:EX_GeographicDescription>
+     </gmd:geographicElement>
+     <gmd:geographicElement>
+        <gmd:EX_GeographicDescription>
+           <gmd:geographicIdentifier>
+              <gmd:MD_Identifier>
+                 <gmd:code>
+                    <gmx:Anchor xlink:href="https://sws.geonames.org/643261/about.rdf">Padasjoki</gmx:Anchor>
+                 </gmd:code>
+              </gmd:MD_Identifier>
+           </gmd:geographicIdentifier>
+        </gmd:EX_GeographicDescription>
+     </gmd:geographicElement>
+     <gmd:geographicElement>
+       <gmd:EX_GeographicBoundingBox>
+          <gmd:westBoundLongitude>
+             <gco:Decimal>24.60851</gco:Decimal>
+          </gmd:westBoundLongitude>
+          <gmd:eastBoundLongitude>
+             <gco:Decimal>25.13732</gco:Decimal>
+          </gmd:eastBoundLongitude>
+          <gmd:southBoundLatitude>
+             <gco:Decimal>60.3694</gco:Decimal>
+          </gmd:southBoundLatitude>
+          <gmd:northBoundLatitude>
+             <gco:Decimal>61.35062</gco:Decimal>
+          </gmd:northBoundLatitude>
+       </gmd:EX_GeographicBoundingBox>
+     </gmd:geographicElement>
+  </gmd:EX_Extent>
+</gmd:extent>
 ----
 
 === Jakelutiedot (distributionInfo)

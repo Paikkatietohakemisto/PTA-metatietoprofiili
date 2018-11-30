@@ -32,7 +32,7 @@ ifdef::preface-title[:preface-title: Esipuhe]
 :version-label: Versio
 :warning-caption: Ongelma
 :table-caption: Taulukko
-:x-versio: 0.9
+:x-versio: 1.0
 :x-vaatimus-metatiedon-kieli-nro: 1
 :x-vaatimus-metatiedon-tunnus-nro: 2
 :x-vaatimus-tm35fin-tunnus-nro: 3
@@ -51,20 +51,22 @@ ifdef::preface-title[:preface-title: Esipuhe]
 :x-vaatimus-pta-vaatimuksenmukaisuus-nro: 16
 :x-suositus-aineiston-pta-tunnus-nro: 1
 :x-suositus-aikaviite-nro: 2
-:x-suositus-yksityiskohtaisuus-luokittelu-nro: 3
+:x-suositus-maantieteellinen-kattavuus-nimi-nro: 3
+:x-suositus-yksityiskohtaisuus-luokittelu-nro: 4
+
 = {title}
 
 <<<
 [cols = "<",frame = "none",grid = "none"]
 |===
 |{set:cellbgcolor:#FFFFFF}
-|[big]*Maanmittauslaitos*
-|Hyväksytty:   <yyyy-mm-dd>
-|Julkaistu:   <yyyy-mm-dd>
+|[big]*Paikkatietoalusta / Maanmittauslaitos*
+|Ensimmäinen versio: PTA-metatietoprofiili-projektiryhmä, toimittanut Ilkka Rinne / Spatineo Oy 2018
+|Hyväksytty: pp.kk.vvvv
+|Julkaistu: pp.kk.vvvv
 |Dokumentin tunniste: http://paikkatiedot.fi/def/pta-metatietoprofiili/{x-versio}
 |Versio: {x-versio}
 |Kieli: suomi
-|Editori:   Ilkka Rinne / Spatineo Oy
 |===
 
 include::front_material.adoc[]
@@ -164,21 +166,21 @@ Council as regards interoperability of spatial data services.
 Tämän dokumentin puitteissä seuraavat termit ja määritelmät ovat voimassa:
 
 [glossary]
+Metatietoelementti:: Metatietokuvauksen yksittäinen tietoelementti tai sitä vastaava
+metatietokoodauksen osa (esim. XML-elementti).
+Paikkatietoinfrastruktuuri:: Paikkatietoinfrastruktuurilla tarkoitetaan tässä Inspire-direktiivin mukaista kansallista paikkatietoinfrastruktuuria kuitenkin ilman direktiivin liitteissä määriteltyjä, paikkatietoaineistojen sisällöllisiä rajauksia.
+Paikkatietoalusta (PTA):: Paikkatietoalustalla tarkoitetaan tässä paikkatietoinfrastruktuuriin kuuluvaa tukipalvelua, joka mahdollistaa paikkatietoaineistojen ja -palvelujen kokoamisen ja käyttämisen yhteentoimivana kokonaisuutena.
+Paikkatietoalustan ekosysteemi:: Paikkatietoalustan ekosysteemillä tarkoitetaan tässä Paikkatietoalustan kehittämisen ja käytön foorumia ja verkostoa, jossa paikkatiedon tuottajien tietoekosysteemit ja paikkatiedon hyödyntäjät sekä palveluyritykset toimivat synergisessä yhteistyössä.
+Tietoekosysteemi:: Tietoekosysteemillä tarkoitetaan tässä paikkatiedon tuottajien klustereita, jotka asettavat tuottamansa paikkatiedon Paikkatietoalustan kautta yhteisen tietomallin mukaan. Ensivaiheessa Paikkatietoalustan tietoekosysteemejä ovat kansallinen maastotietokanta (KMTK) -ohjelma, kansallinen satelliittikuvien prosessointi- ja jakelupalvelu sekä valtakunnallinen osoitetietojärjestelmä -hanke.
+Tuoteomistaja:: Tuoteomistajalla tarkoitetaan tässä Paikkatietoekosysteemin toimijaa, joka huolehtii Paikkatietoalustan käytännön kehitys- ja ylläpitotyöstä sekä alustapalveluista. Tuoteomistajan toiminnan tavoitteena on, että kehittämishankkeet toteutuvat suunnitellusti ja että tarjotut palvelut toimivat luotettavasti ja tehokkaasti. Tuoteomistajana toimii Maanmittauslaitos.
+Tiedon tuottaja:: Tiedon tuottajalla tarkoitetaan tässä tietoekosysteemiin kuuluvaa paikkatietoa tuottavaa toimijaa, joka asettaa tiedon saataville Paikkatietoalustan kautta yhteisen tietomallin mukaan.
+PTA-aineisto:: Nimetty tietoaineisto, joka on tietoekosysteemin edustajien,
+tuoteomistajan ja tiedon tuottajan kesken yhteisesti tunnistettu tärkeäksi osaksi Paikkatietoalustan tietoaineistokokonaisuutta, ja jonka tuottamisesta ja käytöstä
+osana Paikkatietoalustaa on yhteisesti sovittu.
 Vaatimuksenmukaisuusluokka (conformance class):: Tietyn laatuvaatimustason
 täyttymiseksi vaadittavien vaatimusten joukko.
 Abstrakti testisarja (abstract test suite):: Abstrakti testausmoduuli, jossa
 on määritelty kaikki nimetyn laatuvaatimustason täyttymiseen edellytettävät vaatimukset.
-Metatietoelementti:: Metatietokuvauksen yksittäinen tietoelementti tai sitä vastaava
-metatietokoodauksen osa (esim. XML-elementti).
-XPath-kysely:: W3C:n <<XPath_20>>-suosituksen mukainen ilmaus, jonka avulla voidaan
-tehdä tarkka sisältökysely rakenteiseen XML-dokumenttiin.
-URI-tunnus:: IETF:n <<URI>>-standardin mukainen resurssin tunnus.
-URL-osoite:: Uniform Resource Locator, ns. web-osoite, jonka tarkoitus on osoittaa tietoverkon kautta saataville asetettuun
-resurssiin. <<URL>>-osoite on URI-tunnuksen erikoistapaus.
-Paikkatietoalusta (PTA):: Julkisen hallinnon yhteinen paikkatietoalusta -kehityshanke, ko. hankkeen tavoitteena oleva
-järjestelmä, joka mahdollistaa ihmisten, palveluiden ja sovellusten yhteydet toisiinsa.
-PTA-aineisto:: Tietoaineisto, jonka käytöstä osana Paikkatietoalustan palveluja on sovittu Maanmittauslaitoksen ja
-tiedontuottajan välillä, ja jolle on yhteisesti sovittu erityinen PTA-aineisto -status.
 PTA-laatuvahti:: Paikkatietoalustan sisältämä aineistojen validointipalvelu.
 rajapintapalvelu:: Palvelu, joka tarjotaan sovelluksen avulla tietokoneverkon kautta muiden sovellusten saataville
 (<<GI_sanasto>>)
@@ -188,6 +190,11 @@ yksilöivä ko. palvelun sisällä.
 INSPIRE-tunnus (INSPIRE identifier):: INSPIRE-aineiston yksilöivä tunnus.
 Havaintotarjoomatunnus (observation offering identifier):: <<SOS_20>>-standardin mukainen yksittäisen latattavaksi asetetun
 havaintoaineiston tunnus, joka on yksilöivä ko. palvelun sisällä.
+XPath-kysely:: W3C:n <<XPath_20>>-suosituksen mukainen ilmaus, jonka avulla voidaan
+tehdä tarkka sisältökysely rakenteiseen XML-dokumenttiin.
+URI-tunnus:: IETF:n <<URI>>-standardin mukainen resurssin tunnus.
+URL-osoite:: Uniform Resource Locator, ns. web-osoite, jonka tarkoitus on osoittaa tietoverkon kautta saataville asetettuun
+resurssiin. <<URL>>-osoite on URI-tunnuksen erikoistapaus.
 
 include::johdanto.adoc[]
 

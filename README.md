@@ -1,21 +1,9 @@
-# Standard template
+# Paikkatietoalusta - metatietoprofiili
 
-## Content
+## HTML- ja PDF-versioiden tuottaminen
+Dokumentin sisältö on kuvattu [asciidoc](https://asciidoctor.org/docs/asciidoc-writers-guide/)-kielellä. HTML- ja PDF-versioiden rakentaminen
+`docs`-alihakemistoon tapahtuu Ruby-pohjaisella asciidoctor-sovelluksella, jonka on oltava asennettuna koneelle, jolla uusi versio luodaan. ks. [Asciidoctor-asennusohjeet](https://asciidoctor.org/docs/user-manual/#getting-started).
 
-This folder contains the text for the standard
+Hyvä vaihtoehto Asciidoctor-sovelluksen ajamiseen on [docker-asciidoctor](https://hub.docker.com/r/asciidoctor/docker-asciidoctor/) Docker-image, jolloin ei tarvitse asentaa Ruby- ja Asciidoctor-riippuvuuksia erikseen, vaan koko paketti on valmiiksi toimiva kaikissa ympäristöissä, joissa Docker toimii.
 
-* standard_document.adoc - the main standard document with references to all sections
-* remaining adocs - each section of the standard document is in a separate document: follow directions in each document to populate
-* images - directory for image files used as figures
-* requirements - directory for requirements and requirement classes to be referenced in clause_7_normative_text.adoc
-* code - sample code to accompany the standard, if desired
-* abstract_tests - the Abstract Test Suite comprising one test for every requirement, optional
-* UML - UML diagrams, if applicable
-
-## Building
-
-To produce the HTML of the standard run `asciidoctor --safe -a data-uri -o
-standard_document.html standard_document.adoc`.
-
-To produce the PDF of the standard run `asciidoctor-pdf --safe -o
-standard_document.pdf standard_document.adoc`
+Tiedosto `asciidoctor.sh` in Bash-skripti, joka tuottaa automaattisesti uuden HTML- ja PDF-version PTA-metatietoprofiili-dokumentista hakemiston `docs` alle käyttäen Docker-imagea. Docker-ympäristön tulee olla käynnissä ko. koneella, jotta skripti toimii, mutta muita asennuksia ei tarvita, ks. [Docker-asennusohje](https://docs.docker.com/install/).
